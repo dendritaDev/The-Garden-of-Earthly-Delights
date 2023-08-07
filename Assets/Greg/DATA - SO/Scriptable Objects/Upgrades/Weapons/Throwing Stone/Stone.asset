@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2f30917b1b718a47b604020d0857645, type: 3}
+  m_Name: Stone
+  m_EditorClassIdentifier: 
+  Name: Throwing Stone
+  stats:
+    damage: 70
+    timeToAttack: 0.1
+    numberOfAttacks: 1
+    numOfPerforationHits: 3
+    projectileSpeed: 2
+    detectionRadius: 3
+    stun: 0.5
+    knockback: 0.5
+    knockbackTimeWeight: 0.5
+  weaponBasePrefab: {fileID: 6790495474329093724, guid: 743a2f1aaa9d82044abfb6f3f6dcd165, type: 3}
+  upgrades:
+  - {fileID: 11400000, guid: f04e95d7f4a670748859f4c66489a7aa, type: 2}
+  - {fileID: 11400000, guid: 943437c421c5061478b48f5339ad4d9a, type: 2}
+  - {fileID: 11400000, guid: a87f34ec650908347acc9a93a92cb755, type: 2}

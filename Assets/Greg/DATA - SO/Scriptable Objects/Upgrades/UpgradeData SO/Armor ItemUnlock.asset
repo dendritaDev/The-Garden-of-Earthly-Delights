@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae28c24c1d2e74d40b647ef5bfbd5490, type: 3}
+  m_Name: Armor ItemUnlock
+  m_EditorClassIdentifier: 
+  upgradeType: 3
+  Name: Armor Upgrade
+  description: Get armor.
+  icon: {fileID: -148335243, guid: 0c1e734fa85636743af3bc22c6d99ba8, type: 3}
+  weaponData: {fileID: 0}
+  weaponUpgradeStats:
+    damage: 0
+    timeToAttack: 0
+    numberOfAttacks: 0
+    numOfPerforationHits: 0
+    projectileSpeed: 0
+    detectionRadius: 0
+    stun: 0
+    knockback: 0
+    knockbackTimeWeight: 0
+  item: {fileID: 11400000, guid: f01b540b8ccc4e94ab402ae59cccb6e3, type: 2}
+  itemStats:
+    armor: 0
