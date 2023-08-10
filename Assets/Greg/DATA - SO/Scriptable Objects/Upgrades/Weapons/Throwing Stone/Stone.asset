@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Throwing Stone
   stats:
-    damage: 70
+    damage: 1
     timeToAttack: 0.1
     numberOfAttacks: 1
     numOfPerforationHits: 3
     projectileSpeed: 2
-    detectionRadius: 3
+    detectionRadius: 6
     stun: 0.5
     knockback: 0.5
     knockbackTimeWeight: 0.5

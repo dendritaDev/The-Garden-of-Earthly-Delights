@@ -57,7 +57,7 @@ public class BulletMovement : MonoBehaviour
                 {
                     if (!CheckRepeatHit(objectHit))
                     {
-                        PostDamage(damage, transform.position);
+                         
                         alreadyHitTargets.Add(objectHit);
                         objectHit.TakeDamage(damage);
                         numOfPerforationHits--;

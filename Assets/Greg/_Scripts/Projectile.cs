@@ -72,6 +72,7 @@ public class Projectile : MonoBehaviour, IPoolMember
                 {
                     if (!CheckRepeatHit(objectHit))
                     {
+                        
                         weapon.ApplyDamage(damage, collider.transform.position, objectHit);
                         alreadyHitTargets.Add(objectHit);
                         numOfPerforationHits--;

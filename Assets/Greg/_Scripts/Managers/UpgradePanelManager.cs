@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class UpgradePanelManager : MonoBehaviour
 {
-    [SerializeField] GameObject panel;
+    [SerializeField] GameObject upgradePanel;
     [SerializeField] UpgradeDescriptionPanel upgradeDescriptionPanel;
     PauseManager pauseManager;
 
@@ -32,7 +32,7 @@ public class UpgradePanelManager : MonoBehaviour
         Clean();
 
         pauseManager.PauseGame();
-        panel.SetActive(true);
+        upgradePanel.SetActive(true);
 
         this.upgradeData = upgradeDatas;
 
@@ -65,8 +65,6 @@ public class UpgradePanelManager : MonoBehaviour
             ClosePanel();
             HideDescriptionPanel();
         }
-        
-        
     }
 
     private void HideDescriptionPanel()
@@ -89,7 +87,7 @@ public class UpgradePanelManager : MonoBehaviour
         HideButtons();
 
         pauseManager.UnPauseGame();
-        panel.SetActive(false);
+        upgradePanel.SetActive(false);
     }
 
     private void HideButtons()

@@ -77,9 +77,9 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 50
+  m_SortingLayerID: 685199579
+  m_SortingLayer: 1
+  m_SortingOrder: 10
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!114 &4607170102822622818
 MonoBehaviour:
@@ -185,4 +185,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5e91060c2b9800429e5b9f4f54a2d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToDisappear: 2
+  timeToLive: 2
+  timeToFadeOff: 0.7
+  normalDmgFontSize: 6
+  criticalDmgFontSize: 8.5
+  normalDmgColor: {r: 1, g: 1, b: 1, a: 1}
+  criticalDmgColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+  minRangeXDistance: -0.2
+  maxRangeXDistance: 0.2
+  YDistance: 0.1
+  isCriticalHit: 0
+  sortingOrder: 0
+  text: 

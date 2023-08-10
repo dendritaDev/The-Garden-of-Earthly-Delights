@@ -44,9 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cac6ab77cfc98947943c0dee3f8c82b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 512
   weaponData: {fileID: 11400000, guid: 6164d7e3839c3a646ad5f4c297f890e0, type: 2}
   weaponStats:
     damage: 0
     timeToAttack: 0
     numberOfAttacks: 0
+    numOfPerforationHits: 0
+    projectileSpeed: 0
+    detectionRadius: 0
+    stun: 0
+    knockback: 0
+    knockbackTimeWeight: 0
+  vectorOfAttack: {x: 0, y: 0}
+  attackDirection: 0
   attackAreaSize: 3

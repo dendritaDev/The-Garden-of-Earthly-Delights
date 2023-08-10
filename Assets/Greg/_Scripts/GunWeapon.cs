@@ -11,16 +11,18 @@ public class GunWeapon : WeaponBase
     //esto seran los proyectiles que se dispararán
     [SerializeField] PoolObjectData bulletPrefab;
 
+    private List<Vector3> enemyPos = new List<Vector3>();
+    private Vector3 selectedOne = Vector3.zero;
 
     public override void Attack()
     {
-        
+        enemyPos.Clear();
         for (int i = 0; i < weaponStats.numberOfAttacks; i++)
         {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, weaponStats.detectionRadius);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, weaponStats.detectionRadius, layerMask);
 
             if(colliders.Length == 0) { return; }
-            float nearEnemy = weaponStats.detectionRadius + 1; //este numero siempre será mayor q cualquier enemigo detectado
+            float nearEnemy = Mathf.Infinity;
             float distanceToEnemy;
             int enemyIndex = -1;
 
@@ -28,21 +30,28 @@ public class GunWeapon : WeaponBase
             {
 
                 if (!colliders[e].CompareTag("Enemy")) //solo nos interesan los colliders de enemigos
+                {
+                    Debug.Log(colliders[e].tag);
+                    Debug.Log(colliders[e].name);
                     continue;
 
-                Debug.Log("b");
+                }
+
 
                 distanceToEnemy = Vector3.Distance(this.transform.position, colliders[e].transform.position);
+
+                enemyPos.Add(colliders[e].transform.position);
+
                 if (distanceToEnemy < nearEnemy)
                 {
+                    nearEnemy = distanceToEnemy;
                     enemyIndex = e;
                 }
             }
 
             if(enemyIndex == -1) { return; } //si no hay ningun enemigo return
-
+            selectedOne = colliders[enemyIndex].transform.position;
             GameObject bullet = SpawnProjectile(bulletPrefab, transform.position, colliders[enemyIndex].transform.position);
-            Debug.Log(colliders[enemyIndex].transform.position - transform.position);
 
         }
     }
@@ -51,6 +60,18 @@ public class GunWeapon : WeaponBase
     {
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, weaponStats.detectionRadius);
+
+        if(enemyPos.Count > 1)
+        {
+            foreach (var enemy in enemyPos)
+            {
+                Gizmos.color = Color.white;
+                Gizmos.DrawLine(this.transform.position, enemy);
+            }
+        }
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawLine(this.transform.position, selectedOne);
     }
 
 }

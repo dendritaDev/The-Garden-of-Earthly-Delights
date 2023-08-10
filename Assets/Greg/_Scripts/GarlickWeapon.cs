@@ -20,7 +20,7 @@ public class GarlickWeapon : WeaponBase
 
         for (int i = 0; i < weaponStats.numberOfAttacks; i++)
         {
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, attackAreaSize);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, attackAreaSize, layerMask);
             ApplyDamage(colliders);
             yield return new WaitForSeconds(0.15f);
 

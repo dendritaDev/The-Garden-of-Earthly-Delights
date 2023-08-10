@@ -26,7 +26,7 @@ public class WhipWeapon : WeaponBase
         for(int i = 0; i < weaponStats.numberOfAttacks; i++)
         {
             whipObject.SetActive(true);
-            Collider2D[] colliders = Physics2D.OverlapBoxAll(whipObject.transform.position, attackSize, 0f);
+            Collider2D[] colliders = Physics2D.OverlapBoxAll(whipObject.transform.position, attackSize, 0f, layerMask);
             ApplyDamage(colliders);
 
             yield return new WaitForSeconds(0.3f);

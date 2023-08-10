@@ -11,6 +11,7 @@ public enum DirectionOfAttack
 }
 public abstract class WeaponBase : MonoBehaviour
 {
+    public LayerMask layerMask;
    
     public WeaponData weaponData;
     public WeaponStats weaponStats;
