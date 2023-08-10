@@ -8,6 +8,6 @@ public class HealPickUpObject : MonoBehaviour, IPickUpObject
 
     public void OnPickUp(Character character)
     {
-        character.Heal(healAmount);
+        character.Heal(healAmount, true);
     }
 }

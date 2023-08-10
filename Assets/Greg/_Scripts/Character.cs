@@ -80,7 +80,7 @@ public class Character : MonoBehaviour
             damage = 0;
     }
 
-    public void Heal(int amount)
+    public void Heal(int amount, bool displayPopup = false)
     {
         if(currentHP <= 0) { return; }
 
@@ -89,6 +89,10 @@ public class Character : MonoBehaviour
         if(currentHP > maxHP) { currentHP = maxHP; }
 
         hpBar.SetState(currentHP, maxHP);
+
+        if(displayPopup)
+            MessageSystem.instance.HealPopup(amount.ToString(), this.transform.position, false);
+
     }
 
 }

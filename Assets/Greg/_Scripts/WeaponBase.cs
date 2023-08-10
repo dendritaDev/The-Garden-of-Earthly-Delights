@@ -83,7 +83,7 @@ public abstract class WeaponBase : MonoBehaviour
     }
     public virtual void PostDamage(int damage, Vector3 targetPosition)
     {
-        MessageSystem.instance.PostMessage(damage.ToString(), targetPosition);
+        MessageSystem.instance.DamagePopup(damage.ToString(), targetPosition);
     }
 
     public void Upgrade(UpgradeData upgradeData)

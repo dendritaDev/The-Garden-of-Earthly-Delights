@@ -1379,6 +1379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageMessage: {fileID: 7346387185707533698, guid: 987762116afca5443b44638770821fb0, type: 3}
+  healMessage: {fileID: 7346387185707533698, guid: 7b15e8b3671eacd45b8c2a1bd6e42b15, type: 3}
   poolSize: 30
 --- !u!4 &515680790
 Transform:

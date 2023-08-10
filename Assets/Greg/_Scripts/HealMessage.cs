@@ -1,23 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
-public class DamageMessage : PopupMessage
+public class HealMessage : PopupMessage
 {
     public float disappearSpeed;
     public override void CriticalHit()
     {
         textMesh.fontSize = popupData.criticalFontSize;
         textMesh.color = popupData.criticalColor;
-        textMesh.text = text + "!";
+        textMesh.text = "+" + text + "!";
     }
 
     public override void NormalHit()
     {
         textMesh.fontSize = popupData.normalFontSize;
         textMesh.color = popupData.mainColor;
-        textMesh.text = text;
+        textMesh.text = "+" + text;
     }
 
     private void Update()
@@ -34,7 +33,7 @@ public class DamageMessage : PopupMessage
         }
 
         //un poco despues empezamos a hacerla transparente
-        if(disappearTimer < popupData.timeToLive * popupData.timeToFadeOff * popupData.timeToFadeOff)
+        if (disappearTimer < popupData.timeToLive * popupData.timeToFadeOff * popupData.timeToFadeOff)
         {
             textColor.a -= disappearSpeed * Time.deltaTime;
 

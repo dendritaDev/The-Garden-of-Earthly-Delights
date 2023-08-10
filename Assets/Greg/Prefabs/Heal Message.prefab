@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1273966381077289306}
   - component: {fileID: 472201496519079364}
   - component: {fileID: 4607170102822622818}
-  - component: {fileID: -4933311638035355419}
+  - component: {fileID: -3862984724645700339}
   m_Layer: 0
-  m_Name: Damage Message
+  m_Name: Heal Message
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_renderer: {fileID: 472201496519079364}
   m_maskType: 0
---- !u!114 &-4933311638035355419
+--- !u!114 &-3862984724645700339
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,10 +182,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7346387185707533698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5e91060c2b9800429e5b9f4f54a2d49, type: 3}
+  m_Script: {fileID: 11500000, guid: b0deca3d642f757499664d16ea13274f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popupData: {fileID: 11400000, guid: 2682f678179b47b418e1f8b24b7a1827, type: 2}
+  popupData: {fileID: 11400000, guid: f0499e28da8312940959f87d5fa4dee5, type: 2}
   disappearTimer: 2
   isCriticalHit: 0
   sortingOrder: 0
@@ -193,4 +193,4 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   moveVector: {x: 0, y: 0, z: 0}
   textColor: {r: 0, g: 0, b: 0, a: 0}
-  disappearSpeed: 9
+  disappearSpeed: 5
