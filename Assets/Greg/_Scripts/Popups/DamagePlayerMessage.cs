@@ -1,29 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class HealMessage : PopupMessage
+public class DamagePlayerMessage : PopupMessage
 {
-    public float disappearSpeed;
+    public float disappearSpeed = 9f;
     public override void CriticalHit()
     {
         textMesh.fontSize = popupData.criticalFontSize;
         textMesh.color = popupData.criticalColor;
-        textMesh.text = "+" + text + "!";
+        textMesh.text = text + "!";
     }
 
     public override void NormalHit()
     {
         textMesh.fontSize = popupData.normalFontSize;
         textMesh.color = popupData.mainColor;
-        textMesh.text = "+" + text;
+        textMesh.text = text;
     }
 
     private void Update()
     {
         disappearTimer -= Time.deltaTime;
 
-        disappearSpeed = 9f;
+        
         //Primero emepzamos a moverla y cambiarla a color oscuro
         if (disappearTimer < popupData.timeToLive * popupData.timeToFadeOff)
         {

@@ -1378,8 +1378,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d040ef551cadb9d4d9f38caf21af0075, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageMessage: {fileID: 7346387185707533698, guid: 987762116afca5443b44638770821fb0, type: 3}
-  healMessage: {fileID: 7346387185707533698, guid: 7b15e8b3671eacd45b8c2a1bd6e42b15, type: 3}
+  damageMessagePrefae: {fileID: 7346387185707533698, guid: 987762116afca5443b44638770821fb0, type: 3}
+  healMessagePrefab: {fileID: 7346387185707533698, guid: 7b15e8b3671eacd45b8c2a1bd6e42b15, type: 3}
+  damagePlayerMessagePrefab: {fileID: 7346387185707533698, guid: 705250d4f5790644ca533c7dad73742e, type: 3}
   poolSize: 30
 --- !u!4 &515680790
 Transform:

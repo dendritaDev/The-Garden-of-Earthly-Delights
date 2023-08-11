@@ -60,15 +60,15 @@ public class Character : MonoBehaviour
 
         ApplyArmor(ref damage);
 
+        MessageSystem.instance.DamagePlayerPopup(damage.ToString(), this.transform.position);
+
         currentHP -= damage;
-        
 
         if (currentHP < 0)
         {
             GetComponent<CharacterGameOver>().GameOver();
             isDead = true;
         }
-            
 
         hpBar.SetState(currentHP, maxHP);
     }

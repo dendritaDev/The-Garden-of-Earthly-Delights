@@ -7,15 +7,18 @@ public class MessageSystem : MonoBehaviour
 {
     public static MessageSystem instance;
 
-    [SerializeField] GameObject damageMessage;
-    [SerializeField] GameObject healMessage;
+    [SerializeField] GameObject damageMessagePrefae;
+    [SerializeField] GameObject healMessagePrefab;
+    [SerializeField] GameObject damagePlayerMessagePrefab;
 
     List<PopupMessage> damageMessagePool;
+    List<PopupMessage> damagePlayerMessagePool;
     List<PopupMessage> healMessagePool;
     
     [SerializeField]int poolSize = 10;
     int healCount;
     int dmgCount;
+    int dmgPlayercount;
 
     private int sortingOrder;
 
@@ -28,6 +31,7 @@ public class MessageSystem : MonoBehaviour
     private void Start()
     {
         damageMessagePool = new List<PopupMessage>();
+        damagePlayerMessagePool = new List<PopupMessage>();
         healMessagePool = new List<PopupMessage>();
         for (int i = 0; i < poolSize; i++)
         {
@@ -37,11 +41,15 @@ public class MessageSystem : MonoBehaviour
 
     public void Populate()
     {
-        GameObject objectDamageMessage = Instantiate(damageMessage, transform);
+        GameObject objectDamageMessage = Instantiate(damageMessagePrefae, transform);
         damageMessagePool.Add(objectDamageMessage.GetComponent<PopupMessage>());
         objectDamageMessage.SetActive(false);
 
-        GameObject objectHealMessage = Instantiate(healMessage, transform);
+        GameObject objectDamagePlayerMessage = Instantiate(damagePlayerMessagePrefab, transform);
+        damagePlayerMessagePool.Add(objectDamagePlayerMessage.GetComponent<PopupMessage>());
+        objectDamagePlayerMessage.SetActive(false);
+
+        GameObject objectHealMessage = Instantiate(healMessagePrefab, transform);
         healMessagePool.Add(objectHealMessage.GetComponent<PopupMessage>());
         objectHealMessage.SetActive(false);
     }
@@ -54,6 +62,11 @@ public class MessageSystem : MonoBehaviour
     public void HealPopup(string damageAmount, Vector3 worldPosition, bool isCriticalHit = false)
     {
         PrintPopup(healMessagePool, ref healCount,damageAmount, worldPosition, isCriticalHit);
+    }
+
+    public void DamagePlayerPopup(string damageAmount, Vector3 worldPosition, bool isCriticalHit = false)
+    {
+        PrintPopup(damagePlayerMessagePool, ref dmgPlayercount, damageAmount, worldPosition, isCriticalHit);
     }
 
     public void PrintPopup(List<PopupMessage> pool, ref int count, string damageAmount, Vector3 worldPosition, bool isCriticalHit = false)

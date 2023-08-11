@@ -5,7 +5,7 @@ using TMPro;
 
 public class DamageMessage : PopupMessage
 {
-    public float disappearSpeed;
+    public float disappearSpeed = 9f;
     public override void CriticalHit()
     {
         textMesh.fontSize = popupData.criticalFontSize;
@@ -24,7 +24,7 @@ public class DamageMessage : PopupMessage
     {
         disappearTimer -= Time.deltaTime;
 
-        disappearSpeed = 9f;
+        
         //Primero emepzamos a moverla y cambiarla a color oscuro
         if (disappearTimer < popupData.timeToLive * popupData.timeToFadeOff)
         {
