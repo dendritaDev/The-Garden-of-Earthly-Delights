@@ -268,10 +268,10 @@ GameObject:
   - component: {fileID: 8527718409679528858}
   - component: {fileID: 5957466977671266387}
   - component: {fileID: 5173788552180423921}
+  - component: {fileID: 5059557516871137189}
   - component: {fileID: 9122908486871839529}
   - component: {fileID: 6801147297944968583}
   - component: {fileID: 5873920894117910476}
-  - component: {fileID: 5059557516871137189}
   - component: {fileID: 3914185316531104821}
   - component: {fileID: 8623839892582081463}
   - component: {fileID: 3914185316531104823}
@@ -346,6 +346,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!61 &5059557516871137189
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8527718409679528805}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.04771304, y: 0.41987437}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0954261, y: 1.6870672}
+  m_EdgeRadius: 0
 --- !u!114 &9122908486871839529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,32 +424,6 @@ MonoBehaviour:
   level: {fileID: 0}
   coins: {fileID: 0}
   dataContainer: {fileID: 11400000, guid: 6f52d4b195ab3b244a5cb0ccff0d52b8, type: 2}
---- !u!61 &5059557516871137189
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8527718409679528805}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.04771304, y: 0.41987437}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0954261, y: 1.6870672}
-  m_EdgeRadius: 0
 --- !u!114 &3914185316531104821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponObjectsContainer: {fileID: 7466021704895522097}
+  poolManager: {fileID: 0}
   startingWeapon: {fileID: 11400000, guid: 5d0e4aa4558b05d49909c984eecbedee, type: 2}
 --- !u!1 &8527718410691229853
 GameObject:

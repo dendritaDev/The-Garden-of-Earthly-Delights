@@ -8,6 +8,8 @@ public class Character : MonoBehaviour
     public int maxHP = 100;
     public int currentHP = 100;
     public int armor = 0;
+    //MORE STATS TO ADD
+    
 
     public float hpRegenerationRate = 1f;
     public float hpRegenerationTimer;

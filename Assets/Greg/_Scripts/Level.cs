@@ -99,7 +99,7 @@ public class Level : MonoBehaviour
     /// <summary>
     /// Mezclar de posicion los upgrades para que tengan diferente orden
     /// </summary>
-    public void SuffleUpgrades()
+    public void ShuffleUpgrades()
     {
         for (int i = upgrades.Count - 1; i > 0; i--)
         {
@@ -114,7 +114,7 @@ public class Level : MonoBehaviour
 
     public List<UpgradeData> GetUpgrades(int count)
     {
-        SuffleUpgrades();
+        ShuffleUpgrades();
         List<UpgradeData> upgradeList = new List<UpgradeData>();
 
         

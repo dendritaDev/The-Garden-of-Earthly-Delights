@@ -36,7 +36,11 @@ public class PassiveItems : MonoBehaviour
 
     public void Unequip(Item itemToUnequip)
     {
-        
+        if (items == null)
+            items = new List<Item>();
+
+        Item newItemIstance = new Item();
+        newItemIstance.Unequip(character);
     }
 
     internal void UpgradeItem(UpgradeData upgradeData)
