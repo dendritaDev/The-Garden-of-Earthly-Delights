@@ -20,7 +20,7 @@ MonoBehaviour:
     numOfPerforationHits: 3
     projectileSpeed: 2
     detectionRadius: 6
-    stun: 0.5
+    stun: 0.1
     knockback: 0.5
     knockbackTimeWeight: 0.5
   weaponBasePrefab: {fileID: 6790495474329093724, guid: 743a2f1aaa9d82044abfb6f3f6dcd165, type: 3}

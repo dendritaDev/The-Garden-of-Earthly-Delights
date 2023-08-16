@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using BehaviorSteering;
+
 [Serializable]
 public class EnemyStats
 {
@@ -38,18 +40,23 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
 
     [SerializeField] EnemyData enemyData;
 
-    float stunned;
+    //float stunned;
     Vector3 knocnkbackVector;
     float knockbackForce; //a mas fuerza, mayor distancia de knockback
     float knockbackTimeWeight; //a mas tiempo, mas duracion del knockback
 
     public PoolMember poolMember;
 
+    private AgentBehavior[] behaviors;
+    private Agent agent;
 
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
-        
+        behaviors = GetComponents<AgentBehavior>();
+        agent = GetComponent<Agent>();
+
+
     }
 
     private void Start()
@@ -64,43 +71,58 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
             //Lo hago aqui de nuevo tambien por si quiero testear con enemigos y no me quiero esperar a que spawneen o algo
             //que arrastrandolos simplemente en el juego puedan funcionar
         }*/
+
     }
 
     public void SetTarget(GameObject target)
     {
         targetGameObject = target;
         targetDestination = target.transform;
+
+        foreach (var behavior in behaviors)
+        {
+            behavior.SetTarget(target);
+        }
     }
 
     private void FixedUpdate()
     {
-        ProcessStun();
 
-        Move();
+        //ProcessStun();
+        //Ahora se mueven a partir de Behavior Steering
+        //Move();
     }
 
-    private void ProcessStun()
-    {
-        if(stunned > 0f)
-        {
-            _rigidbody2D.velocity = Vector2.zero;
-            stunned -= Time.fixedDeltaTime; //fixeddeltatime porque estamos en feixed update
-        }
+    //private void ProcessStun()
+    //{
+    //    if(stunned > 0f)
+    //    {
+    //        _rigidbody2D.velocity = Vector2.zero;
+    //        stunned -= Time.fixedDeltaTime; //fixeddeltatime porque estamos en feixed update
+    //    }
         
-    }
+    //}
 
-    private void Move()
-    {
-        Vector3 direction = (targetDestination.position - transform.position).normalized;
-        _rigidbody2D.velocity = CalculateMovementVelocity(direction) + CalculateKnockback();
-    }
+    //private void ProcessStunForAgent()
+    //{
+    //    if (stunned > 0f)
+    //    {
+    //        agent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    //        stunned -= Time.fixedDeltaTime; //fixeddeltatime porque estamos en feixed update
+    //    }
 
-    private Vector3 CalculateMovementVelocity(Vector3 direction)
-    {
-        
+    //}
 
-        return direction * stats.moveSpeed * (stunned > 0f ? 0f : 1f); //si esta stuneado la velocidad de movimiento es 0 y solo se movera si es knockbackeado
-    }
+    //private void Move()
+    //{
+    //    Vector3 direction = (targetDestination.position - transform.position).normalized;
+    //    _rigidbody2D.velocity = CalculateMovementVelocity(direction) + CalculateKnockback();
+    //}
+
+    //private Vector3 CalculateMovementVelocity(Vector3 direction)
+    //{
+    //    return direction * stats.moveSpeed * (stunned > 0f ? 0f : 1f); //si esta stuneado la velocidad de movimiento es 0 y solo se movera si es knockbackeado
+    //}
 
     private Vector3 CalculateKnockback()
     {
@@ -181,7 +203,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
 
     public void Stun(float stun)
     {
-        stunned = stun; 
+        agent.stunned = stun; 
     }
 
     public void SetPoolMember(PoolMember poolMember)

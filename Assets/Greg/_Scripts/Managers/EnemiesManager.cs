@@ -61,7 +61,7 @@ public class EnemiesManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Esto sirve para que las oleadas se preitan varias veces en caso de que esten asi en los parametros, simplemente añaden a la lista de enemigos mas veces
+    /// Esto sirve para que las oleadas se repitan varias veces en caso de que esten asi en los parametros, simplemente añaden a la lista de enemigos mas veces
     /// </summary>
     private void ProcessRepeatedSpawnGroups()
     {
@@ -110,15 +110,6 @@ public class EnemiesManager : MonoBehaviour
     
     }
 
-    internal void AddRepeatedSpawn(StageEvent stageEvent, bool isBoss)
-    {
-        EnemiesSpawnGroup repeatSpawnGroup = new EnemiesSpawnGroup(stageEvent.enemyToSpawn, stageEvent.count, isBoss);
-        repeatSpawnGroup.SetRepeatSpawn(stageEvent.repeatEverySeconds, stageEvent.repeatCount);
-
-        if(repeatedSpawnGroupList == null) { repeatedSpawnGroupList = new List<EnemiesSpawnGroup>();}
-        repeatedSpawnGroupList.Add(repeatSpawnGroup);
-    }
-
     private void UpdateBossHealth()
     {
         if(bossEnemiesList == null) { return; }
@@ -139,6 +130,15 @@ public class EnemiesManager : MonoBehaviour
             bossHealthBar.gameObject.SetActive(false);
             bossEnemiesList.Clear();
         }
+    }
+
+    internal void AddRepeatedSpawn(StageEvent stageEvent, bool isBoss)
+    {
+        EnemiesSpawnGroup repeatSpawnGroup = new EnemiesSpawnGroup(stageEvent.enemyToSpawn, stageEvent.count, isBoss);
+        repeatSpawnGroup.SetRepeatSpawn(stageEvent.repeatEverySeconds, stageEvent.repeatCount);
+
+        if (repeatedSpawnGroupList == null) { repeatedSpawnGroupList = new List<EnemiesSpawnGroup>(); }
+        repeatedSpawnGroupList.Add(repeatSpawnGroup);
     }
 
     public void AddGroupToSpawn(EnemyData enemyToSpawn, int count, bool isBoss)
