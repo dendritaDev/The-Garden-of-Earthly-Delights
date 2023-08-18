@@ -41,9 +41,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
     [SerializeField] EnemyData enemyData;
 
     //float stunned;
-    Vector3 knocnkbackVector;
-    float knockbackForce; //a mas fuerza, mayor distancia de knockback
-    float knockbackTimeWeight; //a mas tiempo, mas duracion del knockback
+    //Vector3 knocnkbackVector;
+    //float knockbackForce; //a mas fuerza, mayor distancia de knockback
+    //float knockbackTimeWeight; //a mas tiempo, mas duracion del knockback
 
     public PoolMember poolMember;
 
@@ -124,20 +124,20 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
     //    return direction * stats.moveSpeed * (stunned > 0f ? 0f : 1f); //si esta stuneado la velocidad de movimiento es 0 y solo se movera si es knockbackeado
     //}
 
-    private Vector3 CalculateKnockback()
-    {
-        if (knockbackTimeWeight > 0f)
-        {
-            knockbackTimeWeight -= Time.fixedDeltaTime;
-        }
-        return knocnkbackVector * knockbackForce * (knockbackTimeWeight > 0f ? 1f : 0f); //mientras time no sea 0, seguimos haciendo knockback
-    }
+    //private Vector3 CalculateKnockback()
+    //{
+    //    if (knockbackTimeWeight > 0f)
+    //    {
+    //        knockbackTimeWeight -= Time.fixedDeltaTime;
+    //    }
+    //    return knocnkbackVector * knockbackForce * (knockbackTimeWeight > 0f ? 1f : 0f); //mientras time no sea 0, seguimos haciendo knockback
+    //}
 
     public void Knockback(Vector3 direction, float force, float timeWeight)
     {
-        knocnkbackVector = direction;
-        knockbackForce = force;
-        knockbackTimeWeight = timeWeight;
+        agent.knocnkbackVector = direction;
+        agent.knockbackForce = force;
+        agent.knockbackTimeWeight = timeWeight;
     }
 
     internal void UpdateStatsForProgress(float progress)

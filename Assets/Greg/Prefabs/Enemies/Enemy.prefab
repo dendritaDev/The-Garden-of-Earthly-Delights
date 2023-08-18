@@ -184,15 +184,19 @@ MonoBehaviour:
   blendWeight: 1
   blendPriority: 0
   priorityThreshold: 0.2
-  maxSpeed: 8
-  maxAccel: 15
+  maxSpeed: 5
+  maxAccel: 10
   maxRotation: 15
   maxAngularAccel: 0
   orientation: 0
   rotation: 0
-  isKinematic: 1
+  isKinematic: 0
   velocity: {x: 0, y: 0}
   stunned: 0
+  knocnkbackVector: {x: 0, y: 0, z: 0}
+  knockbackForce: 0
+  knockbackTimeWeight: 0
+  velocityMagnitude: 0
 --- !u!114 &-2660603152727435777
 MonoBehaviour:
   m_ObjectHideFlags: 0

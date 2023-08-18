@@ -36,6 +36,12 @@ namespace BehaviorSteering
         [Header("Debug Info")]
         public Vector2 velocity;
         public float stunned;
+        public Vector3 knocnkbackVector;
+        [Tooltip("a mas fuerza, mayor distancia de knockback")]
+        public float knockbackForce; 
+        [Tooltip("a mas tiempo, mas duracion del knockback")]
+        public float knockbackTimeWeight;
+        public float velocityMagnitude;
 
         protected Steering steering;
 
@@ -60,7 +66,8 @@ namespace BehaviorSteering
 
             ProcessStun();
 
-            Vector2 displacement = velocity * Time.deltaTime;
+            Vector3 displacement = (velocity + CalculateKnockback()) * Time.deltaTime;
+
             SetOrientation();
 
             // The ForceMode will depend on what you want to achieve
@@ -76,18 +83,19 @@ namespace BehaviorSteering
             if (isKinematic)
                 return;
 
-            ProcessStun();
+            ProcessStunDeltaTime();
 
-            Vector3 displacement = velocity * Time.deltaTime;
+            Vector3 displacement = (velocity + CalculateKnockback()) * Time.deltaTime;
             SetOrientation();
 
-            transform.Translate(displacement, Space.World);
+            transform.Translate(displacement/*, Space.World*/);
             
             // restore rotation to initial point
             // before rotating the object to our value
             transform.rotation = new Quaternion();
             transform.Rotate(Vector3.up, orientation);
         }
+
 
         private void SetOrientation()
         {
@@ -104,9 +112,28 @@ namespace BehaviorSteering
         {
             if (stunned > 0f)
             {
-                rigidbody2D.velocity = Vector2.zero;
-                stunned -= Time.fixedDeltaTime; //fixeddeltatime porque estamos en feixed update
+                velocity = Vector2.zero;
+                stunned -= Time.fixedDeltaTime; //fixedDeltaTime para el que actua con fisicas
             }
+        }
+
+        private void ProcessStunDeltaTime()
+        {
+            if (stunned > 0f)
+            {
+                velocity = Vector2.zero;
+                stunned -= Time.deltaTime; 
+            }
+        }
+
+        private Vector2 CalculateKnockback()
+        {
+            if (knockbackTimeWeight > 0f)
+            {
+                knockbackTimeWeight -= Time.fixedDeltaTime;
+            }
+            //mientras knockbackTimeWeight no sea 0, seguimos haciendo knockback, independientemente de si el agente esta stunned o no
+            return knocnkbackVector * knockbackForce * (knockbackTimeWeight > 0f ? 1f : 0f); 
         }
 
         private void LateUpdate()
@@ -120,11 +147,13 @@ namespace BehaviorSteering
             velocity += steering.linear * Time.deltaTime;
             rotation += steering.angular * Time.deltaTime;
 
+
             if (velocity.magnitude > maxSpeed)
             {
                 velocity.Normalize();
                 velocity = velocity * maxSpeed;
             }
+            velocityMagnitude = velocity.magnitude;
 
             if (rotation > maxRotation)
             {
