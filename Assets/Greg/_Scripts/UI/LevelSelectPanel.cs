@@ -40,7 +40,7 @@ public class LevelSelectPanel : MonoBehaviour
         return unlocked;
     }
 
-    private void OnEnable()
+    public void UpdateButtonsOnAppearing()
     {
         UpdateButtons();
     }
