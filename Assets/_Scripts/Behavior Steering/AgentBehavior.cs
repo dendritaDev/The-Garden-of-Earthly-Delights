@@ -56,6 +56,11 @@ namespace BehaviorSteering
             vector.z = Mathf.Cos(orientation * Mathf.Deg2Rad) * 1.0f;
             return vector.normalized;
         }
+
+        public virtual void OnDrawGizmos()
+        {
+     
+        }
     }
 
 }

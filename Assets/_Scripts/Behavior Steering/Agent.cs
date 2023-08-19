@@ -50,6 +50,8 @@ namespace BehaviorSteering
 
         private Rigidbody2D rigidbody2D;
 
+        private Vector3 displacement;
+
         void Start()
         {
             velocity = Vector3.zero;
@@ -66,7 +68,7 @@ namespace BehaviorSteering
 
             ProcessStun();
 
-            Vector3 displacement = (velocity + CalculateKnockback()) * Time.deltaTime;
+            displacement = (velocity + CalculateKnockback()) * Time.deltaTime;
 
             SetOrientation();
 
@@ -85,7 +87,7 @@ namespace BehaviorSteering
 
             ProcessStunDeltaTime();
 
-            Vector3 displacement = (velocity + CalculateKnockback()) * Time.deltaTime;
+            displacement = (velocity + CalculateKnockback()) * Time.deltaTime;
             SetOrientation();
 
             transform.Translate(displacement/*, Space.World*/);
@@ -213,6 +215,13 @@ namespace BehaviorSteering
                 }
             }
             return steering;
+        }
+
+        private void OnDrawGizmos()
+        {
+            
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(transform.position, transform.position + displacement.normalized);
         }
 
     }
