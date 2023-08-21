@@ -17,6 +17,7 @@ public class SelectStageButton : MonoBehaviour
     public Sprite background;
     public Image backgroundImage;
     public TextMeshProUGUI tipsText;
+    public TextMeshProUGUI levelText;
     public CanvasGroup alphaTextHintsCanvas;
     public string[] tips;
     
@@ -37,6 +38,7 @@ public class SelectStageButton : MonoBehaviour
     public void LoadGame(int stageToPlay)
     {
         backgroundImage.sprite = background;
+        levelText.text = $"{levelText.text} {stageToPlay-1}";
         loadingScreen.SetActive(true);
 
         StartCoroutine(GenerateTips());
