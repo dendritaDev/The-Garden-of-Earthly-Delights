@@ -9,17 +9,20 @@ using DG.Tweening;
 public class SelectStageButton : MonoBehaviour
 {
     public StageData stageData;
-    
-    public GameObject loadingScreen;
+
+    [SerializeField] private CanvasGroup mainMenuAlpha;
+    [SerializeField] private GameObject loadingScreen;
     List<AsyncOperation> scenesLoading = new List<AsyncOperation>();
     
-    public Slider progressBar;
-    public Sprite background;
-    public Image backgroundImage;
-    public TextMeshProUGUI tipsText;
-    public TextMeshProUGUI levelText;
-    public CanvasGroup alphaTextHintsCanvas;
-    public string[] tips;
+    [SerializeField] private Slider progressBar;
+    [SerializeField] private Sprite background;
+    [SerializeField] private Image backgroundImage;
+    [SerializeField] private Image mainCharacterImage;
+    [SerializeField] private Image CircleFxImage;
+    [SerializeField] private TextMeshProUGUI tipsText;
+    [SerializeField] private TextMeshProUGUI levelText;
+    [SerializeField] private CanvasGroup alphaTextHintsCanvas;
+    [SerializeField] private string[] tips;
     
 
     private float totalSceneProgress;
@@ -39,7 +42,9 @@ public class SelectStageButton : MonoBehaviour
     {
         backgroundImage.sprite = background;
         levelText.text = $"{levelText.text} {stageToPlay-1}";
+        mainMenuAlpha.alpha = 0;
         loadingScreen.SetActive(true);
+
 
         StartCoroutine(GenerateTips());
 
@@ -80,6 +85,9 @@ public class SelectStageButton : MonoBehaviour
                     }
                 }
 
+                mainCharacterImage.fillAmount = progress;
+                CircleFxImage.fillAmount = progress;
+
                 yield return new WaitForSeconds(0.01f);
                 //yield return null;
             }
@@ -88,7 +96,7 @@ public class SelectStageButton : MonoBehaviour
         loadingScreen.SetActive(true);
     }
 
-    public int tipCount;
+    private int tipCount;
     public IEnumerator GenerateTips()
     {
         tipCount = Random.Range(0, tips.Length);
