@@ -18,12 +18,14 @@ public class SelectStageButton : MonoBehaviour
     [SerializeField] private Sprite background;
     [SerializeField] private Image backgroundImage;
     [SerializeField] private Image mainCharacterImage;
-    [SerializeField] private Image CircleFxImage;
+    [SerializeField] private Image circleFxImage;
+    [SerializeField] private Image transitionImage;
+
+
     [SerializeField] private TextMeshProUGUI tipsText;
     [SerializeField] private TextMeshProUGUI levelText;
     [SerializeField] private CanvasGroup alphaTextHintsCanvas;
     [SerializeField] private string[] tips;
-    
 
     private float totalSceneProgress;
     public void StartGameplay(string stageToPlay)
@@ -42,9 +44,23 @@ public class SelectStageButton : MonoBehaviour
     {
         backgroundImage.sprite = background;
         levelText.text = $"{levelText.text} {stageToPlay-1}";
+
+        //transitionImage.transform.DOScale(35, 1f).SetEase(Ease.InBounce);
+
+        StartCoroutine(DelayedStartSceneTransition(stageToPlay));
+
+    }
+
+    private IEnumerator DelayedStartSceneTransition(int stageToPlay)
+    {
+        //yield return new WaitForSeconds(1f);
+
         mainMenuAlpha.alpha = 0;
         loadingScreen.SetActive(true);
 
+        //transitionImage.transform.DOScale(0, 1f).SetEase(Ease.InBounce);
+
+        //yield return new WaitForSeconds(1f);
 
         StartCoroutine(GenerateTips());
 
@@ -52,7 +68,9 @@ public class SelectStageButton : MonoBehaviour
         scenesLoading.Add(SceneManager.LoadSceneAsync(stageToPlay, LoadSceneMode.Additive));
 
         StartCoroutine(GetSceneLoadProgress());
+        yield return null;
     }
+
 
     public IEnumerator GetSceneLoadProgress()
     {
@@ -75,26 +93,33 @@ public class SelectStageButton : MonoBehaviour
                 progress = Mathf.MoveTowards(progress, totalSceneProgress, Time.deltaTime);
                 
                 progressBar.value = progress;
-                
-                if(progress >= 0.95f)
-                {
-                    progressBar.value = 1;
-                    for (int j = 0; j < scenesLoading.Count; j++)
-                    {
-                        scenesLoading[j].allowSceneActivation = true;
-                    }
-                }
-
                 mainCharacterImage.fillAmount = progress;
-                CircleFxImage.fillAmount = progress;
+                circleFxImage.fillAmount = progress;
+
+                if (progress >= 0.95f)
+                {
+                    //transitionImage.transform.DOScale(75, .15f).SetEase(Ease.InBounce);
+
+                    Invoke(nameof(SceneActivation),1f);
+                }
 
                 yield return new WaitForSeconds(0.01f);
                 //yield return null;
             }
         }
 
-        loadingScreen.SetActive(true);
+        loadingScreen.SetActive(false);
     }
+
+    private void SceneActivation()
+    {
+        progressBar.value = 1;
+        for (int j = 0; j < scenesLoading.Count; j++)
+        {
+            scenesLoading[j].allowSceneActivation = true;
+        }
+    }
+
 
     private int tipCount;
     public IEnumerator GenerateTips()

@@ -23,15 +23,16 @@ public class SettingsPanelTweening : MonoBehaviour
 
     private void Start()
     {
-        FadeOut(false);
+        //FadeOut(false);
     }
 
     public void FadeIn()
     {
-
+        
         var sequence = DOTween.Sequence()
             .Append(canvasGroup.DOFade(1f, fadeTime)).SetEase(fadeEase)
             .Join(rectTransform.DOAnchorPos(new Vector2(0, 0), transformTime)).SetEase(transformEase);
+        
 
         audioSource.PlayOneShot(fadeIn);
     }

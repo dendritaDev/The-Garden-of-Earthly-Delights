@@ -31,7 +31,7 @@ public class LevelSelectPanelTweening : MonoBehaviour
 
     private void Start()
     {
-        FadeOut(false);
+        //FadeOut(false);
     }
 
     public void FadeIn()
