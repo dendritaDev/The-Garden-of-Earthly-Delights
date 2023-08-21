@@ -50,6 +50,9 @@ public class EnemiesManager : MonoBehaviour
         player = GameManager.instance.playerTransform.gameObject;
         bossHealthBar = FindObjectOfType<BossHPBar>(true).GetComponent<Slider>(); //pasamos true para que lo busque en objectos inactivos tmb
         stageProgress = FindObjectOfType<StageProgress>();
+
+        if (stageProgress == null)
+            StartCoroutine(FindStageProgressObject());
     }
 
     private void Update()
@@ -187,5 +190,14 @@ public class EnemiesManager : MonoBehaviour
 
         bossHealthBar.gameObject.SetActive(true);
         bossHealthBar.maxValue = totalBossHealth;
+    }
+
+    public IEnumerator FindStageProgressObject()
+    {
+        while(stageProgress == null)
+        {
+            yield return new WaitForEndOfFrame();
+            stageProgress = FindObjectOfType<StageProgress>();
+        }
     }
 }
