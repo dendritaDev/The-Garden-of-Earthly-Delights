@@ -45,7 +45,7 @@ public class SelectStageButton : MonoBehaviour
         backgroundImage.sprite = background;
         levelText.text = $"{levelText.text} {stageToPlay-1}";
 
-        //transitionImage.transform.DOScale(35, 1f).SetEase(Ease.InBounce);
+        transitionImage.transform.DOScale(35, 1f).SetEase(Ease.InBounce);
 
         StartCoroutine(DelayedStartSceneTransition(stageToPlay));
 
@@ -53,14 +53,14 @@ public class SelectStageButton : MonoBehaviour
 
     private IEnumerator DelayedStartSceneTransition(int stageToPlay)
     {
-        //yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f);
 
         mainMenuAlpha.alpha = 0;
         loadingScreen.SetActive(true);
 
-        //transitionImage.transform.DOScale(0, 1f).SetEase(Ease.InBounce);
+        transitionImage.transform.DOScale(0, 1f).SetEase(Ease.InBounce);
 
-        //yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1f);
 
         StartCoroutine(GenerateTips());
 
@@ -98,7 +98,7 @@ public class SelectStageButton : MonoBehaviour
 
                 if (progress >= 0.95f)
                 {
-                    //transitionImage.transform.DOScale(75, .15f).SetEase(Ease.InBounce);
+                    transitionImage.transform.DOScale(55, .35f).SetEase(Ease.InBounce);
 
                     Invoke(nameof(SceneActivation),1f);
                 }

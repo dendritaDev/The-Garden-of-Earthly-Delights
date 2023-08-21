@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject panel;
     PauseManager pauseManager;
 
+
     private void Awake()
     {
         pauseManager = GetComponent<PauseManager>();
