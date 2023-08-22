@@ -10068,16 +10068,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backImage: {fileID: 1503624626}
   mainImage: {fileID: 1457823047}
-  sprites:
+  fadeTime: 3
+  changeSpriteTime: 15
+  disappearingImageEase: 21
+  appearingImageEase: 20
+  spritesList:
   - {fileID: 21300000, guid: 9d89951d165385a4ba304463394cebaa, type: 3}
   - {fileID: 21300000, guid: 6c9c0f9096b00bb4dad1585439b6a246, type: 3}
   - {fileID: 21300000, guid: 4264430487aaf0647b6dd4689cbdd880, type: 3}
   - {fileID: 21300000, guid: 90a20bec04a857b4f8699a19df53a9aa, type: 3}
   - {fileID: 21300000, guid: c95163db0f77ae7488dc7ae71a43ff74, type: 3}
-  fadeTime: 3
-  changeSpriteTime: 10
-  disappearingImageEase: 21
-  appearingImageEase: 20
 --- !u!114 &1503624626
 MonoBehaviour:
   m_ObjectHideFlags: 0

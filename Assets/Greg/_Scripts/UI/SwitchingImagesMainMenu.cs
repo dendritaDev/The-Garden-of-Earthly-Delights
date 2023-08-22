@@ -8,28 +8,22 @@ public class SwitchingImagesMainMenu : MonoBehaviour
 {
     [SerializeField] Image backImage;
     [SerializeField] Image mainImage;
-    [SerializeField] Sprite[] sprites;
     [SerializeField] float fadeTime = 3f;
     [SerializeField] float changeSpriteTime = 10f;
     [SerializeField] Ease disappearingImageEase;
     [SerializeField] Ease appearingImageEase;
 
-    private List<Sprite> spritesList;
+    [SerializeField] private List<Sprite> spritesList = new List<Sprite>();
     private void Awake()
     {
         backImage = GetComponent<Image>();
-        spritesList = new List<Sprite>();
-
-        for (int i = 0; i < sprites.Length; i++)
-        {
-            spritesList.Add(sprites[i]);
-        }
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-        int selectedImage = Random.Range(0, sprites.Length);
-        mainImage.sprite = sprites[selectedImage];
+        int selectedImage = Random.Range(0, spritesList.Count);
+        mainImage.sprite = spritesList[selectedImage];
 
         StartCoroutine(SwitchBacgroundImagesOverTime());
     }
@@ -39,10 +33,20 @@ public class SwitchingImagesMainMenu : MonoBehaviour
         Debug.Log(mainImage.color.a);
     }
 
-    public Sprite GetNextSprite()
+    public Sprite GetNextSprite(Sprite currentSprite)
     {
-        int randomIndex = Random.Range(0, spritesList.Count);
-        return spritesList[randomIndex];
+        List<Sprite> availableSprites = new List<Sprite>(spritesList);
+        availableSprites.Remove(currentSprite);
+
+        if (availableSprites.Count > 0)
+        {
+            int randomIndex = Random.Range(0, availableSprites.Count);
+            return availableSprites[randomIndex];
+        }
+        else
+        {
+            return null; 
+        }
     }
 
     public IEnumerator SwitchBacgroundImagesOverTime()
@@ -53,7 +57,7 @@ public class SwitchingImagesMainMenu : MonoBehaviour
             yield return new WaitForSeconds(changeSpriteTime);
 
             //Le damos a la imagen que esta por detras una imagen nueva
-            backImage.sprite = GetNextSprite();
+            backImage.sprite = GetNextSprite(backImage.sprite);
             backImage.DOFade(0, 0);
 
 
@@ -66,20 +70,9 @@ public class SwitchingImagesMainMenu : MonoBehaviour
                     mainImage.sprite = backImage.sprite;
                     mainImage.color = Color.white;
                 });
-                //.OnComplete(OnSequenceComplete);
 
-
-            //mainImage.sprite = backImage.sprite;
-            //mainImage.DOFade(1, 0);
-
-            //Invoke(nameof(OnSequenceComplete), 1.5f);
         }
 
     }
 
-    private void OnSequenceComplete()
-    {
-        mainImage.sprite = backImage.sprite;
-        mainImage.color = Color.white;
-    }
 }
