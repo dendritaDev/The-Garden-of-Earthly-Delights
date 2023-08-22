@@ -36,7 +36,7 @@ public class LevelSelectPanelTweening : MonoBehaviour
 
     public void FadeIn()
     {
-        Debug.Log(Time.timeScale);
+        
         var sequence = DOTween.Sequence()
             .Append(canvasGroup.DOFade(1f, fadeTime)).SetEase(fadeEase)
             .Join(rectTransform.DOAnchorPos(new Vector2(0, 0), transformTime)).SetEase(transformEase);
