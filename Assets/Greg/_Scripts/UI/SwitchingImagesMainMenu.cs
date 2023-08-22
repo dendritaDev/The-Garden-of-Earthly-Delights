@@ -28,11 +28,6 @@ public class SwitchingImagesMainMenu : MonoBehaviour
         StartCoroutine(SwitchBacgroundImagesOverTime());
     }
 
-    private void Update()
-    {
-        Debug.Log(mainImage.color.a);
-    }
-
     public Sprite GetNextSprite(Sprite currentSprite)
     {
         List<Sprite> availableSprites = new List<Sprite>(spritesList);
