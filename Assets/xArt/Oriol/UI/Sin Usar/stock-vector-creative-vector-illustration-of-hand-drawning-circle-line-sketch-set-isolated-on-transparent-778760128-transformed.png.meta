@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: 53877c8bd8e77774c86ff282001f8a04
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 773
+        width: 371.5
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a88954d7584d684db28d38b277aaa7b
+      internalID: 441985764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_1
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 773
+        width: 371.5
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8e20cb12289074f8a09ccb569775f6
+      internalID: 637694035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_2
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 773
+        width: 371.5
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db01a3397fbeab48a74e2d18ebca97a
+      internalID: 2145364913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_3
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 773
+        width: 371.5
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e34e069a979cd4b9606bf2fc71feac
+      internalID: -1462337846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 428
+        width: 372
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e8d4aeae18df7948b9f9cf854372dc3
+      internalID: 847407004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_5
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 435
+        width: 372
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73f296e1b7cb684ca6be6e789404235
+      internalID: 1574747916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_6
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 430
+        width: 372
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e7981f659fa664aa780627ddaa0a51
+      internalID: -513177990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_7
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 438
+        width: 372
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde9926b7a2e3704a919606f86a04ff3
+      internalID: -28815310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_8
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 99
+        width: 372
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e221c2658de1f0647ae377feb1b00287
+      internalID: -1265637690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_9
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 92
+        width: 372
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6a3a0377a92b3d43896b625062ad3ec
+      internalID: 92435974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_10
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 83
+        width: 372
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b9322f6b44d7b647ac61a28f37f752a
+      internalID: -1479828156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_11
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 101
+        width: 372
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2541b62d16f4c6740b845e5b8d4ed75f
+      internalID: -262559829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_0: 441985764
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_1: 637694035
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_10: -1479828156
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_11: -262559829
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_2: 2145364913
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_3: -1462337846
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_4: 847407004
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_5: 1574747916
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_6: -513177990
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_7: -28815310
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_8: -1265637690
+      stock-vector-creative-vector-illustration-of-hand-drawning-circle-line-sketch-set-isolated-on-transparent-778760128-transformed_9: 92435974
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

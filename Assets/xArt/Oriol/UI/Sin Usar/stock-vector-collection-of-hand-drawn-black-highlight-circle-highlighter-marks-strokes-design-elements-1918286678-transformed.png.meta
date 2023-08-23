@@ -1,0 +1,333 @@
+fileFormatVersion: 2
+guid: 3869a68d98f7d354995d0c6c0c557e8c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_0
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1018.6666
+        width: 495.33334
+        height: 446.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb1aa5e0b4726b43995ec6465fd8e44
+      internalID: 1508537892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_1
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 1018.6666
+        width: 495.33334
+        height: 446.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a810957d61069e04ead9c0779c262f1f
+      internalID: 39732331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_2
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1018.6666
+        width: 495.33334
+        height: 446.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680ae7a943c7a6d4ebc5b59cbb627fa2
+      internalID: -2146294233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 597
+        width: 495
+        height: 393
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56fddf8ad77b2134a92913eab5858e4b
+      internalID: -1956727451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_4
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 599
+        width: 495
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ad0e275521d92144b3238ba4e51b64e
+      internalID: -320623467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_5
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 578
+        width: 495
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b096ea637e2a5f64799b05ff3893941e
+      internalID: -1019824944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 141
+        width: 495
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb60038b05b49ef4d8923bd56f4134f9
+      internalID: 1390123867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 129
+        width: 495
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57811782d00737341b555061d80c48cf
+      internalID: -1419131692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_8
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 122
+        width: 495
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c8ec2edd9ab854daa54b8cc8254ee5
+      internalID: -536222694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_0: 1508537892
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_1: 39732331
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_2: -2146294233
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_3: -1956727451
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_4: -320623467
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_5: -1019824944
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_6: 1390123867
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_7: -1419131692
+      stock-vector-collection-of-hand-drawn-black-highlight-circle-highlighter-marks-strokes-design-elements-1918286678-transformed_8: -536222694
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

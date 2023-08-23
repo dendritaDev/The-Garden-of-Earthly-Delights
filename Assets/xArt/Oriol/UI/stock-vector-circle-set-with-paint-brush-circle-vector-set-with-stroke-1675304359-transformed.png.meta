@@ -1,0 +1,466 @@
+fileFormatVersion: 2
+guid: 65b231b1d051894448323b1ca78e6063
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 683.6666
+        width: 300
+        height: 265.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46856412b2628a4485a7fdd01e12447
+      internalID: -795083339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 683.6666
+        width: 300
+        height: 265.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac75a9bb18433bb48a51021d23f23f4b
+      internalID: 1838194481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 683.6666
+        width: 300
+        height: 265.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92f1c46f9dd45e4a9933437872a1b50
+      internalID: 2145019626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 683.6666
+        width: 300
+        height: 265.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 790164ca6808dbb44b4f11eca1755078
+      internalID: 355425603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 683.6666
+        width: 300
+        height: 265.33334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb1ad752bdea7d4894e6b2b0bdc8015
+      internalID: 151173515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 380
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab2b095d79e53b43bb63e529098c9d0
+      internalID: 285411746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 387
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf47b3e93e9b4045a62ca78babedc65
+      internalID: -166811918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_7
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 385
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c458ad44e49504d45a308df57f625902
+      internalID: -1061869068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_8
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 374
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02722cbcb659ee04fbfeefda79e9d051
+      internalID: -771964121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_9
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 381
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308b941eb96e14c44b3e23d3071f6197
+      internalID: -248469464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 94
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18e75ea057f03e4c884d6df144ee2c8
+      internalID: 948986591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_11
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 91
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca7679591d81558438c079f29628aa29
+      internalID: -515379605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_12
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 94
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40c53377ebd256b4486fb767a6c4a232
+      internalID: 1501114020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_13
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 84
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1fcaba33ce3e147ae0582363314725
+      internalID: 1810362295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_14
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 91
+        width: 300
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2df68bd577425c4fa50e64640b296bb
+      internalID: -1116708660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_0: -795083339
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_1: 1838194481
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_10: 948986591
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_11: -515379605
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_12: 1501114020
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_13: 1810362295
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_14: -1116708660
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_15: 2010003348
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_2: 2145019626
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_3: 355425603
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_4: 151173515
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_5: 285411746
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_6: -166811918
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_7: -1061869068
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_8: -771964121
+      stock-vector-circle-set-with-paint-brush-circle-vector-set-with-stroke-1675304359-transformed_9: -248469464
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
