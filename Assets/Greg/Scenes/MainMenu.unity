@@ -720,7 +720,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
+  m_Color: {r: 0.48235294, g: 0.75686276, b: 0.28235295, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4800,7 +4800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
+  m_Color: {r: 0.40392157, g: 0.40392157, b: 0.40392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -8065,9 +8065,33 @@ PrefabInstance:
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 543781203808773024, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.28235295
+      objectReference: {fileID: 0}
+    - target: {fileID: 543781203808773024, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.75686276
+      objectReference: {fileID: 0}
+    - target: {fileID: 543781203808773024, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.48235294
+      objectReference: {fileID: 0}
+    - target: {fileID: 543781203808773024, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
+      propertyPath: InitialModule.startColor.minColor.b
+      value: 0.1986472
+      objectReference: {fileID: 0}
+    - target: {fileID: 543781203808773024, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
+      propertyPath: InitialModule.startColor.minColor.g
+      value: 0.4528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 543781203808773024, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
+      propertyPath: InitialModule.startColor.minColor.r
+      value: 0.30578217
+      objectReference: {fileID: 0}
     - target: {fileID: 543781203808773025, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 543781203808773026, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
       propertyPath: m_Pivot.x
