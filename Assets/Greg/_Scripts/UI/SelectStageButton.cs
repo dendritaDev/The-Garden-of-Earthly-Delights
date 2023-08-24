@@ -15,6 +15,7 @@ public class SelectStageButton : MonoBehaviour
     List<AsyncOperation> scenesLoading = new List<AsyncOperation>();
     
     [SerializeField] private Slider progressBar;
+    [SerializeField] private Image progressBarFill;
     [SerializeField] private Sprite background;
     [SerializeField] private Image backgroundImage;
     [SerializeField] private Image mainCharacterImage;
@@ -95,6 +96,7 @@ public class SelectStageButton : MonoBehaviour
                 progressBar.value = progress;
                 mainCharacterImage.fillAmount = progress;
                 circleFxImage.fillAmount = progress;
+                progressBarFill.fillAmount = progress;
 
                 if (progress >= 0.95f)
                 {
@@ -103,7 +105,7 @@ public class SelectStageButton : MonoBehaviour
                     Invoke(nameof(SceneActivation),1f);
                 }
 
-                yield return new WaitForSeconds(0.01f);
+                yield return new WaitForSeconds(0.015f);
                 //yield return null;
             }
         }
