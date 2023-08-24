@@ -8084,7 +8084,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rate: 1.1
   time: 0.35
-  ease: 0
+  ease: 27
   hover: {fileID: 8300000, guid: 0517750aed76b7246919bb354123d6c5, type: 3}
   pressed: {fileID: 8300000, guid: 489b75994eb82084e8b438e5f7fa6af1, type: 3}
   circleImage: {fileID: 690294190}
