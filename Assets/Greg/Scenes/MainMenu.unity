@@ -1607,7 +1607,6 @@ GameObject:
   - component: {fileID: 303309311}
   - component: {fileID: 303309310}
   - component: {fileID: 303309309}
-  - component: {fileID: 303309312}
   - component: {fileID: 303309314}
   - component: {fileID: 303309313}
   m_Layer: 5
@@ -1720,23 +1719,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 303309306}
   m_CullTransparentMesh: 1
---- !u!114 &303309312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 303309306}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3362e757ec5249e4ab741271dac5b035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rate: 1.25
-  time: 0.25
-  ease: 27
-  hover: {fileID: 8300000, guid: 83fcaf88e51710e4c80dba03d6cf35e8, type: 3}
-  pressed: {fileID: 8300000, guid: 779ab0bf5277e27458be571f6b392488, type: 3}
 --- !u!82 &303309313
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6866,7 +6848,6 @@ GameObject:
   - component: {fileID: 519227649}
   - component: {fileID: 519227648}
   - component: {fileID: 519227647}
-  - component: {fileID: 519227650}
   - component: {fileID: 519227652}
   - component: {fileID: 519227651}
   m_Layer: 5
@@ -6940,19 +6921,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 519227648}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 571257649}
-        m_TargetAssemblyTypeName: StorePanelTweening, Assembly-CSharp
-        m_MethodName: FadeIn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: GameplayStage2
-          m_BoolArgument: 1
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &519227648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6991,23 +6960,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519227644}
   m_CullTransparentMesh: 1
---- !u!114 &519227650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519227644}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3362e757ec5249e4ab741271dac5b035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rate: 1.25
-  time: 0.25
-  ease: 27
-  hover: {fileID: 8300000, guid: 83fcaf88e51710e4c80dba03d6cf35e8, type: 3}
-  pressed: {fileID: 8300000, guid: 779ab0bf5277e27458be571f6b392488, type: 3}
 --- !u!82 &519227651
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7123,8 +7075,20 @@ MonoBehaviour:
   pressed: {fileID: 8300000, guid: 779ab0bf5277e27458be571f6b392488, type: 3}
   myUnityEvent:
     m_PersistentCalls:
-      m_Calls: []
-  ShaderGraphObject: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 571257649}
+        m_TargetAssemblyTypeName: StorePanelTweening, Assembly-CSharp
+        m_MethodName: FadeIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ShaderGraphObject: {fileID: 658164629}
 --- !u!114 &528129048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22853,7 +22817,6 @@ GameObject:
   - component: {fileID: 2112611400}
   - component: {fileID: 2112611399}
   - component: {fileID: 2112611398}
-  - component: {fileID: 3627280375823377553}
   - component: {fileID: 7290739768635166886}
   - component: {fileID: 7290739768635166885}
   m_Layer: 5
@@ -22927,19 +22890,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2112611399}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 132881548}
-        m_TargetAssemblyTypeName: SettingsPanelTweening, Assembly-CSharp
-        m_MethodName: FadeIn
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &2112611399
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23127,23 +23078,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b6e93986e44b324bb5d4e981df09237, type: 3}
---- !u!114 &3627280375823377553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2112611396}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3362e757ec5249e4ab741271dac5b035, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rate: 1.25
-  time: 0.25
-  ease: 27
-  hover: {fileID: 8300000, guid: 83fcaf88e51710e4c80dba03d6cf35e8, type: 3}
-  pressed: {fileID: 8300000, guid: 779ab0bf5277e27458be571f6b392488, type: 3}
 --- !u!1 &4851266845924189832
 GameObject:
   m_ObjectHideFlags: 0
@@ -25035,5 +24969,17 @@ MonoBehaviour:
   pressed: {fileID: 8300000, guid: 779ab0bf5277e27458be571f6b392488, type: 3}
   myUnityEvent:
     m_PersistentCalls:
-      m_Calls: []
-  ShaderGraphObject: {fileID: 0}
+      m_Calls:
+      - m_Target: {fileID: 132881548}
+        m_TargetAssemblyTypeName: SettingsPanelTweening, Assembly-CSharp
+        m_MethodName: FadeIn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ShaderGraphObject: {fileID: 658164629}
