@@ -83,37 +83,33 @@ public class RippleWatterEffectController : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Space))
-        {
-            GetWaterColor();
-            transform.DOScale(new Vector3(4f, 4f, 1f), timeToScale).SetEase(scaleEase);
-            rippleWaterEffect.DOFloat(ripplesCount, ripplesCountProperty, 1f).SetEase(ripplesCountEase);
-            rippleWaterEffect.DOFloat(rippleSpeed, rippleSpeedProperty, 1f).SetEase(rippleSpeedEase);
-            rippleWaterEffect.DOFloat(rippleStrength, rippleStrengthProperty, 1f).SetEase(rippleStrengthEase);
-            rippleWaterEffect.DOFloat(rippleTime, rippleTimeProperty, 1f).SetEase(rippleTimeEase);
-            rippleWaterImage.DOFade(0f, timeToFade).SetEase(fadeEase);
+        //if(Input.GetKeyUp(KeyCode.Space))
+        //{
+        //    GetWaterColor();
+        //    transform.DOScale(new Vector3(4f, 4f, 1f), timeToScale).SetEase(scaleEase);
+        //    rippleWaterEffect.DOFloat(ripplesCount, ripplesCountProperty, 1f).SetEase(ripplesCountEase);
+        //    rippleWaterEffect.DOFloat(rippleSpeed, rippleSpeedProperty, 1f).SetEase(rippleSpeedEase);
+        //    rippleWaterEffect.DOFloat(rippleStrength, rippleStrengthProperty, 1f).SetEase(rippleStrengthEase);
+        //    rippleWaterEffect.DOFloat(rippleTime, rippleTimeProperty, 1f).SetEase(rippleTimeEase);
+        //    rippleWaterImage.DOFade(0f, timeToFade).SetEase(fadeEase);
 
-        }
+        //}
 
-        if(Input.GetKeyUp(KeyCode.R))
-        {
-            transform.DOScale(scale, 0f);
-            rippleWaterEffect.DOFloat(baseRipplesCount, ripplesCountProperty, 0f);
-            rippleWaterEffect.DOFloat(baseRippleSpeed, rippleSpeedProperty, 0f);
-            rippleWaterEffect.DOFloat(baseRippleStrength, rippleStrengthProperty, 0f);
-            rippleWaterEffect.DOFloat(baseRippleTime, rippleTimeProperty, 0f);
-            rippleWaterImage.DOFade(1f, 0f);
+        //if(Input.GetKeyUp(KeyCode.R))
+        //{
+        //    transform.DOScale(scale, 0f);
+        //    rippleWaterEffect.DOFloat(baseRipplesCount, ripplesCountProperty, 0f);
+        //    rippleWaterEffect.DOFloat(baseRippleSpeed, rippleSpeedProperty, 0f);
+        //    rippleWaterEffect.DOFloat(baseRippleStrength, rippleStrengthProperty, 0f);
+        //    rippleWaterEffect.DOFloat(baseRippleTime, rippleTimeProperty, 0f);
+        //    rippleWaterImage.DOFade(1f, 0f);
             
-        }
-    }
-
-    public void SetVectorCenter(Vector2 VectorCenter)
-    {
-        rippleWaterEffect.SetVector(rippleVectorCenterProperty, VectorCenter);
+        //}
     }
 
     private void OnEnable()
     {
+        
         GetWaterColor();
         rippleWaterEffect.DOFloat(ripplesCount, ripplesCountProperty, 1f).SetEase(ripplesCountEase);
         rippleWaterEffect.DOFloat(rippleSpeed, rippleSpeedProperty, 1f).SetEase(rippleSpeedEase);
