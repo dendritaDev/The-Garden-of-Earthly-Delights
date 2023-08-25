@@ -41,8 +41,14 @@ public class LevelSelectPanelTweening : MonoBehaviour
             .Append(canvasGroup.DOFade(1f, fadeTime)).SetEase(fadeEase)
             .Join(rectTransform.DOAnchorPos(new Vector2(0, 0), transformTime)).SetEase(transformEase);
 
-        audioSource.PlayOneShot(fadeIn);
+        StartCoroutine(PlaySFX());
         StartCoroutine(nameof(ItemsAnimation));
+    }
+
+    public IEnumerator PlaySFX()
+    {
+        yield return new WaitForSeconds(0.12f);
+        audioSource.PlayOneShot(fadeIn);
     }
 
     public void FadeOut(bool playAudio = true)

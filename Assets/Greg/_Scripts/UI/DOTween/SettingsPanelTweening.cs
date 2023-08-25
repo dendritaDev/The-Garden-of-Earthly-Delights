@@ -1,4 +1,5 @@
 using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 
 public class SettingsPanelTweening : MonoBehaviour
@@ -32,8 +33,15 @@ public class SettingsPanelTweening : MonoBehaviour
         var sequence = DOTween.Sequence()
             .Append(canvasGroup.DOFade(1f, fadeTime)).SetEase(fadeEase)
             .Join(rectTransform.DOAnchorPos(new Vector2(0, 0), transformTime)).SetEase(transformEase);
-        
 
+        StartCoroutine(PlaySFX());
+
+        
+    }
+
+    public IEnumerator PlaySFX()
+    {
+        yield return new WaitForSeconds(0.12f);
         audioSource.PlayOneShot(fadeIn);
     }
 
