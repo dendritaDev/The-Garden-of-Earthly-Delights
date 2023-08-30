@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
+    public bool isGamePaused = false;
+
     private void Start()
     {
         //esto es para evitar que cuando ganamos, vamos al main menu y empezamos otra partida, el tiempo esté parado, debido a que se guardo así
@@ -12,11 +14,13 @@ public class PauseManager : MonoBehaviour
     }
     public void PauseGame()
     {
-        Time.timeScale = 0f;
+        isGamePaused = true;
+        //Time.timeScale = 0f;
     }
 
     public void UnPauseGame()
     {
-        Time.timeScale = 1f;
+        isGamePaused = false;
+        //Time.timeScale = 1f;
     }
 }

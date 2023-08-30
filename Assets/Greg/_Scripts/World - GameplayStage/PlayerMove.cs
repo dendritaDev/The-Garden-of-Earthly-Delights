@@ -16,7 +16,8 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] float speed = 3f;
 
     Animate animate;
-    
+    private PauseManager pauseManager;
+
     private void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -25,8 +26,24 @@ public class PlayerMove : MonoBehaviour
         movementVector = new Vector3();
     }
 
+    private void Start()
+    {
+        pauseManager = FindObjectOfType<PauseManager>();
+    }
+
     void Update()
     {
+
+        if (pauseManager.isGamePaused)
+        {
+
+            rigidbody2d.velocity = Vector2.zero;
+            animate.horizontal = 0f;
+            animate.vertical = 0f;
+            return;
+        }
+            
+
         Movement();
         
     }

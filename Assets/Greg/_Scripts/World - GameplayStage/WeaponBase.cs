@@ -22,9 +22,19 @@ public abstract class WeaponBase : MonoBehaviour
     public Vector2 vectorOfAttack;
     [SerializeField] DirectionOfAttack attackDirection;
 
+    private PauseManager pauseManager;
+
+    public void Start()
+    {
+        pauseManager = FindObjectOfType<PauseManager>();
+    }
+
     PoolManager poolManager;
     public void Update()
     {
+        if (pauseManager.isGamePaused)
+            return;
+
         timer -= Time.deltaTime;
         if(timer < 0f)
         {

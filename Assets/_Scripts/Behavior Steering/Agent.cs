@@ -52,18 +52,26 @@ namespace BehaviorSteering
 
         private Vector3 displacement;
 
+        private PauseManager pauseManager;
+
         void Start()
         {
             velocity = Vector3.zero;
             steering = new Steering();
             groups = new Dictionary<int, List<Steering>>();
             rigidbody2D = GetComponent<Rigidbody2D>();
+
+            pauseManager = FindObjectOfType<PauseManager>();
+
         }
 
 
         private void FixedUpdate()
         {
             if (!isKinematic)
+                return;
+
+            if (pauseManager.isGamePaused)
                 return;
 
             ProcessStun();
@@ -83,6 +91,9 @@ namespace BehaviorSteering
         {
 
             if (isKinematic)
+                return;
+
+            if (pauseManager.isGamePaused)
                 return;
 
             ProcessStunDeltaTime();

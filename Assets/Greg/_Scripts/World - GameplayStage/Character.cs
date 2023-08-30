@@ -23,6 +23,8 @@ public class Character : MonoBehaviour
     private bool isDead = false;
 
     [SerializeField] DataContainer dataContainer;
+
+    private PauseManager pauseManager;
     private void Awake()
     {
         level = GetComponent<Level>();
@@ -33,6 +35,7 @@ public class Character : MonoBehaviour
     {
         ApplyPersistentUpgrades();
         hpBar.SetState(currentHP, maxHP);
+        pauseManager = FindObjectOfType<PauseManager>();
     }
 
     private void ApplyPersistentUpgrades()
@@ -47,6 +50,10 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
+
+        if (pauseManager.isGamePaused)
+            return;
+
         hpRegenerationTimer += Time.deltaTime * hpRegenerationRate;
 
         if(hpRegenerationTimer > 1f)

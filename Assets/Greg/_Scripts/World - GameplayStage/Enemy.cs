@@ -50,6 +50,8 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
     private AgentBehavior[] behaviors;
     private Agent agent;
 
+
+
     private void Awake()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();

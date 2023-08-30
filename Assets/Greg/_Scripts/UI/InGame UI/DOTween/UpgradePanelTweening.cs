@@ -41,9 +41,15 @@ public class UpgradePanelTweening : MonoBehaviour
 
         for (int i = 0; i < BackgroundUpgradesImageList.Count-1; i++)
         {
+            Quaternion randomRotation = Quaternion.Euler(0, 0, UnityEngine.Random.Range(0, 360));
+            UpgradesImageList[i].transform.DORotateQuaternion(randomRotation, 0f);
+            UpgradesImageList[i].DOColor(UnityEngine.Random.ColorHSV(), 0f);
+            UpgradesImageList[i].transform.DOLocalMoveY(UnityEngine.Random.Range(-80,80), 0f);
+
             sequence.Append(BackgroundUpgradesImageList[i].DOFade(1f, 0.25f))
-            .Join(BackgroundUpgradesImageList[i].transform.DOScale(0.4112785f, 0.25f).SetEase(Ease.OutBounce))
-            .Join(UpgradesImageList[i].DOFade(1f, 0.25f));
+            .Join(BackgroundUpgradesImageList[i].transform.DOScale(1f, 0.30f).SetEase(Ease.OutBounce))
+            .Join(UpgradesImageList[i].DOFade(1f, 0.25f))
+            .Join(UpgradesImageList[i].transform.DOScale(1f, 0.20f).SetEase(Ease.OutBounce));
         }
 
         sequence.Append(ButtonCloseCanvasGroup.DOFade(1.0f, 0.25f))

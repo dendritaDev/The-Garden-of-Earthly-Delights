@@ -13,6 +13,8 @@ public class StaveEventManager : MonoBehaviour
 
     PlayerWinManager playerWin;
 
+    private PauseManager pauseManager;
+
     private void Awake()
     {
         stageTime = GetComponent<StageTime>();
@@ -23,11 +25,18 @@ public class StaveEventManager : MonoBehaviour
         playerWin = FindObjectOfType<PlayerWinManager>();
 
         enemiesManager = FindObjectOfType<EnemiesManager>();
+
+        pauseManager = FindObjectOfType<PauseManager>();
     }
 
     private void Update()
     {
-        if(eventIndexer >= stageData.stageEvents.Count) { return; }
+
+        if (pauseManager.isGamePaused)
+            return;
+
+
+        if (eventIndexer >= stageData.stageEvents.Count) { return; }
 
         if (stageTime.time > stageData.stageEvents[eventIndexer].time)
         {
