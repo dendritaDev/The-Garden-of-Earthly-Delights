@@ -10,7 +10,7 @@ public class WinPanelTweening : MonoBehaviour
     private SpriteRenderer paper;
 
     [SerializeField]
-    private Transform paperTransform;
+    private GameObject paperGO;
 
     [SerializeField]
     private Ease paperEase;
@@ -39,6 +39,10 @@ public class WinPanelTweening : MonoBehaviour
     [SerializeField]
     private Transform button;
 
+    [SerializeField]
+    private Sprite paperSpriteToChange;
+
+
     private void OnEnable()
     {
         Initialize();
@@ -55,7 +59,7 @@ public class WinPanelTweening : MonoBehaviour
            .Append(shadePaperTransform.DOScale(5.785f, 2f)).SetEase(shadePaperEase)
            .Join(shadePaper.DOColor(shadePaperColorEnd2, 2f)).SetEase(shadePaperEase)
 
-           .Join(paperTransform.DOScale(24.785f, 1.5f)).SetEase(paperEase)
+           .Join(paperGO.transform.DOScale(24.785f, 1.5f)).SetEase(paperEase)
            .Join(paper.DOFade(1.5f, 0.08f));
 
         //LeftTape
@@ -72,6 +76,7 @@ public class WinPanelTweening : MonoBehaviour
             .Join(rightTape.DOScale(67.61806f, 0.5f)).SetEase(rightTapeEase)
             .OnComplete(() =>
             {
+                paperGO.GetComponent<SpriteRenderer>().sprite = paperSpriteToChange;
                 button.gameObject.SetActive(true);
             });
 
@@ -86,7 +91,7 @@ public class WinPanelTweening : MonoBehaviour
         shadePaper.DOColor(shadePaperColorStart, 0f);
 
         //Paper
-        paperTransform.DOScale(65f, 0f);
+        paperGO.transform.DOScale(65f, 0f);
         paper.DOFade(0f, 0f);
 
         //LeftTape
