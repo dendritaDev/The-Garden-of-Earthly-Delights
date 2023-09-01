@@ -20,6 +20,7 @@ public class FillCircleButtonsMainMenuTweening : UIBehaviour, IPointerEnterHandl
     public TextMeshProUGUI text;
 
     private AudioSource audioSource;
+    private Color textBaseColor;
 
     protected override void Awake()
     {
@@ -29,6 +30,7 @@ public class FillCircleButtonsMainMenuTweening : UIBehaviour, IPointerEnterHandl
     protected override void Start()
     {
         BaseScale = textTransform.transform.localScale;
+        textBaseColor = text.color;
     }
 
     public void OnPointerEnter(PointerEventData eventData)
@@ -47,7 +49,7 @@ public class FillCircleButtonsMainMenuTweening : UIBehaviour, IPointerEnterHandl
     {
         textTransform.transform.DOScale(BaseScale, time).SetEase(ease);
 
-        text.color = new Color(168, 168, 168, 255);
+        text.color = textBaseColor;
 
         circleImage.DOFillAmount(0, time * 5).SetEase(ease);
     }
