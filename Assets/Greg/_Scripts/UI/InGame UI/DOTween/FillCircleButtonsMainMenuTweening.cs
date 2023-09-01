@@ -47,7 +47,7 @@ public class FillCircleButtonsMainMenuTweening : UIBehaviour, IPointerEnterHandl
     {
         textTransform.transform.DOScale(BaseScale, time).SetEase(ease);
 
-        text.color = new Color(255, 255, 255, 255);
+        text.color = new Color(168, 168, 168, 255);
 
         circleImage.DOFillAmount(0, time * 5).SetEase(ease);
     }
