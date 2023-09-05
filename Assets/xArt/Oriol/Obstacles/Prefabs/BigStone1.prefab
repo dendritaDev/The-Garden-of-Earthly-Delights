@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 483580572768846411}
   - component: {fileID: 1731461557065941794}
   - component: {fileID: 1729720084}
-  - component: {fileID: 6477337507087576399}
   m_Layer: 7
   m_Name: BigStone1
   m_TagString: Untagged
@@ -118,26 +117,6 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!114 &6477337507087576399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14496247302364832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21ed15abf70a7ed4baa54ed2184a6c3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToRotate: {fileID: 6965847778491731867}
-  splashTexture: {fileID: 938083156461135540}
-  splashImages:
-  - {fileID: 21300000, guid: 1dc1d62098cf4b44cb1de05c7a59e3df, type: 3}
-  - {fileID: 21300000, guid: 70e0617279bc908419b9b6eb580dd6b8, type: 3}
-  - {fileID: 21300000, guid: 66d7c79aea04f1d44866102ff93e4141, type: 3}
-  - {fileID: 21300000, guid: e187d6569ee511b4cb0ff70c2c40c1b2, type: 3}
-  - {fileID: 21300000, guid: f07a9e7c38bc66f4193cfdd2b6f8f2bb, type: 3}
 --- !u!1001 &4476811092620631996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -211,11 +190,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ccad6c2ee57de804082f43bc30d4cbee, type: 3}
---- !u!212 &938083156461135540 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 3685191689947511048, guid: ccad6c2ee57de804082f43bc30d4cbee, type: 3}
-  m_PrefabInstance: {fileID: 4476811092620631996}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6965847778491731867 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6812673405110702119, guid: ccad6c2ee57de804082f43bc30d4cbee, type: 3}
