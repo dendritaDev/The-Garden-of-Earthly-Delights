@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 
 public class PickUp : MonoBehaviour
@@ -33,9 +33,24 @@ public class PickUp : MonoBehaviour
 
         yield return new WaitForEndOfFrame();
 
+        SpriteRenderer spriteRenderer = GO.GetComponent<SpriteRenderer>();
+
+        Color color = Random.ColorHSV();
+        color.a = spriteRenderer.color.a;
+
+        var sequence = DOTween.Sequence()
+            .Append(spriteRenderer.DOColor(color, 0.5f))
+            .Join(spriteRenderer.DOFade(Random.Range(0.15f, 0.9f), 0.5f))
+            .Join(spriteRenderer.transform.DOPunchScale(new Vector3(0.2f,0.2f,0.2f), 0.5f))
+            .OnComplete(()=>
+            {
+                spriteRenderer.sortingOrder -= 1;
+            });
+        
+        yield return new WaitForEndOfFrame();
+
         GO.transform.parent = paintingCanvas.transform;
 
-        yield return new WaitForEndOfFrame();
 
         Destroy(gameObject);
 
