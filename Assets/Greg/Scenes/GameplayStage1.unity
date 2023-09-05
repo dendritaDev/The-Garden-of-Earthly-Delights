@@ -552,7 +552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 638270223}
   m_Layer: 0
-  m_Name: Painting
+  m_Name: PaintingCanvas
   m_TagString: Painting
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
