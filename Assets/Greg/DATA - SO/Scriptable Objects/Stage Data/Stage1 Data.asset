@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: Stage1 Data
   m_EditorClassIdentifier: 
   stageEvents:
-  - eventType: 3
-    time: 3000
+  - eventType: 2
+    time: 1
     message: 
-    enemyToSpawn: {fileID: 11400000, guid: 732291a95c3ed1f4cba1b47b038bb1e2, type: 2}
-    objectToSpawn: {fileID: 9219287461840458396, guid: 1f93f448d1c148c4bb576d5646e95637, type: 3}
-    count: 12
-    isRepeatedEvent: 0
-    repeatEverySeconds: 5
-    repeatCount: 10
+    enemyToSpawn: {fileID: 0}
+    objectToSpawn: {fileID: 2109499103910143569, guid: 01b6ace65b6a69f479b1b61ae495fbdc, type: 3}
+    count: 3
+    isRepeatedEvent: 1
+    repeatEverySeconds: 2
+    repeatCount: 3
   stageID: Stage 1 Complete
   stageCompletionToUnlock: []

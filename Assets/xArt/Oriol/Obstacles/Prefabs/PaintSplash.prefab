@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5661553306729580277}
   m_Layer: 7
   m_Name: PaintSplash
-  m_TagString: Untagged
+  m_TagString: PaintSplash
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
