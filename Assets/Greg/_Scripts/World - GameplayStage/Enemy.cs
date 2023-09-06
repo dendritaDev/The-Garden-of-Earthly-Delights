@@ -1,9 +1,9 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 using BehaviorSteering;
+using DG.Tweening;
 
 [Serializable]
 public class EnemyStats
@@ -50,7 +50,8 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
     private AgentBehavior[] behaviors;
     private Agent agent;
 
-
+    public Sprite splashSprite;
+    public ParticleSystem splashExplosion;
 
     private void Awake()
     {
@@ -63,17 +64,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
 
     private void Start()
     {
-        /*if(enemyData != null)
-        {
-            InitSprite(enemyData.animatedPrefab);
-
-            //aunque esto ya lo hacemos en el SpawnEnemy de Enemis Manager:
-            SetStats(enemyData.stats);
-            SetTarget(GameManager.instance.playerTransform.gameObject);
-            //Lo hago aqui de nuevo tambien por si quiero testear con enemigos y no me quiero esperar a que spawneen o algo
-            //que arrastrandolos simplemente en el juego puedan funcionar
-        }*/
-
+ 
     }
 
     public void SetTarget(GameObject target)
@@ -90,51 +81,9 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
     private void FixedUpdate()
     {
 
-        //ProcessStun();
-        //Ahora se mueven a partir de Behavior Steering
-        //Move();
     }
 
-    //private void ProcessStun()
-    //{
-    //    if(stunned > 0f)
-    //    {
-    //        _rigidbody2D.velocity = Vector2.zero;
-    //        stunned -= Time.fixedDeltaTime; //fixeddeltatime porque estamos en feixed update
-    //    }
-        
-    //}
-
-    //private void ProcessStunForAgent()
-    //{
-    //    if (stunned > 0f)
-    //    {
-    //        agent.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
-    //        stunned -= Time.fixedDeltaTime; //fixeddeltatime porque estamos en feixed update
-    //    }
-
-    //}
-
-    //private void Move()
-    //{
-    //    Vector3 direction = (targetDestination.position - transform.position).normalized;
-    //    _rigidbody2D.velocity = CalculateMovementVelocity(direction) + CalculateKnockback();
-    //}
-
-    //private Vector3 CalculateMovementVelocity(Vector3 direction)
-    //{
-    //    return direction * stats.moveSpeed * (stunned > 0f ? 0f : 1f); //si esta stuneado la velocidad de movimiento es 0 y solo se movera si es knockbackeado
-    //}
-
-    //private Vector3 CalculateKnockback()
-    //{
-    //    if (knockbackTimeWeight > 0f)
-    //    {
-    //        knockbackTimeWeight -= Time.fixedDeltaTime;
-    //    }
-    //    return knocnkbackVector * knockbackForce * (knockbackTimeWeight > 0f ? 1f : 0f); //mientras time no sea 0, seguimos haciendo knockback
-    //}
-
+ 
     public void Knockback(Vector3 direction, float force, float timeWeight)
     {
         agent.knocnkbackVector = direction;
@@ -184,7 +133,43 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
         targetGameObject.GetComponent<Level>().AddExperience(stats.experienceReward);
         GetComponent<DropOnDestroy>().CheckDrop();
 
-        if(poolMember != null)
+        StartCoroutine(DestroyEnemy());
+        
+    }
+
+    public IEnumerator DestroyEnemy()
+    {
+        splashExplosion.Play();
+        GameObject GO = new GameObject();
+        GO.transform.position = transform.position;
+        SpriteRenderer spriteRenderer = GO.AddComponent<SpriteRenderer>();
+        spriteRenderer.sprite = splashSprite;
+
+        yield return new WaitForEndOfFrame();
+
+        GameObject paintingCanvas = GameObject.FindGameObjectWithTag("Painting");
+
+        yield return new WaitForEndOfFrame();
+
+        Color mainColor = splashExplosion.main.startColor.color;
+        mainColor.a = 0f;
+        Color color = UnityEngine.Random.ColorHSV();
+
+        var sequence = DOTween.Sequence()
+           .Append(spriteRenderer.DOColor(color, 0.5f))
+           .Join(spriteRenderer.DOFade(UnityEngine.Random.Range(0.15f, 0.9f), 0.5f))
+           .Join(spriteRenderer.transform.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), 0.5f))
+           .OnComplete(() =>
+           {
+               spriteRenderer.sortingOrder = -7;
+           });
+
+        yield return new WaitForEndOfFrame();
+
+        GO.transform.parent = paintingCanvas.transform;
+
+
+        if (poolMember != null)
         {
             poolMember.ReturnToPool();
         }
@@ -193,15 +178,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
             Destroy(gameObject);
         }
 
-        
     }
-
-    //public void InitSprite(GameObject animatedPrefab)
-    //{
-    //    GameObject spriteObject = Instantiate(animatedPrefab);
-    //    spriteObject.transform.parent = transform;
-    //    spriteObject.transform.localPosition = Vector3.zero;
-    //}
 
     public void Stun(float stun)
     {
