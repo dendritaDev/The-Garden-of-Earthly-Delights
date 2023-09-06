@@ -155,7 +155,6 @@ MonoBehaviour:
   poolMember: {fileID: 0}
   splashSprite: {fileID: 21300000, guid: 1e4ce9391444e32449ac50f537551678, type: 3}
   splashExplosion: {fileID: 2983851931673298692, guid: e8cce8b4f33d37e44a27358a10857508, type: 3}
-  prueba: {fileID: 302722876041777189, guid: c77a785a0bbc9c0408b91f96ccf2815d, type: 3}
 --- !u!114 &5752901467447919466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,7 +170,7 @@ MonoBehaviour:
   dropItemPrefab:
   - {fileID: 2109499103910143569, guid: 01b6ace65b6a69f479b1b61ae495fbdc, type: 3}
   - {fileID: 6038782246737755231, guid: b3cc50415bec24d4f83a129c6cb099ff, type: 3}
-  chance: 1
+  chance: 0.12
 --- !u!114 &5597791698329199312
 MonoBehaviour:
   m_ObjectHideFlags: 0

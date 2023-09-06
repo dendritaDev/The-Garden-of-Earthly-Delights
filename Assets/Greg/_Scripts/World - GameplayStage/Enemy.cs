@@ -151,7 +151,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
         SpriteRenderer spriteRenderer = GO.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = splashSprite;
         spriteRenderer.color = new Color(0f, 0f, 0f, 0f);
-        GO.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+        GO.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
 
         yield return new WaitForEndOfFrame();
 
@@ -161,7 +161,8 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
 
         var sequence = DOTween.Sequence()
            .Append(spriteRenderer.DOColor(colorFromSplashExplosion, 0.5f))
-           .Join(spriteRenderer.DOFade(UnityEngine.Random.Range(0.15f, 0.9f), 0.5f))
+           .Join(spriteRenderer.DOFade(UnityEngine.Random.Range(0.15f, 0.7f), 0.5f))
+           .Join(spriteRenderer.transform.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), 0.3f))
            .OnComplete(() =>
            {
                spriteRenderer.sortingOrder = -7;
