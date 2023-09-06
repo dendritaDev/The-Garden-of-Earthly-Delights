@@ -4,6 +4,7 @@ using UnityEngine;
 
 using BehaviorSteering;
 using DG.Tweening;
+using System.Collections.Generic;
 
 [Serializable]
 public class EnemyStats
@@ -64,7 +65,6 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
 
     private void Start()
     {
- 
     }
 
     public void SetTarget(GameObject target)
@@ -134,31 +134,34 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
         GetComponent<DropOnDestroy>().CheckDrop();
 
         StartCoroutine(DestroyEnemy());
-        
+
     }
 
     public IEnumerator DestroyEnemy()
     {
-        splashExplosion.Play();
+        var splashFX = Instantiate(splashExplosion, transform.position, Quaternion.identity, gameObject.transform);
+
+        Color colorFromSplashExplosion = splashFX.main.startColor.gradient.Evaluate(UnityEngine.Random.Range(0f, 1f));
+        splashFX.startColor = colorFromSplashExplosion;
+
+        yield return new WaitForEndOfFrame();
+        
         GameObject GO = new GameObject();
         GO.transform.position = transform.position;
         SpriteRenderer spriteRenderer = GO.AddComponent<SpriteRenderer>();
         spriteRenderer.sprite = splashSprite;
+        spriteRenderer.color = new Color(0f, 0f, 0f, 0f);
+        GO.transform.localScale = new Vector3(0.7f, 0.7f, 0.7f);
 
         yield return new WaitForEndOfFrame();
 
         GameObject paintingCanvas = GameObject.FindGameObjectWithTag("Painting");
 
-        yield return new WaitForEndOfFrame();
-
-        Color mainColor = splashExplosion.main.startColor.color;
-        mainColor.a = 0f;
-        Color color = UnityEngine.Random.ColorHSV();
+        yield return new WaitForSeconds(0.15f);
 
         var sequence = DOTween.Sequence()
-           .Append(spriteRenderer.DOColor(color, 0.5f))
+           .Append(spriteRenderer.DOColor(colorFromSplashExplosion, 0.5f))
            .Join(spriteRenderer.DOFade(UnityEngine.Random.Range(0.15f, 0.9f), 0.5f))
-           .Join(spriteRenderer.transform.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), 0.5f))
            .OnComplete(() =>
            {
                spriteRenderer.sortingOrder = -7;

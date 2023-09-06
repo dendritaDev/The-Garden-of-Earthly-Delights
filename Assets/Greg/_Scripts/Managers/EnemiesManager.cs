@@ -167,8 +167,8 @@ public class EnemiesManager : MonoBehaviour
         newEnemyComponent.SetTarget(player);
         newEnemyComponent.SetStats(enemyToSpawn.stats);
         newEnemyComponent.UpdateStatsForProgress(stageProgress.Progress);
-        
-        if(isBoss)
+
+        if (isBoss)
         {
             SpawnBossEnemy(newEnemyComponent);
         }

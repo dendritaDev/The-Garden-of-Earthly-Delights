@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2983851931673298694}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.296248, y: -3.514264, z: 2.488102}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -52,7 +52,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -118,7 +118,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.25
+      scalar: 0.15
       minScalar: 0.8
       maxCurve:
         serializedVersion: 2
@@ -189,11 +189,11 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 4
       minColor: {r: 0.944, g: 0.12586667, b: 0.12586667, a: 1}
-      maxColor: {r: 0.734, g: 0.17298089, b: 0.18700643, a: 1}
+      maxColor: {r: 0.36450237, g: 0.73333335, b: 0.17254901, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 0.49803922}
-        key1: {r: 0.10724342, g: 1, b: 0, a: 0.49803922}
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 0.10724342, g: 1, b: 0, a: 1}
         key2: {r: 1, g: 0.96567404, b: 0, a: 0}
         key3: {r: 1, g: 0.063871056, b: 0, a: 0}
         key4: {r: 0.96862745, g: 0, b: 0.870975, a: 0}
@@ -567,7 +567,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1
+    maxNumParticles: 2
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -4711,7 +4711,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2983851931673298694}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9205bc1bbacc90040a998067b5643d16, type: 3}
   m_Name: 
@@ -4802,7 +4802,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
