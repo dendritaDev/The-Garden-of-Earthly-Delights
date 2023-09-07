@@ -11,6 +11,8 @@ public class UpgradePanelManager : MonoBehaviour
 
     [SerializeField] List<UpgradeButton> upgradeButtons;
 
+    [SerializeField] UpgradeDescriptionPanelTweening upgradeDescriptionPanelTweening;
+
     int selectedUpgradeID;
     List<UpgradeData> upgradeData;
     Level characterLevel;
@@ -58,6 +60,7 @@ public class UpgradePanelManager : MonoBehaviour
         {
             selectedUpgradeID = pressedButtonID;
             ShowDescription();
+            upgradeDescriptionPanelTweening.TweenDescriptionPanel();
         }
         else //segundo click para seleccionar
         {
@@ -88,6 +91,9 @@ public class UpgradePanelManager : MonoBehaviour
 
         pauseManager.UnPauseGame();
         upgradePanel.SetActive(false);
+        upgradeDescriptionPanel.gameObject.SetActive(false);
+
+
     }
 
     private void HideButtons()

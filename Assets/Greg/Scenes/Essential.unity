@@ -2199,6 +2199,7 @@ MonoBehaviour:
   - {fileID: 827955148}
   - {fileID: 1795970397}
   - {fileID: 1782880449}
+  upgradeDescriptionPanelTweening: {fileID: 33188467}
 --- !u!114 &554327114
 MonoBehaviour:
   m_ObjectHideFlags: 0

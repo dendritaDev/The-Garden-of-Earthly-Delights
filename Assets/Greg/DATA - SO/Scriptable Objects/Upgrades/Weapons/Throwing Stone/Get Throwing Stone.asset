@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeType: 2
   Name: Throwing Stone
   description: Get Stone Weapon
-  icon: {fileID: 21300000, guid: 707e8d01bdc99cb4388b5b5a632c11ea, type: 3}
+  icon: {fileID: 21300000, guid: 1d3f8c2a90d56d94989e90ca6abc4cd5, type: 3}
   weaponData: {fileID: 11400000, guid: 794dfc03615f5e84f89a49cec64e17b5, type: 2}
   weaponUpgradeStats:
     damage: 0

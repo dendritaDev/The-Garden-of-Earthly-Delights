@@ -17,7 +17,8 @@ public class UpgradeDescriptionPanelTweening : MonoBehaviour
     [SerializeField] private float descriptionTextTime = 1f;
 
     private DOTweenTMPAnimator TitleTextAnimator;
-    private void OnEnable()
+
+    public void TweenDescriptionPanel()
     {
         Initialize();
 
@@ -27,26 +28,29 @@ public class UpgradeDescriptionPanelTweening : MonoBehaviour
             .Append(FrameRectTransform.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), transformTime)).SetEase(RectTransformEase)
             .Append(TitleTextTransform.DOPunchScale(new Vector3(0.2f, 0.2f, 0.2f), titleTextTime)).SetEase(TitleTextEase).OnComplete(() =>
             {
-                var sequence = DOTween.Sequence();
-                float time = descriptionTextTime / (float)TitleTextAnimator.textInfo.characterCount;
-                float constTime = time;
-                Debug.Log(time);
-                for (int i = 0; i < TitleTextAnimator.textInfo.characterCount; i++)
-                {
-                    sequence
-                        .Append(TitleTextAnimator.DOFadeChar(i, 1, time)).SetEase(DescritionTextEase)
-                        .Join(TitleTextAnimator.DOPunchCharScale(i, 1.5f, time)).SetEase(DescritionTextEase);
-
-                    time -= (constTime / (float)TitleTextAnimator.textInfo.characterCount);
-                }
+                TweenText();
             });
+    }
 
+    public void TweenText()
+    {
 
+        var sequence = DOTween.Sequence();
+        float time = descriptionTextTime / (float)TitleTextAnimator.textInfo.characterCount;
+        float constTime = time;
+        Debug.Log(time);
+        for (int i = 0; i < TitleTextAnimator.textInfo.characterCount; i++)
+        {
+            sequence
+                .Append(TitleTextAnimator.DOFadeChar(i, 1, time)).SetEase(DescritionTextEase)
+                .Join(TitleTextAnimator.DOPunchCharScale(i, 1.5f, time)).SetEase(DescritionTextEase);
+
+            time -= (constTime / (float)TitleTextAnimator.textInfo.characterCount);
+        }
     }
 
     private void Initialize()
-    {
-        
+    {   
         DescriptionText.DOFade(0f, 0f);
     }
 }

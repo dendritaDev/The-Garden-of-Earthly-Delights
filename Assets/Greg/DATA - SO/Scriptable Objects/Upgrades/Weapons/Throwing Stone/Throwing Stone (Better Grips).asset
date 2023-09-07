@@ -15,7 +15,7 @@ MonoBehaviour:
   upgradeType: 0
   Name: Better Grips
   description: -1 time to attack
-  icon: {fileID: 21300000, guid: 7895bfef619dd5b4590bbf9bd4c56884, type: 3}
+  icon: {fileID: 21300000, guid: 756cd27e67548f74b93a3bab914ae99e, type: 3}
   weaponData: {fileID: 11400000, guid: 794dfc03615f5e84f89a49cec64e17b5, type: 2}
   weaponUpgradeStats:
     damage: 0
