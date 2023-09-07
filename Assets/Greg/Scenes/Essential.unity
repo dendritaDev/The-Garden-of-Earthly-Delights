@@ -230,6 +230,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0efa9aaf3d1391740862b9b7a20ae83b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FrameRectTransform: {fileID: 33188463}
+  RectTransformEase: 0
+  transformTime: 0.2
+  TitleTextTransform: {fileID: 1304969354}
+  TitleTextEase: 0
+  titleTextTime: 0.3
+  DescriptionText: {fileID: 532168727}
+  DescritionTextEase: 0
+  descriptionTextTime: 1.5
 --- !u!1 &56601440
 GameObject:
   m_ObjectHideFlags: 0
@@ -1995,7 +2004,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -4, y: -318.4}
+  m_AnchoredPosition: {x: -4, y: -295.8}
   m_SizeDelta: {x: 356.5, y: 877.08}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &532168727
@@ -2018,10 +2027,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Lorem ipsum dolor sit amet consectetur, adipiscing elit proin cursus tempor
+    commodo, libero tellus posuere natoque
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 614ee7951bcf7044ba8274a632f9571d, type: 2}
-  m_sharedMaterial: {fileID: -1091368569702028963, guid: 614ee7951bcf7044ba8274a632f9571d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
