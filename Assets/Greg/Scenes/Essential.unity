@@ -8503,6 +8503,10 @@ PrefabInstance:
       propertyPath: poolManager
       value: 
       objectReference: {fileID: 1329768878}
+    - target: {fileID: 3914185316531104815, guid: cceab38a914c8b141942ddb8f16a4f62, type: 3}
+      propertyPath: startingWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: b1f7b6d09bdaf3347947613d8859f004, type: 2}
     - target: {fileID: 3914185316531104821, guid: cceab38a914c8b141942ddb8f16a4f62, type: 3}
       propertyPath: experienceBar
       value: 
