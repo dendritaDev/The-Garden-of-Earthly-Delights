@@ -13,7 +13,8 @@ public class UpgradePanelTweening : MonoBehaviour
     [SerializeField] private TextMeshProUGUI TitleText;
     [SerializeField] private CanvasGroup ButtonCloseCanvasGroup;
     [SerializeField] private List<Image> UpgradesImageList;
-    [SerializeField] private List<Image> BackgroundUpgradesImageList;
+    [SerializeField] private List<Image> BackgroundUpgradesImageList;    
+
 
     private DOTweenTMPAnimator TitleTextAnimator;
     private Vector2 FrameSizeDelta;
