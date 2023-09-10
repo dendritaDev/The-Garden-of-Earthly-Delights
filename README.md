@@ -27,7 +27,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ### Art
   - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of       the game
 
-## Todo's
+## To do's
 ### Art & Code:
   - Add Game Feel to the gameplay
     
