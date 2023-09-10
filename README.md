@@ -20,3 +20,7 @@ https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/5
 
 ## Collectibles + Headling Popups - Gameplay
 ![](https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/blob/main/Collectibles.gif)
+
+## Win
+
+## Game Over
