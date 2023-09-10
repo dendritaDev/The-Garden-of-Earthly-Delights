@@ -5,6 +5,8 @@ I chose to make a roguelite game because this year, this genre has been a discov
 
 During the development of this project, I've learned a lot. Specifically, gameplay programming, Scriptable Objects, AI programming (movement and decision-making), UI programming (using tweening libraries), design patterns, and UML.
 
+**Be aware:** There are some bugs in the videos and gifs that have already been fixed, but I haven't been able to update the videos yet due to time constraints. Don't worry!
+
 # Features
 ## Done
 ### Code
