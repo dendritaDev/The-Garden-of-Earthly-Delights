@@ -4,10 +4,10 @@ Descripcion de lo que he hecho, key features, controles, lo que he aprendido, et
 
 # Videos - Gifs
 ## Images Transition - Main Menu
-https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/52ff0aa8-1906-4e96-a82a-4dc4d864a6f9
+https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/d8ba62c7-621a-4729-b182-e2e6ba30b8a3
 
 ## Main Menu Flow
-https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/ad320e55-b022-4e72-9bc1-820f5d71b10e
+https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/5eb9934b-65ba-4eae-aafa-6fdce1afd254
 
 ## Loading Screen
 
