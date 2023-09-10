@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour, IPoolMember
     int numOfPerforationHits = 3;
 
     [SerializeField] float hitArea = 0.7f;
-    float timeToDestroy = 6f;
+    float timeToDestroy = 3f;
 
     List<IDamageable> alreadyHitTargets;
 

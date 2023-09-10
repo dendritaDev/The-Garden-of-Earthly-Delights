@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Throwing Stone
   stats:
     damage: 3
-    timeToAttack: 0.3
+    timeToAttack: 0.35
     numberOfAttacks: 1
     numOfPerforationHits: 3
     projectileSpeed: 2

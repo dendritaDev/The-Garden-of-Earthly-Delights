@@ -53,6 +53,14 @@ public class GunWeapon : WeaponBase
             selectedOne = colliders[enemyIndex].transform.position;
             GameObject bullet = SpawnProjectile(bulletPrefab, transform.position, colliders[enemyIndex].transform.position);
 
+
+            Vector3 direction = colliders[enemyIndex].transform.position - transform.position;
+            float angleRadians = Mathf.Atan2(-direction.y, -direction.x);
+            float angleDegree = angleRadians * Mathf.Rad2Deg;
+            bullet.transform.rotation = Quaternion.AngleAxis(angleDegree, Vector3.forward);
+            Debug.Log("2");
+            Debug.Log(bullet.transform.rotation);
+
         }
     }
 
