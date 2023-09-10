@@ -4,29 +4,29 @@ Descripcion de lo que he hecho, key features, controles, lo que he aprendido, et
 # Features
 ## Done
 ### Code
- - Player
- - Enemy AI: Blending Steering Behavior based on book Artificial Intelligence - Ian Millington
- - Tweening UI: DOTween library
- - Passive Items
- - Different Weapons
- - Stats System for player: armor
- - Upgrades System
- - Message System: Popups (enemy damage, enemy crit damage, player damage, player healing)
- - Pool Object System
- - Condition Flag System to unlock new levels
- - Managers: Event Spawning Enemies Manager, Music Manager, Weapon Manager, Enemies Manager, Object Spawning Manager.
- - Scriptable Objects to save data and save different kind of objects from weapons, enemies, levels, condition flags,     
+ - **Player**
+ - **Enemy AI:** Blending Steering Behavior based on the book Artificial Intelligence - Ian Millington
+ - **Tweening UI:** DOTween library
+ - **Passive Items**
+ - **Different Weapons**
+ - **Stats System for player:** armor
+ - **Upgrades System**
+ - **Message System:** Popups (enemy damage, enemy crit damage, player damage, player healing)
+ - **Pool Object System**
+ - **Condition Flag System** to unlock new levels
+ - **Managers:** Event Spawning Enemies Manager, Music Manager, Weapon Manager, Enemies Manager, Object Spawning Manager.
+ - **Scriptable Objects** to save data and save different kind of objects from weapons, enemies, levels, condition flags,
    pools, popups...
 
 ### Art
-  - Half of the art is made by me. The other half is taken from internet and edited for me to get the watercolor style of       the game
+  - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of       the game
 
 ## Todo's
 ### Art & Code:
   - Add Game Feel to the gameplay
     
 ### Code:
-  - Enemy AI: Implement different behaviors with Behavior Trees made on my own
+  - Enemy AI: Implement different behaviors with Behavior Trees made by myself
   - Add more passive items
   - Add different stats for the player (crit, hp regeneration, range...)
   - Add different levels
