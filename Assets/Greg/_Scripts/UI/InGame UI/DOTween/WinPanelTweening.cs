@@ -50,8 +50,8 @@ public class WinPanelTweening : MonoBehaviour
         //ShaderPaper
         Color shadePaperColorEnd = new Color(0.1803922f, 0.1803922f, 0.1803922f, 1f);
         var sequence = DOTween.Sequence()
-            .Append(shadePaperTransform.DOScale(10.785f, 1.5f)).SetEase(shadePaperEase)
-            .Join(shadePaper.DOColor(shadePaperColorEnd, 1.5f)).SetEase(shadePaperEase);
+            .Append(shadePaperTransform.DOScale(10.785f, 2f)).SetEase(shadePaperEase)
+            .Join(shadePaper.DOColor(shadePaperColorEnd, 2f)).SetEase(shadePaperEase);
 
         //end shaderpaper and start paper
         Color shadePaperColorEnd2 = new Color(0.0803922f, 0.0803922f, 0.0803922f, 1f);

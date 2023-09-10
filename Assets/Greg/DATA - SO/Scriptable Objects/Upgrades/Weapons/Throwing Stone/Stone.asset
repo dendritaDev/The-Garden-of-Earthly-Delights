@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Throwing Stone
   stats:
-    damage: 3
+    damage: 4
     timeToAttack: 0.35
     numberOfAttacks: 1
     numOfPerforationHits: 3

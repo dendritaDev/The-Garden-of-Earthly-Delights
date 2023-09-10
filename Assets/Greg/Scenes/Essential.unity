@@ -401,7 +401,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 685199579
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 25
   m_Sprite: {fileID: 21300000, guid: 6c5cf95ebb60e05458f533fc0eac2c54, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.28235295}
   m_FlipX: 0
@@ -492,7 +492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79668348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.978523, y: -3.03001, z: -31.2}
+  m_LocalPosition: {x: 17.418524, y: -0.65001, z: -31.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2761,7 +2761,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 685199579
   m_SortingLayer: 1
-  m_SortingOrder: 1
+  m_SortingOrder: 25
   m_Sprite: {fileID: 21300000, guid: dfa03e7844648dd4084866b06709b8d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8454,7 +8454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3362e757ec5249e4ab741271dac5b035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rate: 1.25
+  rate: 1
   time: 0.25
   ease: 0
   hover: {fileID: 8300000, guid: 489b75994eb82084e8b438e5f7fa6af1, type: 3}
@@ -8681,7 +8681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974685574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.978523, y: -3.03001, z: -31.2}
+  m_LocalPosition: {x: 17.418524, y: -0.65001, z: -31.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10231,7 +10231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1352762718
 Transform:
   m_ObjectHideFlags: 0
@@ -10854,7 +10854,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 685199579
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 24
   m_Sprite: {fileID: 21300000, guid: cabd40ee16e8c5647ae9c5746583d1b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -12921,7 +12921,7 @@ MonoBehaviour:
   rightTape: {fileID: 481648192}
   rightTapeEase: 6
   button: {fileID: 960474476}
-  paperSpriteToChange: {fileID: 21300000, guid: 34b96ea79b4acc646809a213a8b3f10c, type: 3}
+  paperSpriteToChange: {fileID: 21300000, guid: b990837cd530f3b409ab8fd2f5cb912d, type: 3}
 --- !u!1 &2015209962
 GameObject:
   m_ObjectHideFlags: 0
@@ -13695,7 +13695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3914185316531104977}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.26, y: -3.98, z: 0}
+  m_LocalPosition: {x: 17.7, y: -1.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
