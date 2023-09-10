@@ -22,5 +22,7 @@ https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/5
 ![](https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/blob/main/Collectibles.gif)
 
 ## Win
+![]()
 
 ## Game Over
+![](https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/blob/main/Game%20Over.gif)
