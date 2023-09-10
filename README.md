@@ -13,7 +13,7 @@ https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/5
 https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/51fce06c-bc89-4790-8bbd-57771e86d2e8
 
 ## Weapons + Damage Popups - Gameplay
-
+![](https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/blob/main/Weapons.gif)
 ## Upgrades - Gameplay
 
 ## Collectibles + Headling Popups - Gameplay
