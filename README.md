@@ -1,5 +1,5 @@
 # The Garden of Earthly Delights
-This project is a project I've been working on throughout the summer of 2023.
+This project is a personal project I've been working on throughout the summer of 2023.
 
 I chose to make a roguelite game because this year, this genre has been a discovery for me and I've enjoyed it a lot, playing games like Hades, Bio-Prototype, Loop Hero, Enter the Gungeon, Dead Cells, Neon Abyss, and a few more!
 
