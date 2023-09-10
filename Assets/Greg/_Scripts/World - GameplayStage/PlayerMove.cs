@@ -44,9 +44,15 @@ public class PlayerMove : MonoBehaviour
         }
             
 
-        Movement();
+        //Movement();
         
     }
+
+    private void FixedUpdate()
+    {
+        Movement();
+    }
+
 
     private void Movement()
     {

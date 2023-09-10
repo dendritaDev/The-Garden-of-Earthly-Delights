@@ -21,7 +21,24 @@ public class Animate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(horizontal != 0 || vertical != 0)
+        //if(horizontal != 0 || vertical != 0)
+        //{
+        //    animator.SetBool("isMoving", true);
+        //}
+        //else
+        //{
+        //    animator.SetBool("isMoving", false);
+        //}
+
+        //if(Input.GetMouseButtonDown(0))
+        //{
+        //    animator.SetTrigger("attack");
+        //}
+    }
+
+    private void FixedUpdate()
+    {
+        if (horizontal != 0 || vertical != 0)
         {
             animator.SetBool("isMoving", true);
         }
@@ -30,7 +47,7 @@ public class Animate : MonoBehaviour
             animator.SetBool("isMoving", false);
         }
 
-        if(Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0))
         {
             animator.SetTrigger("attack");
         }

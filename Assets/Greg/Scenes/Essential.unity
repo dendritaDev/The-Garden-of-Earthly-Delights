@@ -492,7 +492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79668348}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.26, y: -3.98, z: -31.2}
+  m_LocalPosition: {x: 13.978523, y: -3.03001, z: -31.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8627,6 +8627,7 @@ GameObject:
   m_Component:
   - component: {fileID: 974685576}
   - component: {fileID: 974685575}
+  - component: {fileID: 974685577}
   m_Layer: 0
   m_Name: CM vcam1
   m_TagString: Untagged
@@ -8680,7 +8681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 974685574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.26, y: -3.98, z: -31.2}
+  m_LocalPosition: {x: 13.978523, y: -3.03001, z: -31.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8688,6 +8689,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &974685577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974685574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a8a05de0ac134f4f9d01bef6b9da077, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1003249865
 GameObject:
   m_ObjectHideFlags: 0
@@ -12503,12 +12516,12 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0.1
+  m_YDamping: 0.1
+  m_ZDamping: 0.1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenX: 0.5083332
+  m_ScreenY: 0.5499995
   m_CameraDistance: 31.2
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
@@ -13400,7 +13413,7 @@ Rigidbody2D:
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
@@ -13835,7 +13848,7 @@ MonoBehaviour:
   movementVector: {x: 0, y: 0, z: 0}
   lastHorizontalVector: 0
   lastVerticalVector: 0
-  speed: 15
+  speed: 7
 --- !u!1 &4614342957947219140
 GameObject:
   m_ObjectHideFlags: 0
