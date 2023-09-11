@@ -60,9 +60,6 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ## Loading Screen
 ![](https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/blob/main/Loading%20Screen.gif)
 
-## Images Transition - Main Menu
-
-
 ## Main Menu Flow
 https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/149fa6ee-a710-440b-a0e5-2f09edcd2039
 
