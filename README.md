@@ -58,6 +58,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ![](https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/blob/main/Game%20Over.gif)
 
 ## Loading Screen
+![](https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/blob/main/Loading%20Screen.mp4)
 https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/51fce06c-bc89-4790-8bbd-57771e86d2e8
 
 ## Images Transition - Main Menu
