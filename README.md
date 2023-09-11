@@ -61,8 +61,10 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ![](https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/blob/main/Loading%20Screen.gif)
 
 ## Images Transition - Main Menu
-https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/d8ba62c7-621a-4729-b182-e2e6ba30b8a3
+
 
 ## Main Menu Flow
-https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/5eb9934b-65ba-4eae-aafa-6fdce1afd254
+https://github.com/dendritaDev/The-Garden-of-Earthly-Delights/assets/107819892/149fa6ee-a710-440b-a0e5-2f09edcd2039
+
+
 
