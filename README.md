@@ -1,7 +1,7 @@
 # The Garden of Earthly Delights
 This project is a personal project I've been working on throughout the summer of 2023.
 
-I chose to make a roguelite game because this year, this genre has been a discovery for me and I've enjoyed it a lot, playing games like Hades, Bio-Prototype, Loop Hero, Enter the Gungeon, Dead Cells, Neon Abyss, and a few more!
+I chose to make a roguelite game because this year, this genre has been a discovery for me and I've enjoyed it a lot, playing games like Hades, Cult of the Lumb, Bio-Prototype, Loop Hero, Enter the Gungeon, Dead Cells, Neon Abyss, and a few more!
 
 During the development of this project, I've learned a lot. Specifically, gameplay programming, Scriptable Objects, AI programming (movement and decision-making), UI programming (using tweening libraries), design patterns, and UML.
 
