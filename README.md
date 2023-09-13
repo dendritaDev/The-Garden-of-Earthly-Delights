@@ -27,17 +27,22 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ### Art
   - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of       the game
 
+## UML
+  - [UML Files](https://drive.google.com/drive/folders/16DbW0m3QNyMtEOaptFkmP0oJ878A7_4L?usp=sharing)
+
 ## To do's
 ### Art & Code:
   - Add Game Feel to the gameplay
     
 ### Code:
   - Enemy AI: Implement different behaviors with Behavior Trees made by myself
-  - Add more passive items
+  - Flocking flying enemies
+  - Add more passive items and upgrades
   - Add different stats for the player (crit, hp regeneration, range...)
-  - Add different levels
+  - Add different levels and condition flags (+ instructions at the beggining of the game to explain the conditions to    
+    unlock next level)
   - Gameplay SFX
-  - Graphics and Audio Settings Screen (mainmenu and gameplay)
+  - Graphics and Audio Settings Panel (mainmenu and gameplay)
   - Fix Bugs
   - Optimize (currently 260 fps average tho)
 
