@@ -9,7 +9,7 @@ using System.Collections.Generic;
 [Serializable]
 public class EnemyStats
 {
-    public int hp = 4;
+    public float hp = 4;
     public int damage = 1;
     public int experienceReward = 400;
     public float moveSpeed = 1.0f;

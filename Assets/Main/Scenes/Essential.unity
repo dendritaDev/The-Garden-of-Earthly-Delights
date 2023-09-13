@@ -13925,7 +13925,7 @@ MonoBehaviour:
   upgrades: []
   acquiredUpgrades: []
   upgradesAvailableToUnlockOnStart:
-  - {fileID: 11400000, guid: 96512433701c56b4aa06534ae89bbbae, type: 2}
+  - {fileID: 11400000, guid: e26508d7227cc11429050a08434d3407, type: 2}
 --- !u!114 &8527718409679528835
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -38,7 +38,7 @@ public class UpgradeDescriptionPanelTweening : MonoBehaviour
         var sequence = DOTween.Sequence();
         float time = descriptionTextTime / (float)TitleTextAnimator.textInfo.characterCount;
         float constTime = time;
-        Debug.Log(time);
+        
         for (int i = 0; i < TitleTextAnimator.textInfo.characterCount; i++)
         {
             sequence

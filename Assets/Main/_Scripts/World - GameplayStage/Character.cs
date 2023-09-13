@@ -11,10 +11,13 @@ public class Character : MonoBehaviour
     public int armor = 0;
     public float hpRegenerationRate = 1f;
     public float hpRegenerationTimer;
-    public float damageBonus;
+    [SerializeField]
+    private float damageBonus;
     public float critChance;
-    public float Speed { get => Speed; set { playerMove.speed += value; } }
+
+    public float Speed { get => playerMove.speed; set { playerMove.speed += value; } }
     public int MaxHP { get => maxHP; set { maxHP += value; } }
+    public float DamageBonus { get => damageBonus; set => damageBonus += value; }
 
     [SerializeField] StatusBar hpBar;
 
@@ -51,7 +54,7 @@ public class Character : MonoBehaviour
         currentHP = MaxHP;
 
         int damageUpgradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.Damage);
-        damageBonus = 1f + 0.1f * damageUpgradeLevel; //Trabajaremos con porcentajes, 100% del daño, 105%...
+        DamageBonus = 1f + 0.1f * damageUpgradeLevel; //Trabajaremos con porcentajes, 100% del daño, 105%...
     }
 
     private void Update()

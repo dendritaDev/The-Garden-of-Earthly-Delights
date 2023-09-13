@@ -36,8 +36,8 @@ public class EnemiesManager : MonoBehaviour
     GameObject player;
 
     List<Enemy> bossEnemiesList;
-    int totalBossHealth;
-    int currentBossHealth;
+    float totalBossHealth;
+    float currentBossHealth;
     [SerializeField] Slider bossHealthBar;
 
     List<EnemiesSpawnGroup> enemiesSpawnGroupList;
