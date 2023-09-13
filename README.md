@@ -45,6 +45,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
   - Graphics and Audio Settings Panel (mainmenu and gameplay)
   - Fix Bugs
   - Optimize (currently 260 fps average tho)
+  - Upload to itchio WebGL
 
 # Videos - Gifs
 ## Weapons + Damage Popups - Gameplay
