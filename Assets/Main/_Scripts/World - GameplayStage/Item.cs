@@ -8,11 +8,13 @@ public class ItemStats
 {
     public int armor;
     public int speed;
+    public int health;
 
     internal void Sum(ItemStats stats)
     {
         armor += stats.armor;
         speed += stats.speed;
+        health += stats.health;
     }
 }
 
@@ -34,11 +36,13 @@ public class Item : ScriptableObject
     {
         character.armor = stats.armor;
         character.Speed = stats.speed;
+        character.MaxHP = stats.health;
     }
 
     public void Unequip(Character character)
     {
         character.armor -= stats.armor;
         character.Speed = -stats.speed;
+        character.MaxHP = -stats.health;
     }
 }

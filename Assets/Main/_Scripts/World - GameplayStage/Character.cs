@@ -5,21 +5,16 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    public int maxHP = 100;
+    [SerializeField]
+    private int maxHP = 100;
     public int currentHP = 100;
     public int armor = 0;
     public float hpRegenerationRate = 1f;
     public float hpRegenerationTimer;
     public float damageBonus;
     public float critChance;
-    public float Speed
-    {
-        get => Speed;
-        set
-        {
-            playerMove.speed += value;
-        }
-    }
+    public float Speed { get => Speed; set { playerMove.speed += value; } }
+    public int MaxHP { get => maxHP; set { maxHP += value; } }
 
     [SerializeField] StatusBar hpBar;
 
@@ -44,7 +39,7 @@ public class Character : MonoBehaviour
     {
         playerMove = GetComponent<PlayerMove>();
         ApplyPersistentUpgrades();
-        hpBar.SetState(currentHP, maxHP);
+        hpBar.SetState(currentHP, MaxHP);
         pauseManager = FindObjectOfType<PauseManager>();
         
     }
@@ -52,8 +47,8 @@ public class Character : MonoBehaviour
     private void ApplyPersistentUpgrades()
     {
         int hpUpgradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.HP);
-        maxHP += maxHP / 10 * hpUpgradeLevel;
-        currentHP = maxHP;
+        MaxHP += MaxHP / 50 * hpUpgradeLevel;
+        currentHP = MaxHP;
 
         int damageUpgradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.Damage);
         damageBonus = 1f + 0.1f * damageUpgradeLevel; //Trabajaremos con porcentajes, 100% del daño, 105%...
@@ -90,7 +85,7 @@ public class Character : MonoBehaviour
             isDead = true;
         }
 
-        hpBar.SetState(currentHP, maxHP);
+        hpBar.SetState(currentHP, MaxHP);
     }
 
     private void ApplyArmor(ref int damage)
@@ -106,9 +101,9 @@ public class Character : MonoBehaviour
 
         currentHP += amount;
 
-        if(currentHP > maxHP) { currentHP = maxHP; }
+        if(currentHP > MaxHP) { currentHP = MaxHP; }
 
-        hpBar.SetState(currentHP, maxHP);
+        hpBar.SetState(currentHP, MaxHP);
 
         if(displayPopup)
             MessageSystem.instance.HealPopup(amount.ToString(), this.transform.position, false);

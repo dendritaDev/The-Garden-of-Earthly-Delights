@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fef375a96b18d854bac15a8f38024ce8, type: 3}
-  m_Name: Boots
+  m_Name: Longevity Watercolor
   m_EditorClassIdentifier: 
-  Name: Boots
+  Name: Longevity Watercolors
   stats:
     armor: 0
     speed: 0
     health: 1
-  upgrades: []
+  upgrades:
+  - {fileID: 11400000, guid: 215d34774c3bb724caee06c8e27508bb, type: 2}
+  - {fileID: 11400000, guid: 1823fc9716eb24e4aaafcf3afd949a17, type: 2}

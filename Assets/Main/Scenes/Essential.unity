@@ -9927,7 +9927,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -4, y: -205}
+  m_AnchoredPosition: {x: -4, y: -131.9}
   m_SizeDelta: {x: 356.2, y: 50}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1304969355
@@ -9985,7 +9985,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -13430,7 +13430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHP: 100
-  currentHP: 50
+  currentHP: 100
   armor: 0
   hpRegenerationRate: 1
   hpRegenerationTimer: 0
@@ -13925,8 +13925,7 @@ MonoBehaviour:
   upgrades: []
   acquiredUpgrades: []
   upgradesAvailableToUnlockOnStart:
-  - {fileID: 11400000, guid: 831e19806bd0afc4e8655e7fc65fa922, type: 2}
-  - {fileID: 11400000, guid: f95ca21e308a5a042b06f430a2a86610, type: 2}
+  - {fileID: 11400000, guid: 96512433701c56b4aa06534ae89bbbae, type: 2}
 --- !u!114 &8527718409679528835
 MonoBehaviour:
   m_ObjectHideFlags: 0
