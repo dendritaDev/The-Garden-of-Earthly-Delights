@@ -5,19 +5,19 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField]
-    private int maxHP = 100;
+    [SerializeField] private int maxHP = 100;
     public int currentHP = 100;
     public int armor = 0;
     public float hpRegenerationRate = 1f;
-    public float hpRegenerationTimer;
-    [SerializeField]
-    private float damageBonus;
+    [SerializeField] private int hpRegenerationAmount = 1;
+    [HideInInspector] public float hpRegenerationTimer;
+    [SerializeField] private float damageBonus;
     public float critChance;
 
     public float Speed { get => playerMove.speed; set { playerMove.speed += value; } }
     public int MaxHP { get => maxHP; set { maxHP += value; } }
     public float DamageBonus { get => damageBonus; set => damageBonus += value; }
+    public int HpRegenerationAmount { get => hpRegenerationAmount; set { hpRegenerationAmount += value; } }
 
     [SerializeField] StatusBar hpBar;
 
@@ -67,7 +67,7 @@ public class Character : MonoBehaviour
 
         if(hpRegenerationTimer > 1f)
         {
-            Heal(1);
+            Heal(HpRegenerationAmount);
             hpRegenerationTimer -= 1f;
         }
     }

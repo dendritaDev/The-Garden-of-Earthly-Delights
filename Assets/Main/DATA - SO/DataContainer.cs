@@ -7,7 +7,8 @@ public enum PlayerPersistentUpgrades
 {
     HP,
     Damage,
-    Speed
+    Speed,
+    HPRegeneration
 }
 
 [Serializable]

@@ -10,6 +10,7 @@ public class ItemStats
     public int speed;
     public int health;
     public float damage;
+    public int HPRegeneration;
 
     internal void Sum(ItemStats stats)
     {
@@ -17,6 +18,7 @@ public class ItemStats
         speed += stats.speed;
         health += stats.health;
         damage += stats.damage;
+        HPRegeneration += stats.HPRegeneration;
     }
 }
 
@@ -40,6 +42,7 @@ public class Item : ScriptableObject
         character.Speed = stats.speed;
         character.MaxHP = stats.health;
         character.DamageBonus = stats.damage;
+        character.HpRegenerationAmount = stats.HPRegeneration;
     }
 
     public void Unequip(Character character)
@@ -48,5 +51,6 @@ public class Item : ScriptableObject
         character.Speed = -stats.speed;
         character.MaxHP = -stats.health;
         character.DamageBonus = -stats.damage;
+        character.HpRegenerationAmount -= stats.HPRegeneration;
     }
 }

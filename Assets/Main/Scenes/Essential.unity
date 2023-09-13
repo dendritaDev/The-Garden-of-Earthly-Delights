@@ -13433,6 +13433,7 @@ MonoBehaviour:
   currentHP: 100
   armor: 0
   hpRegenerationRate: 1
+  hpRegenerationAmount: 1
   hpRegenerationTimer: 0
   damageBonus: 0
   critChance: 0
@@ -13925,7 +13926,7 @@ MonoBehaviour:
   upgrades: []
   acquiredUpgrades: []
   upgradesAvailableToUnlockOnStart:
-  - {fileID: 11400000, guid: e26508d7227cc11429050a08434d3407, type: 2}
+  - {fileID: 11400000, guid: 4b865c97febecab409726b52796536bc, type: 2}
 --- !u!114 &8527718409679528835
 MonoBehaviour:
   m_ObjectHideFlags: 0
