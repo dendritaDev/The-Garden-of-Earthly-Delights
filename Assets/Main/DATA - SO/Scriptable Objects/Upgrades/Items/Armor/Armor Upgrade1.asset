@@ -16,6 +16,7 @@ MonoBehaviour:
   Name: Armor Upgrade
   description: Upgrade our amor with 25 points.
   icon: {fileID: 21300000, guid: 61463c70b4cf97641b3f24162a328ffd, type: 3}
+  isRepeatable: 1
   weaponData: {fileID: 0}
   weaponUpgradeStats:
     damage: 0
@@ -29,4 +30,4 @@ MonoBehaviour:
     knockbackTimeWeight: 0
   item: {fileID: 11400000, guid: f01b540b8ccc4e94ab402ae59cccb6e3, type: 2}
   itemStats:
-    armor: 25
+    armor: 1

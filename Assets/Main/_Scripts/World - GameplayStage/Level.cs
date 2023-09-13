@@ -16,7 +16,7 @@ public class Level : MonoBehaviour
     WeaponManager weaponManager;
     PassiveItems passiveItems;
 
-    [SerializeField]List<UpgradeData> upgradesAvailableOnStart;
+    [SerializeField]List<UpgradeData> upgradesAvailableToUnlockOnStart;
 
     int TO_LEVEL_UP
     {
@@ -33,7 +33,7 @@ public class Level : MonoBehaviour
     {
         experienceBar.UpdateExperienceSlider(experience, TO_LEVEL_UP);
         experienceBar.SetLevelText(level);
-        AddUpgradesIntoTheListOfAvailableUpgrades(upgradesAvailableOnStart);
+        AddUpgradesIntoTheListOfAvailableUpgrades(upgradesAvailableToUnlockOnStart);
     }
 
     internal void AddUpgradesIntoTheListOfAvailableUpgrades(List<UpgradeData> upgradesToAdd)
@@ -73,7 +73,8 @@ public class Level : MonoBehaviour
         }
 
         acquiredUpgrades.Add(upgradeData);
-        upgrades.Remove(upgradeData);
+        if(!upgradeData.isRepeatable)
+            upgrades.Remove(upgradeData);
     }
 
     public void CheckLevelUp()

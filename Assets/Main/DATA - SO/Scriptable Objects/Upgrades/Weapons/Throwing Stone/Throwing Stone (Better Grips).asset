@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType: 0
   Name: Better Grips
-  description: -1 time to attack
+  description: -0.1 time to attack
   icon: {fileID: 21300000, guid: 756cd27e67548f74b93a3bab914ae99e, type: 3}
+  isRepeatable: 1
   weaponData: {fileID: 11400000, guid: 794dfc03615f5e84f89a49cec64e17b5, type: 2}
   weaponUpgradeStats:
     damage: 0
-    timeToAttack: -1
+    timeToAttack: -0.1
     numberOfAttacks: 0
     numOfPerforationHits: 0
     projectileSpeed: 0

@@ -17,6 +17,7 @@ public class UpgradeData : ScriptableObject
     public string Name;
     public string description;
     public Sprite icon;
+    public bool isRepeatable;
 
     public WeaponData weaponData;
     public WeaponStats weaponUpgradeStats;
