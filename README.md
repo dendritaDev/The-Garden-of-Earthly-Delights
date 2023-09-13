@@ -11,6 +11,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ## Done
 ### Code
  - **Player**
+ - **Debugging** Mostly OnDrawGizmos 
  - **Enemy AI:** Blending Steering Behavior based on the book Artificial Intelligence - Ian Millington
  - **Tweening UI:** DOTween library
  - **Passive Items**
