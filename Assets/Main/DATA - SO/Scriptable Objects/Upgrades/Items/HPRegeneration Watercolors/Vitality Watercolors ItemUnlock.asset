@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType: 3
   Name: Unlock Vitality Watercolors
-  description: Get Vitality Watercolors and increase you HP.
+  description: Get Vitality Watercolors and increase you HP Regeneration.
   icon: {fileID: 21300000, guid: 326d903fae4202c49b4cb688c40ef50f, type: 3}
   isRepeatable: 0
   weaponData: {fileID: 0}
