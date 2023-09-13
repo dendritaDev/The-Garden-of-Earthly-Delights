@@ -16,7 +16,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
  - **Tweening UI:** DOTween library
  - **Passive Items**
  - **Different Weapons**
- - **Stats System for player:** armor
+ - **Stats System for player:** Armor, Max HP, Damage, HP Regeneration, Speed, Crit Chance
  - **Upgrades System**
  - **Message System:** Popups (enemy damage, enemy crit damage, player damage, player healing)
  - **My own Object Pool System**
@@ -38,8 +38,6 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ### Code:
   - Enemy AI: Implement different behaviors with Behavior Trees made by myself
   - Flocking flying enemies
-  - Add more passive items and upgrades
-  - Add different stats for the player: Max HP, Damage, HP Regeneration, Speed, Range, Crit Change, Life Steal
   - Add new stats to the store (Main Menu)
   - Add different levels and condition flags (+ instructions at the beggining of the game to explain the conditions to    
     unlock next level)
