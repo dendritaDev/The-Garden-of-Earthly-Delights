@@ -69,7 +69,7 @@ public class MessageSystem : MonoBehaviour
         PrintPopup(damagePlayerMessagePool, ref dmgPlayercount, damageAmount, worldPosition, isCriticalHit);
     }
 
-    public void PrintPopup(List<PopupMessage> pool, ref int count, string damageAmount, Vector3 worldPosition, bool isCriticalHit = false)
+    public void PrintPopup(List<PopupMessage> pool, ref int count, string damageAmount, Vector3 worldPosition, bool isCriticalHit)
     {
         pool[count].text = damageAmount;
         pool[count].transform.position = worldPosition;

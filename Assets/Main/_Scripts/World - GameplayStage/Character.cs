@@ -12,12 +12,13 @@ public class Character : MonoBehaviour
     [SerializeField] private int hpRegenerationAmount = 1;
     [HideInInspector] public float hpRegenerationTimer;
     [SerializeField] private float damageBonus;
-    public float critChance;
+    [SerializeField] private float critChance;
 
     public float Speed { get => playerMove.speed; set { playerMove.speed += value; } }
     public int MaxHP { get => maxHP; set { maxHP += value; } }
     public float DamageBonus { get => damageBonus; set => damageBonus += value; }
     public int HpRegenerationAmount { get => hpRegenerationAmount; set { hpRegenerationAmount += value; } }
+    public float CritChance { get => critChance; set { if (critChance < 100) { critChance = value; } } }
 
     [SerializeField] StatusBar hpBar;
 

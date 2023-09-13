@@ -33,3 +33,6 @@ MonoBehaviour:
     armor: 0
     speed: 0
     health: 0
+    damage: 0
+    HPRegeneration: 0
+    critChance: 0

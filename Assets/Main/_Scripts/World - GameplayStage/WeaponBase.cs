@@ -61,7 +61,17 @@ public abstract class WeaponBase : MonoBehaviour
 
     public void ApplyDamage(int damage, Vector3 position, IDamageable e)
     {
-        PostDamage(damage, position);
+        bool isCritical = false;
+
+        if (UnityEngine.Random.Range(0f, 100f) < wielder.CritChance)
+        {
+            isCritical = true;
+            damage *= 2;
+        }
+
+
+
+        PostDamage(damage, position, isCritical);
         e.TakeDamage(damage);
         ApplyAdditionalEffects(e, position);
     }
@@ -91,9 +101,9 @@ public abstract class WeaponBase : MonoBehaviour
         int damage = (int)(weaponData.stats.damage * wielder.DamageBonus);
         return damage;
     }
-    public virtual void PostDamage(int damage, Vector3 targetPosition)
+    public virtual void PostDamage(int damage, Vector3 targetPosition, bool isCritical)
     {
-        MessageSystem.instance.DamagePopup(damage.ToString(), targetPosition);
+        MessageSystem.instance.DamagePopup(damage.ToString(), targetPosition, isCritical);
     }
 
     public void Upgrade(UpgradeData upgradeData)

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae28c24c1d2e74d40b647ef5bfbd5490, type: 3}
-  m_Name: Epic Longevity Watercolors Upgrade
+  m_Name: Epic Critical Watercolors Upgrade
   m_EditorClassIdentifier: 
   upgradeType: 1
-  Name: Epic Longevity Watercolors Upgrade
-  description: Upgrade your Max HP with 10 points.
+  Name: Epic Critical Watercolors Upgrade
+  description: Upgrade your Critical chance with 10 points.
   icon: {fileID: 21300000, guid: 61463c70b4cf97641b3f24162a328ffd, type: 3}
   isRepeatable: 1
   weaponData: {fileID: 0}
@@ -28,11 +28,11 @@ MonoBehaviour:
     stun: 0
     knockback: 0
     knockbackTimeWeight: 0
-  item: {fileID: 11400000, guid: 13ac8bf5727a422448ece9d8034be28e, type: 2}
+  item: {fileID: 11400000, guid: 4e14ae59d9ebcf44da0b1be8ebbdec94, type: 2}
   itemStats:
     armor: 0
     speed: 0
-    health: 10
+    health: 0
     damage: 0
     HPRegeneration: 0
-    critChance: 0
+    critChance: 10

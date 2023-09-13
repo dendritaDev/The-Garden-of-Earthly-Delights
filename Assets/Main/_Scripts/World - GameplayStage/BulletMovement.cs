@@ -99,8 +99,4 @@ public class BulletMovement : MonoBehaviour
         speed = weaponBase.weaponStats.projectileSpeed;
     }
 
-    public void PostDamage(int damage, Vector3 worldPosition)
-    {
-        MessageSystem.instance.DamagePopup(damage.ToString(), worldPosition);
-    }
 }

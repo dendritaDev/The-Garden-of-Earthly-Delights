@@ -28,7 +28,7 @@ public class PopupMessage : MonoBehaviour
         transform.position = new Vector3(transform.position.x, transform.position.y + popupData.offsetYDistance, transform.position.z);
 
  
-        if (/*!isCriticalHit*/Random.value < 0.5)
+        if (!isCriticalHit)
         {
             NormalHit();
         }

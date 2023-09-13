@@ -116,11 +116,6 @@ public class Projectile : MonoBehaviour, IPoolMember
         
     }
 
-    public void PostDamage(int damage, Vector3 worldPosition)
-    {
-        MessageSystem.instance.DamagePopup(damage.ToString(), worldPosition);
-    }
-
     private void OnEnable()
     {
         timeToDestroy = 6f;
