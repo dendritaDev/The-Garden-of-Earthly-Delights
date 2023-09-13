@@ -6,7 +6,8 @@ using UnityEngine;
 public enum PlayerPersistentUpgrades
 {
     HP,
-    Damage
+    Damage,
+    Speed
 }
 
 [Serializable]

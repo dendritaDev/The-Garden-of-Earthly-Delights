@@ -8,13 +8,18 @@ public class Character : MonoBehaviour
     public int maxHP = 100;
     public int currentHP = 100;
     public int armor = 0;
-    //MORE STATS TO ADD
-    
-
     public float hpRegenerationRate = 1f;
     public float hpRegenerationTimer;
-
     public float damageBonus;
+    public float critChance;
+    public float Speed
+    {
+        get => Speed;
+        set
+        {
+            playerMove.speed += value;
+        }
+    }
 
     [SerializeField] StatusBar hpBar;
 
@@ -25,6 +30,10 @@ public class Character : MonoBehaviour
     [SerializeField] DataContainer dataContainer;
 
     private PauseManager pauseManager;
+
+    private PlayerMove playerMove;
+    
+
     private void Awake()
     {
         level = GetComponent<Level>();
@@ -33,9 +42,11 @@ public class Character : MonoBehaviour
 
     private void Start()
     {
+        playerMove = GetComponent<PlayerMove>();
         ApplyPersistentUpgrades();
         hpBar.SetState(currentHP, maxHP);
         pauseManager = FindObjectOfType<PauseManager>();
+        
     }
 
     private void ApplyPersistentUpgrades()

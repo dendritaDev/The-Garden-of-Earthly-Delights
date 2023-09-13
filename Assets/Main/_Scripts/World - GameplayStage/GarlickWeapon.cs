@@ -12,9 +12,10 @@ public class GarlickWeapon : WeaponBase
 
     //Actaualizamos el radio de los sistemas de particulas a el radio de la colision
     public float AttackAreaSize 
-        { get => attackAreaSize; 
-        
-        set { 
+    { 
+        get => attackAreaSize; 
+        set 
+        { 
             attackAreaSize = value;
             slash.startSize = (attackAreaSize / 2);
             backgroundSlash.startSize = (attackAreaSize / 2);
@@ -22,8 +23,8 @@ public class GarlickWeapon : WeaponBase
             ParticleSystem.ShapeModule ps = particles.GetComponent<ParticleSystem>().shape;
             ps.radius = attackAreaSize;
                
-            }  
-        }
+        }  
+    }
 
 
     public override void Attack()

@@ -58,8 +58,7 @@ public class GunWeapon : WeaponBase
             float angleRadians = Mathf.Atan2(-direction.y, -direction.x);
             float angleDegree = angleRadians * Mathf.Rad2Deg;
             bullet.transform.rotation = Quaternion.AngleAxis(angleDegree, Vector3.forward);
-            Debug.Log("2");
-            Debug.Log(bullet.transform.rotation);
+            
 
         }
     }

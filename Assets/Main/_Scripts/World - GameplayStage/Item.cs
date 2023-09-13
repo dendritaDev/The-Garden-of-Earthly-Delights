@@ -7,10 +7,12 @@ using UnityEngine;
 public class ItemStats
 {
     public int armor;
+    public int speed;
 
     internal void Sum(ItemStats stats)
     {
         armor += stats.armor;
+        speed += stats.speed;
     }
 }
 
@@ -31,10 +33,12 @@ public class Item : ScriptableObject
     public void Equip(Character character)
     {
         character.armor = stats.armor;
+        character.Speed = stats.speed;
     }
 
     public void Unequip(Character character)
     {
         character.armor -= stats.armor;
+        character.Speed = -stats.speed;
     }
 }

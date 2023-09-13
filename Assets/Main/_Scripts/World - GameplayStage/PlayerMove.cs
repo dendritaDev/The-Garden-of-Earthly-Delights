@@ -13,7 +13,7 @@ public class PlayerMove : MonoBehaviour
     [HideInInspector]
     public float lastVerticalVector;
 
-    [SerializeField] float speed = 3f;
+    public float speed = 3f;
 
     Animate animate;
     private PauseManager pauseManager;
