@@ -18,7 +18,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
  - **Stats System for player:** armor
  - **Upgrades System**
  - **Message System:** Popups (enemy damage, enemy crit damage, player damage, player healing)
- - **Object Pool System**
+ - **My own Object Pool System**
  - **Condition Flag System** to unlock new levels
  - **Managers:** Event Spawning Enemies Manager, Music Manager, Weapon Manager, Enemies Manager, Object Spawning Manager.
  - **Scriptable Objects** to save data and save different kind of objects from weapons, enemies, levels, condition flags,
