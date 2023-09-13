@@ -38,7 +38,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
   - Enemy AI: Implement different behaviors with Behavior Trees made by myself
   - Flocking flying enemies
   - Add more passive items and upgrades
-  - Add different stats for the player (crit, hp regeneration, range...)
+  - Add different stats for the player: Max HP, Damage, HP Regeneration, Speed, Range, Crit Change, Life Steal
   - Add different levels and condition flags (+ instructions at the beggining of the game to explain the conditions to    
     unlock next level)
   - Gameplay SFX
