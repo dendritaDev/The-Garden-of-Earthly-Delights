@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae28c24c1d2e74d40b647ef5bfbd5490, type: 3}
   m_Name: Boots Upgrade
   m_EditorClassIdentifier: 
-  upgradeType: 0
+  upgradeType: 1
   Name: Winged Boots
   description: Wings for your boots! +1 Speed
   icon: {fileID: 21300000, guid: 61463c70b4cf97641b3f24162a328ffd, type: 3}

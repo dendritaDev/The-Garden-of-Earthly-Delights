@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae28c24c1d2e74d40b647ef5bfbd5490, type: 3}
   m_Name: Boots Upgrade2
   m_EditorClassIdentifier: 
-  upgradeType: 0
-  Name: Winged Boots
-  description: Wings for your boots! +1 Speed
+  upgradeType: 1
+  Name: Sandals
+  description: +2 Speed -1 Armor
   icon: {fileID: 21300000, guid: 61463c70b4cf97641b3f24162a328ffd, type: 3}
   isRepeatable: 1
   weaponData: {fileID: 0}
@@ -30,5 +30,5 @@ MonoBehaviour:
     knockbackTimeWeight: 0
   item: {fileID: 11400000, guid: a44780fd836475b488e016cf9ac3f93b, type: 2}
   itemStats:
-    armor: 0
-    speed: 1
+    armor: -1
+    speed: 2

@@ -16,4 +16,6 @@ MonoBehaviour:
   stats:
     armor: 0
     speed: 0
-  upgrades: []
+  upgrades:
+  - {fileID: 11400000, guid: eac723bf5ae8db64f8964d2f106e27d6, type: 2}
+  - {fileID: 11400000, guid: 6c1f75012a1234840ab3067abeb8b8a7, type: 2}

@@ -163,7 +163,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -714.19995, y: -6.625}
+  m_AnchoredPosition: {x: -714.1999, y: -6.625}
   m_SizeDelta: {x: -1469.3999, y: -87.55006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &33188464
@@ -13435,6 +13435,7 @@ MonoBehaviour:
   hpRegenerationRate: 1
   hpRegenerationTimer: 0
   damageBonus: 0
+  critChance: 0
   hpBar: {fileID: 2139973803}
   level: {fileID: 0}
   coins: {fileID: 0}
@@ -13925,6 +13926,7 @@ MonoBehaviour:
   acquiredUpgrades: []
   upgradesAvailableToUnlockOnStart:
   - {fileID: 11400000, guid: 831e19806bd0afc4e8655e7fc65fa922, type: 2}
+  - {fileID: 11400000, guid: f95ca21e308a5a042b06f430a2a86610, type: 2}
 --- !u!114 &8527718409679528835
 MonoBehaviour:
   m_ObjectHideFlags: 0
