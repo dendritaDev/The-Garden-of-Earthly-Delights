@@ -42,7 +42,8 @@ During the development of this project, I've learned a lot. Specifically, gamepl
   - Gameplay SFX
   - Graphics and Audio Settings Panel (mainmenu and gameplay)
   - Fix Bugs
-  - Upload to itchio WebGL
+  - Upload to itchio WebGL / Google Store
+  - INPUT FOR MOBILE
 
 # Videos - Gifs
 ## Weapons + Damage Popups - Gameplay
