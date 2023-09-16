@@ -42,12 +42,10 @@ During the development of this project, I've learned a lot. Specifically, gamepl
   - Add Game Feel to the gameplay
     
 ### Code:
-  - Add new stats to the store (Main Menu)
   - Add different levels and condition flags (+ instructions at the beggining of the game to explain the conditions to    
     unlock next level)
   - Gameplay SFX
   - Graphics and Audio Settings Panel (mainmenu and gameplay)
-  - Fix Bugs
   - Upload to itchio WebGL / Google Store
   - INPUT FOR MOBILE
 
