@@ -14,8 +14,8 @@ During the development of this project, I've learned a lot. Specifically, gamepl
  - **Debugging** Mostly OnDrawGizmos 
  - **Enemy AI:** Blending Steering Behavior based on the book Artificial Intelligence - Ian Millington
  - **Tweening UI:** DOTween library
- - **Passive Items and different Types of Augments to Unlock**: Armor, Boots, Crit items, HP Regeneration, Max HP
- - **Different Weapons and Augments to Unlock**: Poison Rainbow (Area Damage), Brush (Melee Damage), Water Sling (Distance Weapon)
+ - **Passive Items and different Types of Upgrades to Unlock**: Armor, Boots, Crit items, HP Regeneration, Max HP
+ - **Different Weapons and Upgrades to Unlock**: Poison Rainbow (Area Damage), Brush (Melee Damage), Water Sling (Distance Weapon)
  - **Stats System for player:** Armor, Max HP, Damage, HP Regeneration, Speed, Crit Chance
  - **Upgrades System**
  - **Message System:** Popups (enemy damage, enemy crit damage, player damage, player healing)
