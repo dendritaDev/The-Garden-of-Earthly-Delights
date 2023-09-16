@@ -58,12 +58,12 @@ public class StorePanelTweening : MonoBehaviour
             item.transform.localScale = Vector3.zero;
         }
 
-        yield return new WaitForSeconds(fadeTime);
+        yield return new WaitForSeconds(fadeTime/3);
 
         foreach (var item in items)
         {
             audioSource.PlayOneShot(popupSFX);
-            item.transform.DOScale(1f, fadeTime).SetEase(itemsEase);
+            item.transform.DOScale(1f, fadeTime/3).SetEase(itemsEase);
             yield return new WaitForSeconds(nextItemTime);
         }
     }
