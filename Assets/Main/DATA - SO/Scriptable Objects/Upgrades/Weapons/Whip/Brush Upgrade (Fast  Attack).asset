@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae28c24c1d2e74d40b647ef5bfbd5490, type: 3}
-  m_Name: Brush Upgrade(Fast  Attack)
+  m_Name: Brush Upgrade (Fast  Attack)
   m_EditorClassIdentifier: 
   upgradeType: 0
   Name: Fast Attack
