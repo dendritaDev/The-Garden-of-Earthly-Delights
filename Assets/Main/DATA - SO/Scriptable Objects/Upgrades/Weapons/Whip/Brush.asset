@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Brush
   stats:
-    damage: 2
+    damage: 50
     timeToAttack: 1.5
     numberOfAttacks: 1
     numOfPerforationHits: 0
