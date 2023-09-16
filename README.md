@@ -10,7 +10,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 # Features
 ## Done
 ### Code
- - **Player**
+ - **Player:** Movement, Animation, Character(stats and Scriptable Object for persistance data container), Management of items, coins, weapons and experience
  - **Debugging** Mostly OnDrawGizmos 
  - **Enemy AI:** Blending Steering Behavior based on the book Artificial Intelligence - Ian Millington
  - **Tweening UI:** DOTween library
@@ -20,6 +20,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
  - **Upgrades System**
  - **Message System:** Popups (enemy damage, enemy crit damage, player damage, player healing)
  - **My own Object Pool System**
+ - **Spawn Objectes System**
  - **Condition Flag System** to unlock new levels
  - **Managers:** Event Spawning Enemies Manager, Music Manager, Weapon Manager, Enemies Manager, Object Spawning Manager.
  - **Scriptable Objects** to save data and save different kind of objects from weapons, enemies, levels, condition flags,
