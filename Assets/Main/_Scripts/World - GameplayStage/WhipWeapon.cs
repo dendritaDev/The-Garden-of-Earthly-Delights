@@ -6,9 +6,10 @@ using UnityEngine;
 public class WhipWeapon : WeaponBase
 {
     [SerializeField] GameObject whipObject;
+    [SerializeField] GameObject whipObject2;
     
     PlayerMove playerMove;
-    [SerializeField] Vector2 attackSize = new Vector2(4f, 2f);
+    [SerializeField] Vector2 attackSize = new Vector2(3f, 2f);
 
     private void Awake()
     {
@@ -28,11 +29,18 @@ public class WhipWeapon : WeaponBase
             whipObject.SetActive(true);
             Collider2D[] colliders = Physics2D.OverlapBoxAll(whipObject.transform.position, attackSize, 0f, layerMask);
             ApplyDamage(colliders);
+            Collider2D[] colliders2 = Physics2D.OverlapBoxAll(whipObject2.transform.position, attackSize, 180f, layerMask);
+            ApplyDamage(colliders2);
 
             yield return new WaitForSeconds(0.3f);
         }
      
     }
 
-  
+    private void OnDrawGizmos()
+    {
+        //Gizmos.color = Color.yellow;
+        //Gizmos.Draw
+        //Gizmos.DrawLine(transform.position, transform.position + displacement.normalized);
+    }
 }

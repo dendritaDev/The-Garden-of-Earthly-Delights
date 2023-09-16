@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae28c24c1d2e74d40b647ef5bfbd5490, type: 3}
-  m_Name: Brush Upgrade (Double Strike
+  m_Name: Throwing Stone (Number of attacks)
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: Double Strike
-  description: 
-  icon: {fileID: 21300000, guid: 42341ff5705fad548ad87466b5ad6c8c, type: 3}
-  isRepeatable: 0
-  weaponData: {fileID: 11400000, guid: b1f7b6d09bdaf3347947613d8859f004, type: 2}
+  Name: More Damage
+  description: +1 projectile
+  icon: {fileID: 21300000, guid: 756cd27e67548f74b93a3bab914ae99e, type: 3}
+  isRepeatable: 1
+  weaponData: {fileID: 11400000, guid: 794dfc03615f5e84f89a49cec64e17b5, type: 2}
   weaponUpgradeStats:
     damage: 0
     timeToAttack: 0
-    numberOfAttacks: 1
+    numberOfAttacks: 2
     numOfPerforationHits: 0
     projectileSpeed: 0
     detectionRadius: 0

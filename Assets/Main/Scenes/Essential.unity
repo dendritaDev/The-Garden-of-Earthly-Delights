@@ -13851,6 +13851,7 @@ MonoBehaviour:
   lastHorizontalVector: 0
   lastVerticalVector: 0
   speed: 7
+  speedBonus: 0
 --- !u!1 &4614342957947219140
 GameObject:
   m_ObjectHideFlags: 0
@@ -13975,4 +13976,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponObjectsContainer: {fileID: 2852418311986375301}
   poolManager: {fileID: 1329768878}
-  startingWeapon: {fileID: 11400000, guid: 794dfc03615f5e84f89a49cec64e17b5, type: 2}
+  startingWeapon: {fileID: 11400000, guid: b1f7b6d09bdaf3347947613d8859f004, type: 2}
