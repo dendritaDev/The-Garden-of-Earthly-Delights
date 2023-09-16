@@ -61,7 +61,7 @@ public class Projectile : MonoBehaviour, IPoolMember
 
     private void HitDetection()
     {
-        Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, hitArea);
+        Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, hitArea, weapon.layerMask);
 
         foreach (var collider in hit)
         {

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType: 2
   Name: Throwing Stone
-  description: Get Water Sling Distance Weapon
+  description: Get Water Sling Distance Weapon. The key to open the chests!
   icon: {fileID: 21300000, guid: 1d3f8c2a90d56d94989e90ca6abc4cd5, type: 3}
   isRepeatable: 0
   weaponData: {fileID: 11400000, guid: 794dfc03615f5e84f89a49cec64e17b5, type: 2}
