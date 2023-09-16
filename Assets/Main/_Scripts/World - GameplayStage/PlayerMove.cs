@@ -14,6 +14,7 @@ public class PlayerMove : MonoBehaviour
     public float lastVerticalVector;
 
     public float speed = 3f;
+    public int speedBonus = 0;
 
     Animate animate;
     private PauseManager pauseManager;
@@ -86,7 +87,7 @@ public class PlayerMove : MonoBehaviour
             
         }
 
-        movementVector *= speed;
+        movementVector *= (speed + (float)speedBonus);
         rigidbody2d.velocity = movementVector;
     }
 

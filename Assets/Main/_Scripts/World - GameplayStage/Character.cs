@@ -55,7 +55,18 @@ public class Character : MonoBehaviour
         currentHP = MaxHP;
 
         int damageUpgradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.Damage);
-        DamageBonus = 1f + 0.1f * damageUpgradeLevel; //Trabajaremos con porcentajes, 100% del daño, 105%...
+        DamageBonus = 1f + 2.5f * damageUpgradeLevel; //Trabajaremos con porcentajes, 100% del daño, 105%...
+
+        int speedUpgradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.Speed);
+        playerMove.speedBonus = speedUpgradeLevel;
+
+        int hpRegenerationUpgradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.HPRegeneration);
+        HpRegenerationAmount = 1 + hpRegenerationUpgradeLevel;
+
+        int critChanceUpgradeLevel = dataContainer.GetUpgradeLevel(PlayerPersistentUpgrades.CritChance);
+        CritChance += (critChanceUpgradeLevel * 10);
+
+
     }
 
     private void Update()
