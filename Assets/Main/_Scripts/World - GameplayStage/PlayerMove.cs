@@ -34,14 +34,6 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
 
-        if (pauseManager.isGamePaused)
-        {
-
-            rigidbody2d.velocity = Vector2.zero;
-            animate.horizontal = 0f;
-            animate.vertical = 0f;
-            return;
-        }
             
 
         //Movement();
@@ -50,6 +42,16 @@ public class PlayerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
+
+        if (pauseManager.isGamePaused)
+        {
+
+            rigidbody2d.velocity = Vector2.zero;
+            animate.horizontal = 0f;
+            animate.vertical = 0f;
+            return;
+        }
+
         Movement();
     }
 

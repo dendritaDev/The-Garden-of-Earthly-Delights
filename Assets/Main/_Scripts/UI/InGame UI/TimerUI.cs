@@ -16,6 +16,6 @@ public class TimerUI : MonoBehaviour
     {
         int minutes = (int)(time / 60f);
         int seconds = (int)(time % 60f);
-        text.text = string.Format("{0}:{1}", minutes.ToString("00"), seconds.ToString("00"));/* minutes.ToString() + ":" + seconds.ToString();*/
+        text.text = string.Format("{0}.{1}", minutes.ToString("00"), seconds.ToString("00"));/* minutes.ToString() + ":" + seconds.ToString();*/
     }
 }

@@ -24,4 +24,7 @@ MonoBehaviour:
     knockback: 0
     knockbackTimeWeight: 0
   weaponBasePrefab: {fileID: 7768372356247360363, guid: 53a3af16ed37cb9469fe1394faaad205, type: 3}
-  upgrades: []
+  upgrades:
+  - {fileID: 11400000, guid: 558f5240d7ce1664db09eeef92f49b68, type: 2}
+  - {fileID: 11400000, guid: 1597e7c3e27401f4ea8f2fb77d072aeb, type: 2}
+  - {fileID: 11400000, guid: d06266c9cdab20f4a993cc7e1cfa673a, type: 2}

@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType: 2
   Name: Throwing Stone
-  description: Get Stone Weapon
+  description: Get Water Sling Distance Weapon
   icon: {fileID: 21300000, guid: 1d3f8c2a90d56d94989e90ca6abc4cd5, type: 3}
+  isRepeatable: 0
   weaponData: {fileID: 11400000, guid: 794dfc03615f5e84f89a49cec64e17b5, type: 2}
   weaponUpgradeStats:
     damage: 0
@@ -30,3 +31,8 @@ MonoBehaviour:
   item: {fileID: 0}
   itemStats:
     armor: 0
+    speed: 0
+    health: 0
+    damage: 0
+    HPRegeneration: 0
+    critChance: 0
