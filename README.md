@@ -14,8 +14,8 @@ During the development of this project, I've learned a lot. Specifically, gamepl
  - **Debugging** Mostly OnDrawGizmos 
  - **Enemy AI:** Blending Steering Behavior based on the book Artificial Intelligence - Ian Millington
  - **Tweening UI:** DOTween library
- - **Passive Items**
- - **Different Weapons**
+ - **Passive Items and different Types of Augments to Unlock**: Armor, Boots, Crit items, HP Regeneration, Max HP
+ - **Different Weapons and Augments to Unlock**: Poison Rainbow (Area Damage), Brush (Melee Damage), Water Sling (Distance Weapon)
  - **Stats System for player:** Armor, Max HP, Damage, HP Regeneration, Speed, Crit Chance
  - **Upgrades System**
  - **Message System:** Popups (enemy damage, enemy crit damage, player damage, player healing)
@@ -24,6 +24,12 @@ During the development of this project, I've learned a lot. Specifically, gamepl
  - **Managers:** Event Spawning Enemies Manager, Music Manager, Weapon Manager, Enemies Manager, Object Spawning Manager.
  - **Scriptable Objects** to save data and save different kind of objects from weapons, enemies, levels, condition flags,
    pools, popups...
+
+## Levels
+- First level is about taking as many diamonds as possible in order to unlock weapons and items to get ready for the next levels!
+- Second level: You need to make it to the end of the level alive if you want to be able to unlock the third level!
+- Third level: In this level you will fight some watercolor monster. Kill all of them if you want to unlock the last level!
+- Fourth level: Tons of monsters are going to try to kill you. Have you been wise before? Have you chosen the best items and weapons combinations when you had the chance? I hope so if you want to make it to the end!
 
 ### Art
   - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of       the game
