@@ -26,10 +26,10 @@ During the development of this project, I've learned a lot. Specifically, gamepl
    pools, popups...
 
 ## Levels
-- First level is about taking as many diamonds as possible in order to unlock weapons and items to get ready for the next levels!
-- Second level: You need to make it to the end of the level alive if you want to be able to unlock the third level!
-- Third level: In this level you will fight some watercolor monster. Kill all of them if you want to unlock the last level!
-- Fourth level: Tons of monsters are going to try to kill you. Have you been wise before? Have you chosen the best items and weapons combinations when you had the chance? I hope so if you want to make it to the end!
+- **First level:** is about taking as many diamonds as possible in order to unlock weapons and items to get ready for the next levels!
+- **Second level:** You need to make it to the end of the level alive if you want to be able to unlock the third level!
+- **Third level:** In this level you will fight some watercolor monster. Kill all of them if you want to unlock the last level!
+- **Fourth level:** Tons of monsters are going to try to kill you. Have you been wise before? Have you chosen the best items and weapons combinations when you had the chance? I hope so if you want to make it to the end!
 
 ### Art
   - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of       the game
