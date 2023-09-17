@@ -13438,6 +13438,7 @@ MonoBehaviour:
   damageBonus: 0
   critChance: 0
   hpBar: {fileID: 2139973803}
+  body: {fileID: 3914185316141908182}
   level: {fileID: 0}
   coins: {fileID: 0}
   dataContainer: {fileID: 11400000, guid: 6f52d4b195ab3b244a5cb0ccff0d52b8, type: 2}

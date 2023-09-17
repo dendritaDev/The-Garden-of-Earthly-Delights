@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7354312720265255398
 Transform:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
     hp: 10
     damage: 7
     experienceReward: 100
-    moveSpeed: 1
+    moveSpeed: 7
   enemyData: {fileID: 0}
   poolMember: {fileID: 0}
   splashSprite: {fileID: 21300000, guid: 1e4ce9391444e32449ac50f537551678, type: 3}
@@ -192,7 +192,7 @@ MonoBehaviour:
   maxAngularAccel: 0
   orientation: 0
   rotation: 0
-  isKinematic: 1
+  isKinematic: 0
   velocity: {x: 0, y: 0}
   stunned: 0
   knocnkbackVector: {x: 0, y: 0, z: 0}

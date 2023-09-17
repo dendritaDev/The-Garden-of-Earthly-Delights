@@ -15,7 +15,7 @@ MonoBehaviour:
   Name: Cactus
   poolObjectData: {fileID: 11400000, guid: 52feffffe5d69aa4eb4700820b5afd53, type: 2}
   stats:
-    hp: 15
-    damage: 5
-    experienceReward: 200
-    moveSpeed: 1
+    hp: 10
+    damage: 7
+    experienceReward: 100
+    moveSpeed: 7

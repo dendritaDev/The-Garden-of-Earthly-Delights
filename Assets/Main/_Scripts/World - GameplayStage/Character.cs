@@ -21,6 +21,7 @@ public class Character : MonoBehaviour
     public float CritChance { get => critChance; set { if (critChance < 100) { critChance = value; } } }
 
     [SerializeField] StatusBar hpBar;
+    [SerializeField] SpriteRenderer body;
 
     [HideInInspector] public Level level;
     [HideInInspector] public Coins coins;
@@ -101,6 +102,20 @@ public class Character : MonoBehaviour
         }
 
         hpBar.SetState(currentHP, MaxHP);
+
+        StartCoroutine(GameFeelTakingDamage());
+
+    }
+
+    public IEnumerator GameFeelTakingDamage()
+    {
+        body.color = Color.red;
+        //play music
+
+        yield return new WaitForSeconds(0.1f);
+
+        body.color = Color.white;
+        
     }
 
     private void ApplyArmor(ref int damage)

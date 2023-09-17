@@ -22,5 +22,14 @@ MonoBehaviour:
     isRepeatedEvent: 1
     repeatEverySeconds: 4
     repeatCount: 4
+  - eventType: 0
+    time: 2
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: fcb9b5df28b09c44e952e28b69a24d0b, type: 2}
+    objectToSpawn: {fileID: 8671208272553304450, guid: c6b0d09b97fc83043b72643557352f20, type: 3}
+    count: 16
+    isRepeatedEvent: 1
+    repeatEverySeconds: 4
+    repeatCount: 4
   stageID: Stage 1 Complete
   stageCompletionToUnlock: []

@@ -109,6 +109,14 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject == targetGameObject)
+        {
+            Attack();
+        }
+    }
+
     private void Attack()
     {
         if(targetCharacter == null)
