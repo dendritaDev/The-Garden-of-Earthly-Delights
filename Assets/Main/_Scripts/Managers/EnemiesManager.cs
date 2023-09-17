@@ -45,6 +45,12 @@ public class EnemiesManager : MonoBehaviour
 
     int spawnPerFrame = 2;
 
+    //map limits
+    float minX = -13f;
+    float maxX = 34f;
+    float minY = -30f;
+    float maxY = 21f;
+
     private void Start()
     {
         player = GameManager.instance.playerTransform.gameObject;
@@ -158,6 +164,9 @@ public class EnemiesManager : MonoBehaviour
         Vector3 spawnPosition = UtilityTools.GenerateRandomPositionSquarePattern(spawnArea);
 
         spawnPosition += player.transform.position; //para spawne por donde esta el player
+
+        spawnPosition.x = Mathf.Clamp(spawnPosition.x, minX, maxX);
+        spawnPosition.y = Mathf.Clamp(spawnPosition.y, minY, maxY);
 
         //spawning main enemy object
         GameObject newEnemy = poolManager.GetObject(enemyToSpawn.poolObjectData);
