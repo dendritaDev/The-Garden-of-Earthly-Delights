@@ -12,17 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f30917b1b718a47b604020d0857645, type: 3}
   m_Name: Stone
   m_EditorClassIdentifier: 
-  Name: Throwing Stone
+  Name: Sling that throws stones
   stats:
-    damage: 0
-    timeToAttack: 0.25
-    numberOfAttacks: 2
+    damage: 8
+    timeToAttack: 0.9
+    numberOfAttacks: 1
     numOfPerforationHits: 2
     projectileSpeed: 2
     detectionRadius: 6
     stun: 0.1
     knockback: 10
     knockbackTimeWeight: 0.5
+    areaSize: 0
   weaponBasePrefab: {fileID: 6790495474329093724, guid: 743a2f1aaa9d82044abfb6f3f6dcd165, type: 3}
   upgrades:
   - {fileID: 11400000, guid: f04e95d7f4a670748859f4c66489a7aa, type: 2}

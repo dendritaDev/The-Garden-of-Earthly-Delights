@@ -16,11 +16,11 @@ MonoBehaviour:
   - eventType: 0
     time: 1
     message: 
-    enemyToSpawn: {fileID: 11400000, guid: 8d8621b93b432ee46bfc094768a2aeb0, type: 2}
-    objectToSpawn: {fileID: 8671208272553304450, guid: 3e80c7840cd619f449e7f84d7bedd310, type: 3}
-    count: 8
-    isRepeatedEvent: 1
-    repeatEverySeconds: 4
-    repeatCount: 4
+    enemyToSpawn: {fileID: 11400000, guid: 6f3b94bc58a09c44385cb9c3f998e299, type: 2}
+    objectToSpawn: {fileID: 8671208272553304450, guid: 3a540fa3710270d4181f8f75ca6e81f3, type: 3}
+    count: 2
+    isRepeatedEvent: 0
+    repeatEverySeconds: 0
+    repeatCount: 0
   stageID: Stage 1 Complete
   stageCompletionToUnlock: []

@@ -14,15 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Brush
   stats:
-    damage: 50
+    damage: 10
     timeToAttack: 1.5
     numberOfAttacks: 1
     numOfPerforationHits: 0
     projectileSpeed: 0
     detectionRadius: 0
-    stun: 1
+    stun: 1.5
     knockback: 5
     knockbackTimeWeight: 0.5
+    areaSize: 0
   weaponBasePrefab: {fileID: 1983760848307689847, guid: 9d73bcfdd6a50fe4895ee63ee044974c, type: 3}
   upgrades:
   - {fileID: 11400000, guid: 7aceca162c433a8409d03f667c85dca2, type: 2}

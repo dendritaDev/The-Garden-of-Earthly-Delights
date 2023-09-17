@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType: 0
   Name: More Damage
-  description: +3 Damage
+  description: +5 Damage
   icon: {fileID: 21300000, guid: 42341ff5705fad548ad87466b5ad6c8c, type: 3}
   isRepeatable: 1
   weaponData: {fileID: 11400000, guid: b1f7b6d09bdaf3347947613d8859f004, type: 2}
   weaponUpgradeStats:
-    damage: 3
+    damage: 5
     timeToAttack: 0
     numberOfAttacks: 0
     numOfPerforationHits: 0
@@ -28,6 +28,7 @@ MonoBehaviour:
     stun: 0
     knockback: 0
     knockbackTimeWeight: 0
+    areaSize: 0
   item: {fileID: 0}
   itemStats:
     armor: 0

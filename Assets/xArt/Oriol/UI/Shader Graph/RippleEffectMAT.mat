@@ -39,9 +39,9 @@ Material:
     m_Ints: []
     m_Floats:
     - _FloatTime: 1
-    - _RippleSpeed: 1.9831245
-    - _RippleStrength: 1.4873435
-    - _RipplesCount: 1.4873435
+    - _RippleSpeed: 1.9831079
+    - _RippleStrength: 1.4873312
+    - _RipplesCount: 1.4873312
     m_Colors:
     - _RippleCenter: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []

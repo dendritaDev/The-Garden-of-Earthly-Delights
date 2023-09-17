@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   upgradeType: 0
   Name: Double Strike
-  description: 
+  description: +1 number of attacks
   icon: {fileID: 21300000, guid: 42341ff5705fad548ad87466b5ad6c8c, type: 3}
   isRepeatable: 0
   weaponData: {fileID: 11400000, guid: b1f7b6d09bdaf3347947613d8859f004, type: 2}
@@ -28,6 +28,7 @@ MonoBehaviour:
     stun: 0
     knockback: 0
     knockbackTimeWeight: 0
+    areaSize: 0
   item: {fileID: 0}
   itemStats:
     armor: 0
