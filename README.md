@@ -40,14 +40,12 @@ During the development of this project, I've learned a lot. Specifically, gamepl
   - [UML Files](https://drive.google.com/drive/folders/16DbW0m3QNyMtEOaptFkmP0oJ878A7_4L?usp=sharing)
 
 ## To do's
-### Art & Code:
-  - Add Game Feel to the gameplay
     
 ### Code:
   - Add different levels and condition flags (+ instructions at the beggining of the game to explain the conditions to    
     unlock next level)
   - Gameplay SFX
-  - Graphics and Audio Settings Panel (mainmenu and gameplay)
+  - Graphics and Audio Settings Panel (Menu)
   - Upload to itchio WebGL / Google Store
   - INPUT FOR MOBILE
 
