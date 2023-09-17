@@ -11,8 +11,9 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ## Done
 ### Code
  - **Player:** Movement, Animation, Character(stats and Scriptable Object for persistance data container), Management of items, coins, weapons and experience
- - **Debugging** Mostly OnDrawGizmos 
- - **Enemy AI:** Blending Steering Behavior based on the book Artificial Intelligence - Ian Millington
+ - **Debugging** Mostly OnDrawGizmos
+ - **Enemy:** Different types of enemies: Movement (Kinematic vs Dynamic), experience reward, damage and speed/acceleration.
+ - **Enemy AI:** Blending Steering Behavior based on the book Artificial Intelligence - Ian Millington. 
  - **Tweening UI:** DOTween library
  - **Passive Items and different Types of Upgrades to Unlock**: Armor, Boots, Crit items, HP Regeneration, Max HP
  - **Different Weapons and Upgrades to Unlock**: Poison Rainbow (Area Damage), Brush (Melee Damage), Water Sling (Distance Weapon)
