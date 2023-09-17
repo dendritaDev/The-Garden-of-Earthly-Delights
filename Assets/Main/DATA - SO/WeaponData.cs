@@ -15,6 +15,7 @@ public class WeaponStats
     public float stun;
     public float knockback;
     public float knockbackTimeWeight;
+    public float areaSize;
 
     public WeaponStats(WeaponStats stats)
     {
@@ -27,6 +28,7 @@ public class WeaponStats
         this.stun = stats.stun;
         this.knockback = stats.knockback;
         this.knockbackTimeWeight = stats.knockbackTimeWeight;
+        this.areaSize = stats.areaSize;
     }
 
     internal void Sum(WeaponStats weaponUpgradeStats)
@@ -40,6 +42,7 @@ public class WeaponStats
         this.stun += weaponUpgradeStats.stun;
         this.knockback += weaponUpgradeStats.knockback;
         this.knockbackTimeWeight += weaponUpgradeStats.knockbackTimeWeight;
+        this.areaSize += weaponUpgradeStats.areaSize;
     }
 }
 

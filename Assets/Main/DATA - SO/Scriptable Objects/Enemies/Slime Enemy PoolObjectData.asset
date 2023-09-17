@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Slime Enemy PoolObjectData
   m_EditorClassIdentifier: 
   originalPrefab: {fileID: 255192273708749993, guid: 8afab70bc02b19d4eb05104efb486a9c, type: 3}
-  containerPrefab: {fileID: 8671208272553304450, guid: 0048535fe2b3c8e4ba56ca1f07df84cf, type: 3}
+  containerPrefab: {fileID: 8671208272553304450, guid: c6b0d09b97fc83043b72643557352f20, type: 3}
   poolID: 2

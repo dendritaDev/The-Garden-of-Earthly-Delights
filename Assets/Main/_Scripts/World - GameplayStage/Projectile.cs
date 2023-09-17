@@ -11,28 +11,30 @@ public class Projectile : MonoBehaviour, IPoolMember
     int damage = 5;
     int numOfPerforationHits = 3;
 
-    [SerializeField] float hitArea = 0.7f;
-    float timeToDestroy = 3f;
+    [SerializeField] float hitArea = 1f;
+    float timeToDestroy = 1.5f;
 
     List<IDamageable> alreadyHitTargets;
 
     [SerializeField]
     [Tooltip("Cada cuantos frames se llama al update. Solo tocara para optimizacion. Para modificar velocidad -> cambiar speed")]
-    int frameRate = 6;
+    int frameRate = 2;
 
     [HideInInspector] public Vector3 directionToMove;
 
     // Update is called once per frame
     void Update()
     {
-        //Optimizar: Solo llamamos update cada 6 frames: A más rapido y mas pequeño sea el objeto, mas update tendremos que hacer para que no se de el caso
-        //de que de frame a frame se mueve lo suficiente como para no collisionar con el enemigo aunque visualmente si que lo parezca
-        if (Time.frameCount % frameRate == 0)
-        {
-            Move();
-            HitDetection();
+        Move();
+        HitDetection();
 
-        }
+        ////Optimizar: Solo llamamos update cada 2 frames: A más rapido y mas pequeño sea el objeto, mas update tendremos que hacer para que no se de el caso
+        ////de que de frame a frame se mueve lo suficiente como para no collisionar con el enemigo aunque visualmente si que lo parezca
+        //if (Time.frameCount % frameRate == 0)
+        //{
+            
+
+        //}
 
         LifeTimer();
     }
@@ -104,7 +106,7 @@ public class Projectile : MonoBehaviour, IPoolMember
     private void Move()
     {
 
-        transform.position += (speed * frameRate) * Time.deltaTime * directionToMove;
+        transform.position += (speed/* * frameRate*/) * Time.deltaTime * directionToMove;
     }
 
     internal void SetStats(WeaponBase weaponBase)
@@ -125,4 +127,6 @@ public class Projectile : MonoBehaviour, IPoolMember
     {
         this.poolMember = poolMember;
     }
+
+
 }

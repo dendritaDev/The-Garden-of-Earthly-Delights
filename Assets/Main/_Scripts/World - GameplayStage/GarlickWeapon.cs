@@ -5,7 +5,7 @@ using UnityEngine;
 public class GarlickWeapon : WeaponBase
 {
 
-    [SerializeField] float attackAreaSize = 3f;
+    
     [SerializeField] ParticleSystem slash;
     [SerializeField] ParticleSystem backgroundSlash;
     [SerializeField] ParticleSystem particles;
@@ -13,15 +13,15 @@ public class GarlickWeapon : WeaponBase
     //Actaualizamos el radio de los sistemas de particulas a el radio de la colision
     public float AttackAreaSize 
     { 
-        get => attackAreaSize; 
+        get => weaponStats.areaSize; 
         set 
-        { 
-            attackAreaSize = value;
-            slash.startSize = (attackAreaSize / 2);
-            backgroundSlash.startSize = (attackAreaSize / 2);
+        {
+            weaponStats.areaSize = value;
+            slash.startSize = (weaponStats.areaSize / 2);
+            backgroundSlash.startSize = (weaponStats.areaSize / 2);
             
             ParticleSystem.ShapeModule ps = particles.GetComponent<ParticleSystem>().shape;
-            ps.radius = attackAreaSize;
+            ps.radius = weaponStats.areaSize;
                
         }  
     }
@@ -30,6 +30,7 @@ public class GarlickWeapon : WeaponBase
     public override void Attack()
     {
         StartCoroutine(MultipleAttackProcess());
+        
     }
 
     
@@ -41,7 +42,7 @@ public class GarlickWeapon : WeaponBase
         {
             slash.Play();
 
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, attackAreaSize, layerMask);
+            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, weaponStats.areaSize, layerMask);
             ApplyDamage(colliders);
             yield return new WaitForSeconds(0.15f);
 

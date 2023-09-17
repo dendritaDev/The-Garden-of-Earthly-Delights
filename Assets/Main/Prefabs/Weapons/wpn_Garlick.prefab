@@ -14622,6 +14622,7 @@ MonoBehaviour:
     stun: 0
     knockback: 0
     knockbackTimeWeight: 0
+    areaSize: 3
   vectorOfAttack: {x: 0, y: 0}
   attackDirection: 0
   attackAreaSize: 3

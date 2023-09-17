@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   poolMember: {fileID: 0}
-  hitArea: 0.55
+  hitArea: 1.5
   frameRate: 6
   directionToMove: {x: 0, y: 0, z: 0}
 --- !u!95 &666255740126845561
