@@ -23,6 +23,7 @@ public class EnemiesSpawnGroup
 
     public void SetRepeatSpawn(float timeBetweenSpawns, int repeatcount)
     {
+        Debug.Log("ole");
         this.timeBetweenSpawns = timeBetweenSpawns;
         this.repeatCount = repeatcount;
         repeatTimer = timeBetweenSpawns;

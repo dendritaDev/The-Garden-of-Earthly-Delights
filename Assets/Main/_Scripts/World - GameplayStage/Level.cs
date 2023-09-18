@@ -102,6 +102,10 @@ public class Level : MonoBehaviour
     /// </summary>
     public void ShuffleUpgrades()
     {
+        //para que nunca sea igual
+        int currentSeconds = (int)System.DateTime.Now.TimeOfDay.TotalSeconds;
+        Random.InitState(currentSeconds);
+
         for (int i = upgrades.Count - 1; i > 0; i--)
         {
             int x = Random.Range(0, i + 1);

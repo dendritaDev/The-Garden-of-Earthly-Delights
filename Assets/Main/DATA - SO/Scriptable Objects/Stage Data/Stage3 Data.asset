@@ -12,9 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2699b7cca6f0e448b29bbad28c75317, type: 3}
   m_Name: Stage3 Data
   m_EditorClassIdentifier: 
+  initialText: SURVIVE FOR 3 MIN!
   stageEvents:
+  - eventType: 0
+    time: 4
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 732291a95c3ed1f4cba1b47b038bb1e2, type: 2}
+    objectToSpawn: {fileID: 9219287461840458396, guid: 1f93f448d1c148c4bb576d5646e95637, type: 3}
+    count: 1
+    isRepeatedEvent: 1
+    repeatEverySeconds: 5
+    repeatCount: 45
+  - eventType: 0
+    time: 8
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: 8d8621b93b432ee46bfc094768a2aeb0, type: 2}
+    objectToSpawn: {fileID: 255192273708749993, guid: 45e95e57f2470a440ab96220900d0396, type: 3}
+    count: 1
+    isRepeatedEvent: 1
+    repeatEverySeconds: 3
+    repeatCount: 70
+  - eventType: 0
+    time: 15
+    message: 
+    enemyToSpawn: {fileID: 11400000, guid: fcb9b5df28b09c44e952e28b69a24d0b, type: 2}
+    objectToSpawn: {fileID: 8671208272553304450, guid: c6b0d09b97fc83043b72643557352f20, type: 3}
+    count: 2
+    isRepeatedEvent: 1
+    repeatEverySeconds: 7
+    repeatCount: 75
   - eventType: 3
-    time: 5
+    time: 180
     message: 
     enemyToSpawn: {fileID: 0}
     objectToSpawn: {fileID: 0}

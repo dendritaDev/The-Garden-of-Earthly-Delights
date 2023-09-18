@@ -10484,7 +10484,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Be fast, enemies get stronger with the pass of time!
+  m_text: Be fast!! enemies get stronger each second!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e8c848def9d3ffd4d9acc70f94669ef3, type: 2}
   m_sharedMaterial: {fileID: -2627907675476394282, guid: e8c848def9d3ffd4d9acc70f94669ef3, type: 2}
@@ -13368,14 +13368,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff68e409d90bfdf419ecc9df50ef5944, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHP: 100
-  currentHP: 100
-  armor: 0
+  maxHP: 200
+  currentHP: 200
+  armor: 2
   hpRegenerationRate: 1
-  hpRegenerationAmount: 1
+  hpRegenerationAmount: 5
   hpRegenerationTimer: 0
   damageBonus: 0
-  critChance: 10
+  critChance: 20
   hpBar: {fileID: 2139973803}
   body: {fileID: 3914185316141908182}
   level: {fileID: 0}
@@ -13790,7 +13790,7 @@ MonoBehaviour:
   movementVector: {x: 0, y: 0, z: 0}
   lastHorizontalVector: 0
   lastVerticalVector: 0
-  speed: 6.5
+  speed: 7
   speedBonus: 0
 --- !u!1 &4614342957947219140
 GameObject:

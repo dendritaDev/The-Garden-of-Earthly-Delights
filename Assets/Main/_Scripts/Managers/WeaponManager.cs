@@ -29,7 +29,15 @@ public class WeaponManager : MonoBehaviour
     }
     public void AddWeapon(WeaponData weaponData)
     {
+        
         GameObject weaponGameObject = Instantiate(weaponData.weaponBasePrefab, weaponObjectsContainer);
+
+        //si ya tenemos esa arma la rotamos un poco para que no este en el mismo sitio
+        if(CheckForRepeatedWeapon(weaponData))
+        {
+            Quaternion rot = Quaternion.Euler(new Vector3(0, 0, UnityEngine.Random.Range(40, 90)));
+            weaponGameObject.transform.rotation = rot;
+        }
 
         WeaponBase weaponBase = weaponGameObject.GetComponent<WeaponBase>();
 
@@ -43,6 +51,21 @@ public class WeaponManager : MonoBehaviour
         {
             level.AddUpgradesIntoTheListOfAvailableUpgrades(weaponData.upgrades);
         }
+    }
+
+    public bool CheckForRepeatedWeapon(WeaponData weaponData)
+    {
+        int numWeapons = weapons.Count;
+
+        for (int i = 0; i < numWeapons; i++)
+        {
+            if (weapons[i].weaponData.Name == weaponData.Name)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 
     internal void UpgradeWeapon(UpgradeData upgradeData)

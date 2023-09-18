@@ -149,7 +149,7 @@ MonoBehaviour:
   stats:
     hp: 40
     damage: 10
-    experienceReward: 200
+    experienceReward: 400
     moveSpeed: 8
   enemyData: {fileID: 0}
   poolMember: {fileID: 0}
