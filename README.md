@@ -30,10 +30,10 @@ During the development of this project, I've learned a lot. Specifically, gamepl
    
 
 ## Levels
-- **First level:** 
-- **Second level:** You need to make it to the end of the level alive if you want to be able to unlock the third level!
-- **Third level:** In this level you will fight some watercolor monster. Kill all of them if you want to unlock the last level!
-- **Fourth level:** Tons of monsters are going to try to kill you. Have you been wise before? Have you chosen the best stats when you bought them on the store? I hope so if you want to make it to the end!
+- 4 Different levels.
+- When the game begins, only the first level is unlocked. To unlock the next level, the player must have successfully completed the previous level, which is achieved by surviving the time marked at the beginning of each match. As you progress through the levels, the 
+  time required to complete each level increases, and more monsters, including stronger ones, will spawn. 
+- Even though monsters and the player are paused when you level up and the upgrade panel is opened, monster spawning is not, so the player must make quick decisions about which upgrades to choose to avoid being overwhelmed by a horde of formidable monsters
 
 ### Art
   - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of       the game
@@ -44,8 +44,6 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 ## To do's
     
 ### Code:
-  - Add different levels and condition flags (+ instructions at the beggining of the game to explain the conditions to    
-    unlock next level)
   - Gameplay SFX
   - Graphics and Audio Settings Panel (Menu)
   - Upload to itchio WebGL / Google Store
