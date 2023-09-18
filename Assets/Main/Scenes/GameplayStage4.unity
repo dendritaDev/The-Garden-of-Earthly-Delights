@@ -1173,7 +1173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bbf7bbe77d8805468f8bea7a61e3cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stageData: {fileID: 11400000, guid: f6dfd23743f130a41a1b2a07f6cd230a, type: 2}
+  stageData: {fileID: 11400000, guid: d4924140823212340ae7c2b6aca68dfd, type: 2}
 --- !u!114 &1830715556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,8 +1186,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 043ce158d257cac4084477d7c6619336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressTimeRate: 40
-  progressPerSplit: 0.22
+  progressTimeRate: 25
+  progressPerSplit: 0.4
 --- !u!1001 &1935054134
 PrefabInstance:
   m_ObjectHideFlags: 0
