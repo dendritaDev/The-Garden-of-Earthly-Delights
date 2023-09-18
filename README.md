@@ -35,7 +35,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 - Even though monsters and the player are paused when you level up and the upgrade panel is opened, monster spawning is not, so the player must make quick decisions about which upgrades to choose to avoid being overwhelmed by a horde of formidable monsters
 
 
-### Art
+## Art
   - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of       the game
 
 
