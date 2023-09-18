@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a7175deac84f740ba927e34c02a514, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsAmount: 2
+  coinsAmount: 5
   coinsCountText: {fileID: 0}
 --- !u!1001 &6457331682541431001
 PrefabInstance:

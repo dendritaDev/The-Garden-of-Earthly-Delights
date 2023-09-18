@@ -170,7 +170,7 @@ MonoBehaviour:
   dropItemPrefab:
   - {fileID: 2109499103910143569, guid: 01b6ace65b6a69f479b1b61ae495fbdc, type: 3}
   - {fileID: 6038782246737755231, guid: b3cc50415bec24d4f83a129c6cb099ff, type: 3}
-  chance: 0.2
+  chance: 0.3
 --- !u!114 &5597791698329199312
 MonoBehaviour:
   m_ObjectHideFlags: 0
