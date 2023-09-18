@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public enum StageEventType
 {
@@ -30,6 +31,7 @@ public class StageEvent
 [CreateAssetMenu]
 public class StageData : ScriptableObject
 {
+    public String initialText;
     public List<StageEvent> stageEvents;
     public string stageID;
     public List<string> stageCompletionToUnlock;

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class StaveEventManager : MonoBehaviour
 {
-    [SerializeField] StageData stageData;
+    [SerializeField] public StageData stageData;
     EnemiesManager enemiesManager;
 
     StageTime stageTime;

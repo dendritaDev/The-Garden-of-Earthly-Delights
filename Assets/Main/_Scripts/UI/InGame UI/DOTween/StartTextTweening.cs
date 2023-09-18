@@ -13,6 +13,9 @@ public class StartTextTweening : MonoBehaviour
     private TextMeshProUGUI text;
 
     [SerializeField]
+    private TextMeshProUGUI secondText;
+
+    [SerializeField]
     private Ease textEase;
 
     [SerializeField]
@@ -23,16 +26,19 @@ public class StartTextTweening : MonoBehaviour
 
     [SerializeField]
     private float textTime = 0.25f;
-    
+
+    StaveEventManager staveEventManager;
+
     void Start()
     {
+        staveEventManager = FindObjectOfType<StaveEventManager>();
         Initialize();
     }
 
     public void Initialize()
     {
-        rectTransform.DOAnchorPosX(-1700, 0f);
-
+        rectTransform.DOAnchorPos(new Vector2(-1700, 50), 0);
+        text.text = staveEventManager.stageData.initialText;
         StartCoroutine(TextTweening());
     }
 
@@ -42,8 +48,9 @@ public class StartTextTweening : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         var sequence = DOTween.Sequence()
-            .Append(rectTransform.DOAnchorPos(new Vector2(0, 0), transformTimeTime)).SetEase(textEase)
+            .Append(rectTransform.DOAnchorPos(new Vector2(0, 50), transformTimeTime, true)).SetEase(textEase)
             .Join(text.DOFade(1, textTime).SetEase(Ease.Linear))
+            .Join(secondText.DOFade(1, textTime).SetEase(Ease.Linear))
             .OnComplete(() =>
             {
                 FadeOut();
@@ -57,8 +64,10 @@ public class StartTextTweening : MonoBehaviour
     {
 
         var sequence = DOTween.Sequence()
-            .Append(rectTransform.DOAnchorPos(new Vector2(1700, 0), transformTimeTime+0.5f)).SetEase(textEaseFadeOut)
-            .Join(text.DOFade(0, textTime+0.5f).SetEase(Ease.Linear));
+            .Append(rectTransform.DOAnchorPos(new Vector2(1700, 50), transformTimeTime+0.5f)).SetEase(textEaseFadeOut)
+            .Join(text.DOFade(0, textTime+0.5f).SetEase(Ease.Linear))
+            .Join(secondText.DOFade(0, textTime+0.5f).SetEase(Ease.Linear));
+
     }
 
 }

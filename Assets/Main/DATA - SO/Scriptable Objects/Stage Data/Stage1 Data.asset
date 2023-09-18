@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2699b7cca6f0e448b29bbad28c75317, type: 3}
   m_Name: Stage1 Data
   m_EditorClassIdentifier: 
+  initialText: SURVIVE FOR 1 MINUTE
   stageEvents:
   - eventType: 0
     time: 5
