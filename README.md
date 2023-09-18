@@ -24,8 +24,10 @@ During the development of this project, I've learned a lot. Specifically, gamepl
  - **Spawn Objectes System**
  - **Condition Flag System** to unlock new levels
  - **Managers:** Event Spawning Enemies Manager, Music Manager, Weapon Manager, Enemies Manager, Object Spawning Manager.
+ - **Interfaces:** Interfaces to promote Abstraction, Polymorphism and Decoupling in the code. E.g: IDamageable, IPickUpObject, IPoolMember.
  - **Scriptable Objects** to save data and save different kind of objects from weapons, enemies, levels, condition flags,
    pools, popups...
+   
 
 ## Levels
 - **First level:** 
