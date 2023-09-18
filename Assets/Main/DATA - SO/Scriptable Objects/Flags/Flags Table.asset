@@ -16,10 +16,10 @@ MonoBehaviour:
   - Name: Stage 1 Complete
     state: 1
   - Name: Stage 2 Complete
-    state: 1
+    state: 0
   - Name: Stage 3 Complete
-    state: 1
+    state: 0
   - Name: Stage 4 Complete
     state: 0
-  - Name: Coins 10000
+  - Name: Coins 10
     state: 0

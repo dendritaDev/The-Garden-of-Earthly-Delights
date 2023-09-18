@@ -180,6 +180,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
 
         GO.transform.parent = paintingCanvas.transform;
 
+        splashFX.gameObject.SetActive(false);
 
         if (poolMember != null)
         {

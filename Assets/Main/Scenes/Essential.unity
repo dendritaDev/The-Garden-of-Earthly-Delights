@@ -13423,7 +13423,7 @@ MonoBehaviour:
   movementVector: {x: 0, y: 0, z: 0}
   lastHorizontalVector: 0
   lastVerticalVector: 0
-  speed: 7
+  speed: 6.5
   speedBonus: 0
 --- !u!1 &4614342957947219140
 GameObject:

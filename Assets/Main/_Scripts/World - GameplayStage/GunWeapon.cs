@@ -17,11 +17,61 @@ public class GunWeapon : WeaponBase
     public override void Attack()
     {
         enemyPos.Clear();
+        StartCoroutine(NumberOfAttacks());
+        //for (int i = 0; i < weaponStats.numberOfAttacks; i++)
+        //{
+        //    Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, weaponStats.detectionRadius, layerMask);
+
+        //    if(colliders.Length == 0) { return; }
+        //    float nearEnemy = Mathf.Infinity;
+        //    float distanceToEnemy;
+        //    int enemyIndex = -1;
+
+        //    for (int e = 0; e < colliders.Length; e++)
+        //    {
+
+        //        if (!colliders[e].CompareTag("Enemy")) //solo nos interesan los colliders de enemigos
+        //        {
+        //            Debug.Log(colliders[e].tag);
+        //            Debug.Log(colliders[e].name);
+        //            continue;
+
+        //        }
+
+
+        //        distanceToEnemy = Vector3.Distance(this.transform.position, colliders[e].transform.position);
+
+        //        enemyPos.Add(colliders[e].transform.position);
+
+        //        if (distanceToEnemy < nearEnemy)
+        //        {
+        //            nearEnemy = distanceToEnemy;
+        //            enemyIndex = e;
+        //        }
+        //    }
+
+        //    if(enemyIndex == -1) { return; } //si no hay ningun enemigo return
+        //    selectedOne = colliders[enemyIndex].transform.position;
+        //    GameObject bullet = SpawnProjectile(bulletPrefab, transform.position, colliders[enemyIndex].transform.position);
+
+
+        //    Vector3 direction = colliders[enemyIndex].transform.position - transform.position;
+        //    float angleRadians = Mathf.Atan2(-direction.y, -direction.x);
+        //    float angleDegree = angleRadians * Mathf.Rad2Deg;
+        //    bullet.transform.rotation = Quaternion.AngleAxis(angleDegree, Vector3.forward);
+            
+
+        //}
+    }
+
+    public IEnumerator NumberOfAttacks()
+    {
+
         for (int i = 0; i < weaponStats.numberOfAttacks; i++)
         {
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, weaponStats.detectionRadius, layerMask);
 
-            if(colliders.Length == 0) { return; }
+            if (colliders.Length == 0) { yield break; }
             float nearEnemy = Mathf.Infinity;
             float distanceToEnemy;
             int enemyIndex = -1;
@@ -49,7 +99,7 @@ public class GunWeapon : WeaponBase
                 }
             }
 
-            if(enemyIndex == -1) { return; } //si no hay ningun enemigo return
+            if (enemyIndex == -1) { yield break; } //si no hay ningun enemigo return
             selectedOne = colliders[enemyIndex].transform.position;
             GameObject bullet = SpawnProjectile(bulletPrefab, transform.position, colliders[enemyIndex].transform.position);
 
@@ -58,9 +108,11 @@ public class GunWeapon : WeaponBase
             float angleRadians = Mathf.Atan2(-direction.y, -direction.x);
             float angleDegree = angleRadians * Mathf.Rad2Deg;
             bullet.transform.rotation = Quaternion.AngleAxis(angleDegree, Vector3.forward);
-            
+
+            yield return new WaitForSeconds(0.1f);
 
         }
+
     }
 
     private void OnDrawGizmos()
