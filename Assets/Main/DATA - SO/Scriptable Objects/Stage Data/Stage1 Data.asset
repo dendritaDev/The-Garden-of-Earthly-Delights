@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stageEvents:
   - eventType: 0
-    time: 2
+    time: 5
     message: 
     enemyToSpawn: {fileID: 11400000, guid: 732291a95c3ed1f4cba1b47b038bb1e2, type: 2}
     objectToSpawn: {fileID: 9219287461840458396, guid: 1f93f448d1c148c4bb576d5646e95637, type: 3}
@@ -23,7 +23,7 @@ MonoBehaviour:
     repeatEverySeconds: 3
     repeatCount: 10
   - eventType: 0
-    time: 15
+    time: 18
     message: 
     enemyToSpawn: {fileID: 11400000, guid: 732291a95c3ed1f4cba1b47b038bb1e2, type: 2}
     objectToSpawn: {fileID: 9219287461840458396, guid: 1f93f448d1c148c4bb576d5646e95637, type: 3}
@@ -32,7 +32,7 @@ MonoBehaviour:
     repeatEverySeconds: 0
     repeatCount: 0
   - eventType: 0
-    time: 25
+    time: 28
     message: 
     enemyToSpawn: {fileID: 11400000, guid: 732291a95c3ed1f4cba1b47b038bb1e2, type: 2}
     objectToSpawn: {fileID: 9219287461840458396, guid: 1f93f448d1c148c4bb576d5646e95637, type: 3}
