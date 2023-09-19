@@ -18,7 +18,7 @@ MonoBehaviour:
     timeToAttack: 0.5
     numberOfAttacks: 2
     numOfPerforationHits: 1
-    projectileSpeed: 2
+    projectileSpeed: 2.5
     detectionRadius: 6
     stun: 0.1
     knockback: 5
