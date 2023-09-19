@@ -14,8 +14,14 @@ public class ObjectPool : MonoBehaviour
         this.originalPoolData = poolObjectData;
     }
 
+    private void Start()
+    {
+        transform.position = Vector3.zero;
+    }
+
     public void InstantiateObject()
     {
+        transform.position = Vector3.zero;
         GameObject newObject = Instantiate(originalPoolData.originalPrefab, transform);
         GameObject mainObject = newObject;
 

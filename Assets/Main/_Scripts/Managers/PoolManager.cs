@@ -16,6 +16,7 @@ public class PoolManager : MonoBehaviour
 
     public void CreatePool(PoolObjectData newPoolData)
     {
+        transform.position = Vector3.zero;
         GameObject newObjectPoolGO = Instantiate(poolPrefab, transform).gameObject;
         ObjectPool newObjectPool = newObjectPoolGO.GetComponent<ObjectPool>();
         newObjectPool.Set(newPoolData);

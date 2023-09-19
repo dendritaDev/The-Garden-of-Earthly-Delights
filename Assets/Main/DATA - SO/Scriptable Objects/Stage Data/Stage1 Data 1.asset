@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2699b7cca6f0e448b29bbad28c75317, type: 3}
-  m_Name: testeo
+  m_Name: Stage1 Data 1
   m_EditorClassIdentifier: 
-  initialText: SURVIVE FOR 4 MIN!
+  initialText: SURVIVE FOR 1 MINUTE
   stageEvents:
-  - eventType: 3
-    time: 4
+  - eventType: 0
+    time: 3
     message: 
-    enemyToSpawn: {fileID: 0}
-    objectToSpawn: {fileID: 0}
-    count: 0
+    enemyToSpawn: {fileID: 11400000, guid: 732291a95c3ed1f4cba1b47b038bb1e2, type: 2}
+    objectToSpawn: {fileID: 9219287461840458396, guid: 1f93f448d1c148c4bb576d5646e95637, type: 3}
+    count: 1
     isRepeatedEvent: 0
     repeatEverySeconds: 0
     repeatCount: 0
-  stageID: Stage 4 Complete
-  stageCompletionToUnlock:
-  - Stage 3 Complete
+  stageID: Stage 1 Complete
+  stageCompletionToUnlock: []

@@ -66,7 +66,7 @@ public class StaveEventManager : MonoBehaviour
 
                     break;
             }
-            Debug.Log(stageData.stageEvents[eventIndexer].message);
+            //Debug.Log(stageData.stageEvents[eventIndexer].message);
             eventIndexer += 1;
         }
     }

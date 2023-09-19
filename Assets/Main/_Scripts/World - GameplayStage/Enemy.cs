@@ -129,7 +129,7 @@ public class Enemy : MonoBehaviour, IDamageable, IPoolMember
     public void TakeDamage(int damage)
     {
         stats.hp -= damage;
-
+        Debug.Log("hit");
         if(stats.hp < 1)
         {
             Destroy();

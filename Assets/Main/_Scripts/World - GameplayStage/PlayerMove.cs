@@ -63,6 +63,26 @@ public class PlayerMove : MonoBehaviour
         movementVector.y = Input.GetAxisRaw("Vertical");
         movementVector.Normalize();
 
+
+        if (Input.touchCount > 0)
+        {
+            // Get the first touch
+            Touch touch = Input.GetTouch(0);
+
+            // Convert touch position to world space
+            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(touch.position);
+
+            // Calculate the direction vector
+            Vector3 direction = touchPosition - transform.position;
+            direction.Normalize();
+
+            // Set the movement vector
+            movementVector.x = direction.x;
+            movementVector.y = direction.y;
+        }
+
+
+
         if (movementVector.x != 0)
         {
             lastHorizontalVector = movementVector.x;

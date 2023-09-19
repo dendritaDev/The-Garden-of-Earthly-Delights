@@ -9,7 +9,8 @@ public class Projectile : MonoBehaviour, IPoolMember
 
     float speed;
     int damage = 5;
-    int numOfPerforationHits = 3;
+    [SerializeField] int numOfPerforationHits = 3;
+    [SerializeField] int numOfPerforationHitsReset;
 
     [SerializeField] float hitArea = 1f;
     float timeToDestroy = 1.5f;
@@ -32,6 +33,7 @@ public class Projectile : MonoBehaviour, IPoolMember
     private void FixedUpdate()
     {
         MovePB();
+
         
     }
 
@@ -53,8 +55,11 @@ public class Projectile : MonoBehaviour, IPoolMember
 
     private void MovePB()
     {
+        directionToMove.z = 0;
+        gameObject.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y, 0);
+
         rb.velocity = speed * directionToMove;
-        Debug.Log(rb.velocity);
+        
 
     }
 
@@ -108,6 +113,7 @@ public class Projectile : MonoBehaviour, IPoolMember
         weapon = weaponBase;
         damage = weaponBase.GetDamageStat();
         numOfPerforationHits = weaponBase.weaponStats.numOfPerforationHits;
+        numOfPerforationHitsReset = weaponBase.weaponStats.numOfPerforationHits;
         speed = weaponBase.weaponStats.projectileSpeed;
         
     }
@@ -115,11 +121,20 @@ public class Projectile : MonoBehaviour, IPoolMember
     private void OnEnable()
     {
         timeToDestroy = 3f;
+        numOfPerforationHits = numOfPerforationHitsReset;
+
     }
 
     private void OnDisable()
     {
         rb.velocity = Vector3.zero;
+
+        if(alreadyHitTargets != null)
+        {
+            for (int i = 0; i < alreadyHitTargets.Count; i++)
+                alreadyHitTargets.RemoveAt(i);
+        }
+     
     }
 
     public void SetPoolMember(PoolMember poolMember)
