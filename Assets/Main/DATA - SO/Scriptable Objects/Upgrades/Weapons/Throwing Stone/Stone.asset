@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: Sling that throws stones
   stats:
-    damage: 8
-    timeToAttack: 0.9
-    numberOfAttacks: 1
-    numOfPerforationHits: 2
-    projectileSpeed: 2
+    damage: 3
+    timeToAttack: 0.4
+    numberOfAttacks: 2
+    numOfPerforationHits: 1
+    projectileSpeed: 3
     detectionRadius: 6
     stun: 0.1
     knockback: 10

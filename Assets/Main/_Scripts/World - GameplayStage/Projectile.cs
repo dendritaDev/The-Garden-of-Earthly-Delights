@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -22,20 +22,23 @@ public class Projectile : MonoBehaviour, IPoolMember
 
     [HideInInspector] public Vector3 directionToMove;
 
+    private Rigidbody2D rb;
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void FixedUpdate()
+    {
+        MovePB();
+        
+    }
+
     // Update is called once per frame
     void Update()
     {
-        Move();
-        HitDetection();
-
-        ////Optimizar: Solo llamamos update cada 2 frames: A más rapido y mas pequeño sea el objeto, mas update tendremos que hacer para que no se de el caso
-        ////de que de frame a frame se mueve lo suficiente como para no collisionar con el enemigo aunque visualmente si que lo parezca
-        //if (Time.frameCount % frameRate == 0)
-        //{
-            
-
-        //}
-
+        
         LifeTimer();
     }
 
@@ -43,6 +46,35 @@ public class Projectile : MonoBehaviour, IPoolMember
     {
         timeToDestroy -= Time.deltaTime;
         if (timeToDestroy < 0)
+        {
+            DestroyProjectile();
+        }
+    }
+
+    private void MovePB()
+    {
+        rb.velocity = speed * directionToMove;
+        Debug.Log(rb.velocity);
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (numOfPerforationHits > 0)
+        {
+            IDamageable objectHit = collision.GetComponent<IDamageable>();
+            if (objectHit != null)
+            {
+                if (!CheckRepeatHit(objectHit))
+                {
+
+                    weapon.ApplyDamage(damage, collision.transform.position, objectHit);
+                    alreadyHitTargets.Add(objectHit);
+                    numOfPerforationHits--;
+                }
+            }
+        }
+        else
         {
             DestroyProjectile();
         }
@@ -61,35 +93,6 @@ public class Projectile : MonoBehaviour, IPoolMember
         
     }
 
-    private void HitDetection()
-    {
-        Collider2D[] hit = Physics2D.OverlapCircleAll(transform.position, hitArea, weapon.layerMask);
-
-        foreach (var collider in hit)
-        {
-            if (numOfPerforationHits > 0)
-            {
-                IDamageable objectHit = collider.GetComponent<IDamageable>();
-                if (objectHit != null)
-                {
-                    if (!CheckRepeatHit(objectHit))
-                    {
-                        
-                        weapon.ApplyDamage(damage, collider.transform.position, objectHit);
-                        alreadyHitTargets.Add(objectHit);
-                        numOfPerforationHits--;
-                    }
-                }
-            }
-            else
-            {
-                break;
-            }
-        }
-
-        if (numOfPerforationHits <= 0)
-            DestroyProjectile();
-    }
 
     private bool CheckRepeatHit(IDamageable objectHit)
     {
@@ -98,16 +101,7 @@ public class Projectile : MonoBehaviour, IPoolMember
         return alreadyHitTargets.Contains(objectHit);
     }
 
-    /// <summary>
-    /// Movimiento del proyectil.
-    /// Multiplico la speed por el frameRate para compensar que si se hace el update menos veces, que se desplace más para que la velocidad de la piedra no dependa del framerate que le demos
-    /// Asi solo tenemos que preocuparnos por modificar la velocidad
-    /// </summary>
-    private void Move()
-    {
-
-        transform.position += (speed/* * frameRate*/) * Time.deltaTime * directionToMove;
-    }
+   
 
     internal void SetStats(WeaponBase weaponBase)
     {
@@ -120,13 +114,17 @@ public class Projectile : MonoBehaviour, IPoolMember
 
     private void OnEnable()
     {
-        timeToDestroy = 6f;
+        timeToDestroy = 3f;
+    }
+
+    private void OnDisable()
+    {
+        rb.velocity = Vector3.zero;
     }
 
     public void SetPoolMember(PoolMember poolMember)
     {
         this.poolMember = poolMember;
     }
-
 
 }

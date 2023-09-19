@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25c0e309fb0e8654ebbfc9db99b6b6de, type: 3}
   m_Name: StoneProjetilePool
   m_EditorClassIdentifier: 
-  originalPrefab: {fileID: 6954924444975951992, guid: bca20a358a5cef2449eff162296f0a1d, type: 3}
+  originalPrefab: {fileID: 6954924444975951992, guid: 77e36e4c69b84c041b94363ae297b142, type: 3}
   containerPrefab: {fileID: 0}
   poolID: 0
