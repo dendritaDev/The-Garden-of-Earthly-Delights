@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flags:
   - Name: Stage 1 Complete
-    state: 1
+    state: 0
   - Name: Stage 2 Complete
     state: 0
   - Name: Stage 3 Complete
