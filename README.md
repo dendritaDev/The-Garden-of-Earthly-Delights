@@ -5,8 +5,6 @@ I chose to make a roguelite game because this year, this genre has been a discov
 
 During the development of this project, I've learned a lot. Specifically, gameplay programming, Scriptable Objects, AI programming (movement and decision-making), UI programming (using tweening libraries), design patterns, and UML.
 
-**Be aware:** There are some bugs in the videos and gifs that have already been fixed, but I haven't been able to update the videos yet due to time constraints. Don't worry!
-
 # Features
 ## Code
  - **Player:** Movement, Animation, Character(stats and Scriptable Object for persistance data container), Management of items, coins, weapons and experience
@@ -36,19 +34,15 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 
 
 ## Art
-  - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of       the game
+  - Half of the art is made by me. The other half is taken from internet and edited by me to get the watercolor style of the game
 
 
 ## UML
   - [UML Files](https://drive.google.com/drive/folders/16DbW0m3QNyMtEOaptFkmP0oJ878A7_4L?usp=sharing)
 
-## To do's
-    
-### Code:
-  - Gameplay SFX
-  - Graphics and Audio Settings Panel (Menu)
-  - Upload to itchio WebGL / Google Store
-  - INPUT FOR MOBILE
+## Itch.io Link
+
+## Google Play Link
 
 # Videos - Gifs
 ## Weapons + Damage Popups - Gameplay
