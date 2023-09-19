@@ -23,11 +23,16 @@ public class LosePanelTweening : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI gameOverText;
 
+    [SerializeField]
+    private AudioSource audioSource;
+
     private void OnEnable()
     {
         exitButton.SetActive(false);
         exitButtonText.DOFade(0f, 0f);
 
+
+        audioSource.Play();
 
         var sequence = DOTween.Sequence()
             .Append(gameOverImagePanel.transform.DOPunchPosition(Vector3.one * 50, 1f, 100));

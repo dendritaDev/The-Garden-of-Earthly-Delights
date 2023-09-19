@@ -141,6 +141,7 @@ MonoBehaviour:
   dropItemPrefab:
   - {fileID: 6382455873699016360, guid: cf25a3b6f2403cf47bbee4f6df6dcec7, type: 3}
   - {fileID: 6038782246737755231, guid: b3cc50415bec24d4f83a129c6cb099ff, type: 3}
+  - {fileID: 6382455873699016360, guid: cf25a3b6f2403cf47bbee4f6df6dcec7, type: 3}
   chance: 1
 --- !u!1001 &7951475591784378781
 PrefabInstance:

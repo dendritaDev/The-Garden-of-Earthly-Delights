@@ -10,11 +10,14 @@ public class WhipWeapon : WeaponBase
     
     PlayerMove playerMove;
     [SerializeField] Vector2 attackSize = new Vector2(3f, 2f);
+    [SerializeField] private AudioSource attackSound;
 
     private void Awake()
     {
         playerMove = GetComponentInParent<PlayerMove>();
+        attackSound = GetComponent<AudioSource>();
     }
+
 
     public override void Attack()
     {
@@ -32,6 +35,7 @@ public class WhipWeapon : WeaponBase
             Collider2D[] colliders2 = Physics2D.OverlapBoxAll(whipObject2.transform.position, attackSize, 180f, layerMask);
             ApplyDamage(colliders2);
 
+            attackSound.Play();
             yield return new WaitForSeconds(0.3f);
         }
      

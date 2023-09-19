@@ -32,12 +32,22 @@ public class Character : MonoBehaviour
     private PauseManager pauseManager;
 
     private PlayerMove playerMove;
-    
+
+
+    [SerializeField]
+    private AudioSource audioSource;
+
+    [SerializeField]
+    private AudioClip healingSFX;
+
+    [SerializeField]
+    private AudioClip damageSFX;
 
     private void Awake()
     {
         level = GetComponent<Level>();
         coins = GetComponent<Coins>();
+        
     }
 
     private void Start()
@@ -110,7 +120,10 @@ public class Character : MonoBehaviour
     public IEnumerator GameFeelTakingDamage()
     {
         body.color = Color.red;
-        //play music
+
+        audioSource.clip = damageSFX;
+        audioSource.Play();
+
 
         yield return new WaitForSeconds(0.1f);
 
@@ -135,8 +148,14 @@ public class Character : MonoBehaviour
 
         hpBar.SetState(currentHP, MaxHP);
 
-        if(displayPopup)
+        if(displayPopup) //poción recogida
+        {
             MessageSystem.instance.HealPopup(amount.ToString(), this.transform.position, false);
+            audioSource.clip = healingSFX;
+            audioSource.Play();
+        }
+
+        
 
     }
 

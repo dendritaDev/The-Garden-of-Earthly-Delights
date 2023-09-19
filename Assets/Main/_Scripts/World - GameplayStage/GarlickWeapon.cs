@@ -9,6 +9,13 @@ public class GarlickWeapon : WeaponBase
     [SerializeField] ParticleSystem slash;
     [SerializeField] ParticleSystem backgroundSlash;
     [SerializeField] ParticleSystem particles;
+    [SerializeField] private AudioSource attackSound;
+
+    private void Awake()
+    {
+        attackSound = GetComponent<AudioSource>();
+
+    }
 
     //Actaualizamos el radio de los sistemas de particulas a el radio de la colision
     public float AttackAreaSize 
@@ -41,6 +48,7 @@ public class GarlickWeapon : WeaponBase
         for (int i = 0; i < weaponStats.numberOfAttacks; i++)
         {
             slash.Play();
+            attackSound.Play();
 
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, weaponStats.areaSize, layerMask);
             ApplyDamage(colliders);

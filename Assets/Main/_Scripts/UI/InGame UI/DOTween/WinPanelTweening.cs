@@ -42,10 +42,15 @@ public class WinPanelTweening : MonoBehaviour
     [SerializeField]
     private Sprite paperSpriteToChange;
 
-
+    [SerializeField]
+    private AudioSource audioSource;
     private void OnEnable()
     {
         Initialize();
+
+        audioSource.Play();
+        
+        audioSource.DOFade(0.3f, 7f);
 
         //ShaderPaper
         Color shadePaperColorEnd = new Color(0.1803922f, 0.1803922f, 0.1803922f, 1f);

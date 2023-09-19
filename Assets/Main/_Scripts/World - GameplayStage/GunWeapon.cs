@@ -13,6 +13,12 @@ public class GunWeapon : WeaponBase
 
     private List<Vector3> enemyPos = new List<Vector3>();
     private Vector3 selectedOne = Vector3.zero;
+    [SerializeField] private AudioSource attackSound;
+
+    private void Awake()
+    {
+        attackSound = GetComponent<AudioSource>();
+    }
 
     public override void Attack()
     {
@@ -69,8 +75,9 @@ public class GunWeapon : WeaponBase
 
         for (int i = 0; i < weaponStats.numberOfAttacks; i++)
         {
+       
             Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, weaponStats.detectionRadius, layerMask);
-
+        
             if (colliders.Length == 0) { yield break; }
             float nearEnemy = Mathf.Infinity;
             float distanceToEnemy;
@@ -103,6 +110,8 @@ public class GunWeapon : WeaponBase
             selectedOne = colliders[enemyIndex].transform.position;
             GameObject bullet = SpawnProjectile(bulletPrefab, transform.position, colliders[enemyIndex].transform.position);
 
+            attackSound.Play();
+            
 
             Vector3 direction = colliders[enemyIndex].transform.position - transform.position;
             float angleRadians = Mathf.Atan2(-direction.y, -direction.x);
