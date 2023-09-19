@@ -14,10 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Main/Scenes/GameplayStage1.unity
     guid: f2940ad61fa6b5f44b9769a3203c2ad7
-  - enabled: 0
-    path: Assets/Greg/Scenes/GameplayStage2.unity
-    guid: 0921552c128e34e40b686742250e91a3
+  - enabled: 1
+    path: Assets/Main/Scenes/GameplayStage2.unity
+    guid: cc0ccc8e0fd8c3a48a1ef0a0e05c0067
   - enabled: 1
     path: Assets/Main/Scenes/GameplayStage3.unity
-    guid: fe372829e6e930446b4461d77f07ba94
+    guid: 967ab22ab5472e64f91f4a8c5662cd69
+  - enabled: 1
+    path: Assets/Main/Scenes/GameplayStage4.unity
+    guid: 6b4711c0237e0514ea9068f319b13da6
   m_configObjects: {}
