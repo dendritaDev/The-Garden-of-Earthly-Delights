@@ -5,6 +5,9 @@ I chose to make a roguelite game because this year, this genre has been a discov
 
 During the development of this project, I've learned a lot. Specifically, gameplay programming, Scriptable Objects, AI programming (movement and decision-making), UI programming (using tweening libraries), design patterns, and UML.
 
+## Itch.io Link
+https://dendritadev.itch.io/the-garden-of-earthly-delights-roguelike
+
 # Features
 ## Code
  - **Player:** Movement, Animation, Character(stats and Scriptable Object for persistance data container), Management of items, coins, weapons and experience
@@ -39,9 +42,6 @@ During the development of this project, I've learned a lot. Specifically, gamepl
 
 ## UML
   - [UML Files](https://drive.google.com/drive/folders/16DbW0m3QNyMtEOaptFkmP0oJ878A7_4L?usp=sharing)
-
-## Itch.io Link
-https://dendritadev.itch.io/the-garden-of-earthly-delights-roguelike
 
 # Videos - Gifs
 ## Weapons + Damage Popups - Gameplay
