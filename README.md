@@ -41,8 +41,7 @@ During the development of this project, I've learned a lot. Specifically, gamepl
   - [UML Files](https://drive.google.com/drive/folders/16DbW0m3QNyMtEOaptFkmP0oJ878A7_4L?usp=sharing)
 
 ## Itch.io Link
-
-## Google Play Link
+https://dendritadev.itch.io/the-garden-of-earthly-delights-roguelike
 
 # Videos - Gifs
 ## Weapons + Damage Popups - Gameplay
